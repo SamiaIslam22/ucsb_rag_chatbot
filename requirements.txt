@@ -1,0 +1,23 @@
+# Core AI/ML libraries
+openai>=1.0.0
+langchain-text-splitters
+python-dotenv
+
+# Database
+psycopg[binary]
+pgvector
+
+# Data processing
+pandas
+numpy
+
+# Web scraping and document processing
+crawl4ai
+docling
+
+# Web framework (for Streamlit frontend)
+streamlit
+
+# Development tools
+ipykernel
+
