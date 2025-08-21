@@ -547,18 +547,18 @@ This project serves as both a practical tool for UCSB nanofab users and an educa
 
 ### Project Development
 
-```
+
 This UCSB RAG Chatbot System was developed with guidance and mentorship from Dr. Samantha Roberts (@srobertsphd), director of ASRC Nanofab, advancing AI-powered knowledge management for scientific research and nanofabrication facilities.
-```
+
 ### Data Source Permission
-```
+
 We gratefully acknowledge Dr. Demis D. John, director of UCSB Nanofab, for granting permission to scrape and process the UCSB wiki pages for this educational and research project.
-```
+
 
 ## Research Applications
-```
+
 This project demonstrates the potential for AI-powered knowledge management systems in specialized research environments, making complex technical documentation more accessible through intelligent search and contextual response generation.
-```
+
 ---
 
 **Happy Learning and Research! 🎉**
