@@ -2,7 +2,8 @@ import pandas as pd
 import json
 import re
 import numpy as np
-from vector_search import embed_query, client
+from backend.ai_services.vector_search import embed_query
+from backend.ai_services.openai_services import client
 
 # -- Helper: cosine similarity between two vectors
 def cosine_similarity(a: list, b: list) -> float:
