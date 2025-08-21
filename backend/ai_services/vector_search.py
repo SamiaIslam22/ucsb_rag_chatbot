@@ -47,11 +47,26 @@ def vector_similarity_search(query_text, df, client, k=5):
     similarities.sort(key=lambda x: x[0], reverse=True)
     
     print(f"Found {len(similarities)} chunks, returning top {k}")
+    
+    # FIXED: Convert to the format expected by frontend
+    results = []
     for i, (score, chunk) in enumerate(similarities[:k], 1):
         content_type = chunk.get('content_type', 'unknown')
         print(f"  {i}. Score: {score:.3f} | Type: {content_type} | {chunk['title'][:50]}...")
+        
+        # Format result for frontend
+        result = {
+            'url': chunk.get('url', ''),
+            'title': chunk.get('title', ''),
+            'chunk': chunk.get('chunk_number', i),
+            'content': chunk.get('content', ''),  # ← KEY FIX: Include actual content
+            'content_type': content_type,
+            'score': float(score),
+            'metadata': chunk.get('metadata', {})
+        }
+        results.append(result)
     
-    return similarities[:k]
+    return results
 
 def embed_query(query_text, client):
     """Generate embedding for user query"""
