@@ -1,0 +1,64 @@
+index,url,alt,caption,summary
+1,https://wiki.nanofab.ucsb.edu/w/images/1/1e/EB-1_4-wf_fixture_01_empty.png,,Mount your wafers to the 4-wafer fixture while it is NOT installed in the tool. Like so - setup the fixture on the table:,"### Image Description for Lab Documentation
+
+**Purpose:**
+The image depicts a 4-wafer fixture designed for secure mounting of semiconductor wafers prior to processing. This fixture is integral for maintaining alignment and stability during various operations in semiconductor fabrication tools. Proper use of the fixture ensures accurate processing and minimizes the risk of damage to the wafers.
+
+**Key Technical Details:**
+- **Fixture Design:** The fixture is circular and accommodates four wafers simultaneously, each positioned in dedicated slots.
+- **Material Composition:** The body of the fixture is constructed from a durable material that minimizes static charge build-up and enhances grip on the wafers.
+- **Mounting Mechanism:** Included are various mounting points (notably visible in the image) which facilitate secure attachment of the wafers, preventing movement during handling.
+- **Central Fastening Point:** A central nut and bolt mechanism is featured, allowing for secure attachment to a base or tool during processing.
+- **Preparation Instructions:** The fixture should be set up on a stable table before mounting wafers, ensuring easy access and optimal working conditions.
+
+This fixture is crucial for the precision alignment required in semiconductor operations, enhancing the reliability of the fabrication process."
+2,https://wiki.nanofab.ucsb.edu/w/images/f/fc/EB-1_4-wf_fixture_02_bolt.png,,"Insert a ~1-inch long 1/4-20 Bolt from the underside, with a 1/4-20 Nut on the top side, like so:","### Image Description for Lab Documentation
+
+**Purpose:**  
+The image illustrates the assembly process for securing components using a bolt and nut system. This technique is crucial for maintaining stability and functionality in mechanical structures or experimental setups.
+
+**Key Technical Details:**
+- **Components:** The assembly includes a ~1-inch long 1/4-20 bolt and a 1/4-20 nut.
+- **Orientation:** The bolt is inserted from the underside of the component, while the nut is placed on the top side.
+- **Material Interaction:** The bolt threads engage with the nut to create a secure fit, essential for load-bearing applications.
+- **Assembly Steps:** The image serves as a visual guide for proper alignment and fastening techniques.
+
+The depicted assembly practice is instrumental in ensuring that manufactured components are securely fastened and meet operational requirements."
+3,https://wiki.nanofab.ucsb.edu/w/images/1/1c/EB-1_4-wf_fixture_03_wafers_inserted.jpg,,Insert your wafers Face-Down and secure them with the CuBe Clips:CORRECTION - 1/4-20 bolt + nut may be inserted in center already.,"### Image Description for Lab Documentation
+
+**Image Overview:**
+The image displays a wafer holder designed for securing lab wafers during processing. The holder features several crucial components that facilitate effective sample management and stability.
+
+**Purpose:**
+The primary purpose of the wafer holder is to securely position multiple wafers face-down for various fabrication or analysis processes. The design allows for easy insertion and removal of the wafers while ensuring they remain stable during experiments.
+
+**Key Technical Details:**
+- **Configuration:** The holder accommodates four wafers, each secured with CuBe clips. This arrangement enables efficient processing of multiple samples simultaneously.
+- **Fastening Mechanism:** Each clip is attached to the holder and functions to maintain the wafers in the desired position, minimizing movement and ensuring consistent results.
+- **Center Bolt:** A correction note indicates that a 1/4-20 bolt and nut may already be inserted in the center of the holder. This feature likely assists in securing the entire assembly or serves as a reference point for alignment.
+- **Materials:** The clips appear to be made from a conductive material—likely copper and beryllium (CuBe)—to prevent contamination while providing conductive properties.
+
+This image serves as a visual reference for lab personnel on how to properly insert wafers and utilize the handling tools for optimal performance."
+4,https://wiki.nanofab.ucsb.edu/w/images/5/5a/EB-1_4-wf_fixture_04_fixture_loaded_in_chamber.jpg,,"Load into tool, securing at the top with the single 1/4-20 bolt + nut, and Ensuring the Crystal Monitor does not shadow any wafers, as pictured here:","**Image Description for Lab Documentation**
+
+**Purpose:**  
+This image captures the loading procedure for a wafer tool, highlighting the secure positioning of the equipment. It is essential to ensure the Crystal Monitor does not obstruct any wafers during operation, which is crucial for accurate measurements and optimal performance in wafer processing.
+
+**Key Technical Details:**
+
+1. **Loading Mechanism:**  
+   - The image shows a tooling system designed to hold four wafers, with a clear view of the mounting apparatus.
+   - A single 1/4-20 bolt and nut are used to secure the load at the top, ensuring stability.
+
+2. **Crystal Monitor Positioning:**  
+   - The caption emphasizes preventing the Crystal Monitor from casting shadows on any of the wafers. Proper alignment is critical to maintaining the integrity of the readings and preventing measurement errors.
+
+3. **Visual Elements:**  
+   - The top-mounted, circular apertures reveal the wafers positioned below them, which are aligned for processing or inspection.
+   - The use of gold coloring hints at potential reflective properties, suggesting that the equipment may also be designed with considerations toward minimizing unwanted interference or distortion in readings.
+
+4. **Underlying Structure:**  
+   - The visible support structure indicates a robust design, necessary to handle the weight and requirements of the wafers being processed.
+   - Additional instrument components in the background suggest an organized setup that facilitates efficient workflow within the lab environment.
+
+This detailed overview serves as a reference for best practices in equipment loading and operation procedures in wafer processing."

@@ -1,0 +1,1171 @@
+title,url,markdown
+Wet Benches#HF.2FTMAH Processing Bench,https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#HF.2FTMAH_Processing_Bench,"In the lab we have a total of 16 wet benches. They are divided into the following 8 types as listed in the following table of contents. 
+## Contents
+  * [1 General Information](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#General_Information)
+  * [2 Documentation](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Documentation)
+    * [2.1 Std. Operating Procedure (SOP)](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Std._Operating_Procedure_\(SOP\))
+  * [3 Solvent Cleaning Benches](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Solvent_Cleaning_Benches)
+    * [3.1 About](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#About)
+    * [3.2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Detailed_Specifications)
+  * [4 Develop Benches](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Develop_Benches)
+    * [4.1 About](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#About_2)
+    * [4.2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Detailed_Specifications_2)
+  * [5 Spin Coat Benches](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Spin_Coat_Benches)
+    * [5.1 About](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#About_3)
+    * [5.2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Detailed_Specifications_3)
+  * [6 Toxic Corrosive Benches](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Toxic_Corrosive_Benches)
+    * [6.1 About](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#About_4)
+    * [6.2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Detailed_Specifications_4)
+  * [7 Wafer Toxic Corrosive Benches](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Wafer_Toxic_Corrosive_Benches)
+    * [7.1 About](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#About_5)
+    * [7.2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Detailed_Specifications_5)
+  * [8 HF/TMAH Processing Bench](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#HF/TMAH_Processing_Bench)
+    * [8.1 About](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#About_6)
+    * [8.2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Detailed_Specifications_6)
+  * [9 Plating Bench](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Plating_Bench)
+    * [9.1 About](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#About_7)
+    * [9.2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Detailed_Specifications_7)
+  * [10 Automated Wet-processing Spinners (POLOS)](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Automated_Wet-processing_Spinners_\(POLOS\))
+    * [10.1 General Information](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#General_Information_2)
+    * [10.2 Develop Bench POLOS Spinners](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Develop_Bench_POLOS_Spinners)
+    * [10.3 Solvent Bench POLOS Spinners](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Solvent_Bench_POLOS_Spinners)
+    * [10.4 Acid/Base/HF Bench POLOS Spinners](https://wiki.nanofab.ucsb.edu/wiki/Wet_Benches#Acid/Base/HF_Bench_POLOS_Spinners)
+
+
+## General Information
+  * Abandoned glassware will be collected and no returned
+  * Containers MUST be labeled with Chemical and User/Group name at **all times**.
+  * Another warning about safety gear
+  * Built-in Hotplate calibrations done weekly
+
+
+  
+
+## Documentation
+### Std. Operating Procedure (SOP)
+  *     * Contains procedures for using benches safely, chemical safety
+    * Additional capabilities at the benches (eg. N2 guns, aspirators etc)
+
+
+## Solvent Cleaning Benches
+| Solvent Cleaning Benches   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/2/2d/SolventBench.jpg/300px-SolventBench.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:SolventBench.jpg)  
+---  
+| Location  | Bays 5, 6 & 7   
+---|---  
+Tool Type  |  [Wet Processing](https://wiki.nanofab.ucsb.edu/wiki/Category:Wet_Processing ""Category:Wet Processing"")  
+Manufacturer  | Pure Aire Corporation   
+Description  | Custom Solvent Wet Bench   
+* * *  
+Primary Supervisor  |  [Aidan Hopkins](https://wiki.nanofab.ucsb.edu/wiki/Aidan_Hopkins ""Aidan Hopkins"")  
+(805) 893-2343   
+* * *  
+Secondary Supervisor  |  [Mike Day ](https://wiki.nanofab.ucsb.edu/wiki/Mike_Day ""Mike Day"")  
+* * *  
+Recipes  |   
+  
+
+### About
+The facility contains 4 stainless steel solvent benches for general processing using organic solvents. All solvent waste (except for certain chemicals that are collected) are poured into cups and centrally collected. The benches consist of 2 embedded variable power Crest-ultrasonic units, one kept at 80°C for heating resist strippers and the other kept at room temperature for general solvent work. Laminar flow fume hoods with HEPA filtration. Nitrogen guns are also on both sides of the bench for drying samples. Digital stirring hotplates are included for heating and stirring of resist strippers only (No solvent heating). POLOS spin dryers are included in the benches. All processes are done in user-supplied glassware. Solvents are stored in large steel flammable materials cabinets. Two people may use the bench at a time and protective gear such as proper gloves must be used. Solvents supplied by the laboratory are: Acetone, Methanol, Isopropanol, MIBK, MEK, Toluene, EBR100. PR strippers supplied by the lab are: 1165 (NMP), AZ300T (NMP + TMAH), PRX-127. Other chemicals should be OK'd by laboratory staff prior to use in the laboratory. 
+### Detailed Specifications
+  * 2 7"" x 10"" Crest Ultrasonic Tanks with heating / variable power
+  * 2 Nitrogen guns for sample drying
+  * Solvent based processing; **NO SOLVENT HEATING without staff approval.**
+    * NMP is ok to heat to 80°C
+    * The following should **_never_ be heated**: Acetone, Isopropanol, Methanol, Toluene, Ethanol
+  * Organic material removal up to 80°C
+  * Cyanide-based plating and etching (**NO ACIDS** at bench)
+  * Digital hot plate stirrers
+  * POLOS spin-rinse dryers
+
+
+  
+
+## Develop Benches
+| Develop Benches   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/a/a1/DevelopBench.jpg/300px-DevelopBench.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:DevelopBench.jpg)  
+---  
+| Location  | Bays 6 & 7   
+---|---  
+Tool Type  |  [Wet Processing](https://wiki.nanofab.ucsb.edu/wiki/Category:Wet_Processing ""Category:Wet Processing"")  
+Manufacturer  | Pure Aire Corporation   
+Description  | Custom Developer Bench   
+* * *  
+Primary Supervisor  |  [Aidan Hopkins](https://wiki.nanofab.ucsb.edu/wiki/Aidan_Hopkins ""Aidan Hopkins"")  
+(805) 893-2343   
+* * *  
+Secondary Supervisor  |  [Mike Day ](https://wiki.nanofab.ucsb.edu/wiki/Mike_Day ""Mike Day"")  
+* * *  
+Recipes  |   
+  
+
+### About
+The facility contains 3 polypropylene Developing Benches for photolithographic development using TMAH / TEAH / KOH based developers. All is actively neutralized. The benches consist of two sinks with DI water hook ups and industrial water plenum flushes. Laminar flow fume hoods with hepa filtration. Nitrogen guns are also on both sides of the bench for drying samples. Digital hotplates are included for resist post exposure bakes or post develop hard bakes. POLOS spray puddle develop etch systems are included in the benches. All processes are done in user-supplied glassware. Two people may use the bench at a time and protective gear such as proper gloves must be used. Developers supplied by the laboratory include: AZ300MIF (0.26N TMAH developer), MF701 (0.24N TMAH developer), AZ400K (KOH based developer), pre-diluted AZ400K:DI 1:4. Other developers should be OK'd by laboratory staff prior to use in the laboratory. 
+### Detailed Specifications
+  * 2 Sinks, DI water
+  * 2 Nitrogen guns for sample drying
+  * **NO SOLVENTS or STRIPPERS** in bench
+  * Class 100
+  * Hot plates for post bakes
+  * POLOS Spray-Puddle-Develop-Rinse-Dry systems
+  * Megasonic ultrasonicating water sprayer wand (Bay 7) 
+    * Used for wafer surface cleaning
+    * Installed on Bay 7 developer POLOS Spinner
+
+
+  
+
+## Spin Coat Benches
+| Spin Coat Benches   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/8/81/SpinBench.jpg/300px-SpinBench.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:SpinBench.jpg)  
+---  
+| Location  | Bays 6 & 7   
+---|---  
+Tool Type  |  [Wet Processing](https://wiki.nanofab.ucsb.edu/wiki/Category:Wet_Processing ""Category:Wet Processing"")  
+Manufacturer  | Pure Aire Corporation   
+Description  | Custom Photoresist Spin Coat Bench   
+* * *  
+Primary Supervisor  |  [Aidan Hopkins](https://wiki.nanofab.ucsb.edu/wiki/Aidan_Hopkins ""Aidan Hopkins"")  
+(805) 893-2343   
+* * *  
+Secondary Supervisor  |  [Mike Day ](https://wiki.nanofab.ucsb.edu/wiki/Mike_Day ""Mike Day"")  
+* * *  
+Recipes  |   
+  
+
+### About
+The facility contains 3 stainless steel solvent benches for photoresist spin coating. 
+The benches consist each of 2 integrated Headway PWM32 series photoresist spinners. Overhead and foot controls are provided. 8 preprogrammed recipes and 2 user-programmable recipes are offered. Automatic wafer lifting and centering stations are offered for spinning large wafers up to 8” in diameter. 
+6” or 8” Cee ultra-flat hotplates with 0.1°C temperature stability are preset for standard resist bake temperatures (90, 95, 100, 105, 110, 115°C). Other user-changeable hot plates are also provided. 
+Nitrogen guns are also on both sides of the bench. 
+Large resist bottles are stored in a refrigerator amd small user bottles are stored by group in a ventilated steel cabinet. Waste pipets and resist soaked wipes are collected in containers on the fume-hood benches for disposal. 
+A [list of stocked resists](https://signupmonkey.ece.ucsb.edu/w/index.php?title=Lithography_Recipes#Chemicals_Stocked_.2B_Datasheets) appears on the [lithography processing](https://wiki.nanofab.ucsb.edu/wiki/Lithography_Recipes ""Lithography Recipes"") web page. Other chemicals should be OK'd by laboratory staff prior to use in the laboratory. 
+### Detailed Specifications
+  * Hepa filtered laminar flow for Class 100
+  * 2 Headway PWM32 spinners per bench, multi-step programming 
+    * 8 preset spin programs, 2 user defineable
+    * Variety of user-removable wafer chucks for 5 mm x 5 mm pieces to 6” wafers
+    * Lifters for large wafer centering
+    * Manual dispense of resist with pipettes; particle filtering available
+  * Preset 0.1°C stable, ultra-flat hotplates 
+    * Bay 6: 90, 95, 105, 110, 115°C
+    * Bay 7: 100, 135°C
+    * Proximity and Vacuum baking possible, optional lid closure
+    * Temperatures checked monthly, ±1°C. Please notify if temperature is out of spec.
+  * **NO WAX** on built-in hotplates 
+    * Use tin-foil to protect plate before using wax. Wax only allowed on user-variable hotplates.
+  * Other hotplates for user defined temperatures
+
+
+## Toxic Corrosive Benches
+| Toxic Corrosive Bench   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/f/f7/ToxicBench.jpg/300px-ToxicBench.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:ToxicBench.jpg)  
+---  
+| Location  | Bay 5   
+---|---  
+Tool Type  |  [Wet Processing](https://wiki.nanofab.ucsb.edu/wiki/Category:Wet_Processing ""Category:Wet Processing"")  
+Manufacturer  | Pure Aire Corporation   
+Description  | Custom Acid Wet Bench   
+* * *  
+Primary Supervisor  |  [Aidan Hopkins](https://wiki.nanofab.ucsb.edu/wiki/Aidan_Hopkins ""Aidan Hopkins"")  
+(805) 893-2343   
+* * *  
+Secondary Supervisor  |  [Mike Day ](https://wiki.nanofab.ucsb.edu/wiki/Mike_Day ""Mike Day"")  
+* * *  
+Recipes  |   
+  
+
+### About
+The facility contains 2 polypropylene toxic corrosive benches for general wet processing using Acids and Bases. All waste (except for certain chemicals that are collected) are actively neutralized. The benches consist of two sinks with DI water hook ups and industrial water plenum flushes. Laminar flow fume hoods with hepa filtration. Nitrogen guns are also on both sides of the bench for drying samples. Digital stirring hotplates and/or small benchtop ultrasonic units are included for agitation and heating during the process on select benches. POLOS spin rinse dryers or spray puddle etch systems are included in the benches. Custom-built spray etchers (with bench supplied nitrogen) can also be used. Commonly used acids and bases such as H2O2, NH4OH, HCl, H2SO4, and H3PO4 can be dispensed into glassware using pipets connected to small bottles in the process wells at the back of the bench. All processes are done in user-supplied glassware. Acids and Bases are stored in separate cabinets and collection/disposal policies are posted. Two people may use the bench at a time and protective gear such as proper gloves must be used. Acids supplied by the laboratory are: H2SO4, HNO3, H3PO4, 1.0 M Citric Acid, Acetic Acid, HCl, Chrome mask etchant, Aluminum Etchants A and D, Gold Etchant (TFA), and Nickel Etchant (TFB). Bases supplied by the lab are: NH4OH, NaOH, KOH, and H2O2. Other chemicals should be OK'd by laboratory staff prior to use in the laboratory. 
+### Detailed Specifications
+  * 2 Sinks, DI water
+  * 2 Nitrogen guns for sample drying
+  * Digital hot-plate stirrers
+  * Ultrasonic Baths
+  * **NO SOLVENTS**
+  * HF & TMAH NOT permitted at these benches
+  * POLOS Spray-Spin-Rinse systems
+  * HEPA Filtered Laminar Flow Hoods
+
+
+  
+
+## Wafer Toxic Corrosive Benches
+| Wafer Toxic Corrosive Bench   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/6/68/WaferToxicBench.jpg/300px-WaferToxicBench.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:WaferToxicBench.jpg)  
+---  
+| Location  | Bay 4   
+---|---  
+Tool Type  |  [Wet Processing](https://wiki.nanofab.ucsb.edu/wiki/Category:Wet_Processing ""Category:Wet Processing"")  
+Manufacturer  | Pure Aire Corporation   
+Description  | Custom Wafer-level Acid Bench   
+* * *  
+Primary Supervisor  |  [Aidan Hopkins](https://wiki.nanofab.ucsb.edu/wiki/Aidan_Hopkins ""Aidan Hopkins"")  
+(805) 893-2343   
+* * *  
+Secondary Supervisor  |  [Mike Day ](https://wiki.nanofab.ucsb.edu/wiki/Mike_Day ""Mike Day"")  
+* * *  
+Materials  | HF, PureStrip, KOH, TMAH   
+Recipes  |   
+  
+
+**NOTE: There is HF at this bench, so proper safety gear, including an _apron and face shield_ must be worn during use. Failure to abide by this rule will result in immediate suspension from the lab.**
+### About
+This bench has vertical baths for processing multiple wafers at a time, and is situated opposite the [Tystar Thermal Oxidation furnaces](https://wiki.nanofab.ucsb.edu/wiki/Tube_Furnace_\(Tystar_8300\) ""Tube Furnace \(Tystar 8300\)"") in order to perform the necessary cleaning of Silicon wafers prior to oxidation. 
+Up to 6-inch wafers can be accommodated. 4-inch is typical. Various holders are provided. 
+Please contact the supervisor for training on this bench, which includes use of the heater controllers, bubblers etc. 
+[Spin-Rinse Dryers](https://wiki.nanofab.ucsb.edu/wiki/Spin_Rinse_Dryer_\(SemiTool\) ""Spin Rinse Dryer \(SemiTool\)"") for automated DI water rinse and N2 Dry of full cassettes are located adjacent to this bench. 
+[![photo of Various wafer holders available at the wafer toxic corrosive bench](https://wiki.nanofab.ucsb.edu/w/images/thumb/b/b0/Bay_4_toxic_Corrosive_-_wafer_sample_holders_-_IMG_4243.jpg/300px-Bay_4_toxic_Corrosive_-_wafer_sample_holders_-_IMG_4243.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:Bay_4_toxic_Corrosive_-_wafer_sample_holders_-_IMG_4243.jpg)The various wafer holders available at the wafer toxic corrosive bench, for dipping into vertical baths.
+### Detailed Specifications
+  * HF Bath, vertical
+  * PureStrip bath, Vertical 
+    * Heated Bath, typically 70°C during use.
+  * Quick-Dump-Rinse (QDR) bath, vertical 
+    * Rapid DI water rinse of multiple wafers
+  * KOH bath, vertical 
+    * **Signups Required[on SignupMonkey](https://signupmonkey.ece.ucsb.edu/cgi-bin/users/browse.cgi?tool_ID=73)**
+      * Heated, Typically ~80-90°C during Silicon etching.
+      * Covered for water recapture
+      * N2 Bubbler for improved etch uniformity
+      * Up to 9 wafers at a time
+  * TMAH Bath, Vertical
+  * Numerous wafer holders and custom cassette sizes stored at the bench for general use.  
+
+
+
+## HF/TMAH Processing Bench
+| HF/TMAH Processing Bench   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/6/6e/HFBench.jpg/300px-HFBench.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:HFBench.jpg)  
+---  
+| Location  | Bay 5   
+---|---  
+Tool Type  |  [Wet Processing](https://wiki.nanofab.ucsb.edu/wiki/Category:Wet_Processing ""Category:Wet Processing"")  
+Manufacturer  | Pure Aire Corporation   
+Description  | ?   
+* * *  
+Primary Supervisor  |  [Aidan Hopkins](https://wiki.nanofab.ucsb.edu/wiki/Aidan_Hopkins ""Aidan Hopkins"")  
+(805) 893-2343   
+* * *  
+Secondary Supervisor  |  [Mike Day ](https://wiki.nanofab.ucsb.edu/wiki/Mike_Day ""Mike Day"")  
+* * *  
+Recipes  |   
+  
+**NOTE: Proper safety gear must be worn at all times when using the Acid Benches. For the HF benches this includes an apron and face shield. Failure to abide by this rule will result in immediate suspension from the lab. NO WARNINGS. PERIOD.**
+### About
+### Detailed Specifications
+  * 2 Sinks, DI water
+  * 2 Nitrogen guns for sample drying
+  * Digital hot-plate stirrers
+  * Ultrasonic Baths
+  * **NO SOLVENTS**
+  * HF Processing limited to these two benches
+  * POLOS Spray-Spin-Rinse systems
+  * Hepa Filtered Laminar Flow Hoods
+
+
+  
+
+## Plating Bench
+| Plating Bench   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/5/5d/PlatingBench.jpg/300px-PlatingBench.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:PlatingBench.jpg)  
+---  
+| Location  | Bay 5   
+---|---  
+Tool Type  |  [Wet Processing](https://wiki.nanofab.ucsb.edu/wiki/Category:Wet_Processing ""Category:Wet Processing"")  
+Manufacturer  | Pure Aire Corporation   
+Description  | Electroplating chemical bench   
+* * *  
+Primary Supervisor  |  [Aidan Hopkins](https://wiki.nanofab.ucsb.edu/wiki/Aidan_Hopkins ""Aidan Hopkins"")  
+(805) 893-2343   
+* * *  
+Secondary Supervisor  |  [Mike Day ](https://wiki.nanofab.ucsb.edu/wiki/Mike_Day ""Mike Day"")  
+* * *  
+Recipes  |   
+  
+
+### About
+Custom plating may be performed at this bench. Gold electroplating can be performed with our automated [SEMCON Gold Plating system](https://wiki.nanofab.ucsb.edu/wiki/Gold_Plating_Bench ""Gold Plating Bench""), whereas other electroplating solutions should be used on this acid bench. 
+### Detailed Specifications
+The following equipment is provided at this bench for various types of electroplating. 
+  * DC/Pulsed Power supply
+  * Hotplate / Stirrer
+  * Cables/electrodes
+  * Chemistry hardware for suspending thermocouples, electrodes and samples in beakers.
+
+
+Users must provide the following: 
+  * Beakers for chemicals
+  * Chemistry for performing the electroplating. [See this FAQ page](https://wiki.nanofab.ucsb.edu/wiki/Frequently_Asked_Questions#Bring_a_new_chemical.2Fmaterial_into_the_lab ""Frequently Asked Questions"") for info on supplied chemicals and bringing new chemicals.
+  * Other ancillary hardware (tweezers, cases etc.)  
+
+
+
+## Automated Wet-processing Spinners (POLOS)
+### General Information
+The POLOS spinners, installed on various Solvent, Acid/Base and Develop benches, allow for wafer spinning while applying wet chemistry. Users may program the spinners with custom programs. 
+### Develop Bench POLOS Spinners
+These POLOS spinners are hooked up to pressurized vessels for developer chemicals, and have closed lids with nozzles for fluid/nitrogen delivery. This enables automated spray/puddle developing. In addition, users can spin-drying after manual development. - especially helpful for larger wafers (eg. 100mm) which are more difficult to dry by hand. 
+### Solvent Bench POLOS Spinners
+These spinners are uncovered, allowing users to use our solvent squirt bottles & nitrogen guns for cleaning samples while spinning, which improves wafer cleanliness considerably. Several non-contact chucks for 100mm and 150mm wafers are available, which makes solvent cleaning the underside of these wafers especially useful and effective, without affecting any top-side photoresist, lithography or patterning. 
+### Acid/Base/HF Bench POLOS Spinners
+_To be Added_
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=Wet_Benches&oldid=162383](https://wiki.nanofab.ucsb.edu/w/index.php?title=Wet_Benches&oldid=162383)""
+"
+Autostep 200 Mask Making Guidance,https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance,"## Contents
+  * [1 Stepper Mask Tutorials](https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance#Stepper_Mask_Tutorials)
+  * [2 Photomask Ordering Info](https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance#Photomask_Ordering_Info)
+  * [3 Submission Details](https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance#Submission_Details)
+  * [4 Mask Layout](https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance#Mask_Layout)
+  * [5 Alignment Marks (Global, Local/DFAS)](https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance#Alignment_Marks_\(Global,_Local/DFAS\))
+    * [5.1 Test Structures](https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance#Test_Structures)
+  * [6 CAD Files](https://wiki.nanofab.ucsb.edu/wiki/Autostep_200_Mask_Making_Guidance#CAD_Files)
+
+
+## Stepper Mask Tutorials
+If you are new to stepper masks, please see these tutorials before starting your design.
+[![Schematic of stepper blocking off adjacent Images on reticle and exposure onto different wafer locations.](https://wiki.nanofab.ucsb.edu/w/images/thumb/0/0b/Stepper_Reticle_Tutorial_-_Reticle_Masking_Schematic.png/300px-Stepper_Reticle_Tutorial_-_Reticle_Masking_Schematic.png)](https://wiki.nanofab.ucsb.edu/w/images/c/cb/Demis_D_John_-_Stepper_Reticle_Layout_vs_Wafer_Layout.pdf)**[Click for Stepper Reticle Tutorial](https://wiki.nanofab.ucsb.edu/w/images/c/cb/Demis_D_John_-_Stepper_Reticle_Layout_vs_Wafer_Layout.pdf)** Stepper Reticle Patterns (“images”) can optionally be much more sophisticated and flexible than contact plates.
+  * **[Stepper Reticle Layout vs Wafer Layout (Demis D. John)](https://wiki.nanofab.ucsb.edu/w/images/c/cb/Demis_D_John_-_Stepper_Reticle_Layout_vs_Wafer_Layout.pdf)** _-_ explains how Stepper mask layout is very different than other litho systems.
+  * **[Stepper Reticle Layout (Advanced) - Complex Experiments and Variations](https://wiki.nanofab.ucsb.edu/wiki/Stepper_Reticle_Layout_\(Advanced\)_-_Complex_Experiments_and_Variations ""Stepper Reticle Layout \(Advanced\) - Complex Experiments and Variations"")** - If you need many design variations on your wafer.
+
+
+## Photomask Ordering Info
+  * Plate Material: Soda-Lime or Quartz / Chrome
+  * Dimensions: 5"" x 5"" x 0.090""
+  * Magnification: 5x (assuming CAD file shows on-wafer patterns)
+  * Right Reading if Chrome is Down (assuming CAD file shows on-wafer patterns)
+  * Barcode is optional, but recommended. Max number of characters for GCA barcodes is 10
+  * Instruct vendor that design is for a ""_**GCA AutoStep200 with 5x reduction**_ "".
+  * You can insert your design into the photomask template yourself (below) with no barcode, or ask the vendor to insert your 1x (wafer-scale) design into the appropriate GCA template and they can add a barcode.
+  * **[Photomask Ordering Procedure for UCSB Users](https://wiki.nanofab.ucsb.edu/wiki/Photomask_Ordering_Procedure_for_UCSB_Users ""Photomask Ordering Procedure for UCSB Users"")** - see this page for how to submit your order into the purchasing system. 
+    * Request our negotiated quote (for ACADEMICS ONLY) from [Demis](https://wiki.nanofab.ucsb.edu/wiki/Demis_D._John ""Demis D. John"") or [Brian](https://wiki.nanofab.ucsb.edu/wiki/Brian_Thibeault ""Brian Thibeault"").
+
+
+## Submission Details
+When submitting the photo mask order, the following notes/definitions apply: 
+  1. ""_Grade_ "" determines the price, and is chosen based on required feature size (smaller feature size is more expensive). This is found on the vendor's quote, or you ask the vendor for a price based on desired minimum feature size. Although you will submit your CAD file at 1x wafer scale, the actual reticle is printed 5x larger, so make sure to choose your reticle grade accounting for this; eg. If I want to shoot 1.0µm lines, I should choose a photomask grade better/equal to 5.0µm.
+  2. “ _GDS Level_ ” is the “layer number”
+  3. ""_topcell_ "" is the name of the Cell in your CAD file that contains the hierarchy of patterns to print.
+  4. Typically printed ""_Right reading (legible) with Chrome Down_ "", if your CAD is exactly what you want on the wafer.
+  5. “ _Min. Feature on Mask_ /Lines” refers to minimum clear or chrome feature, assuming features similar to lines/spaces. See ""_Grade_ "" above.
+  6. “ _Min. Contact_ ” refers to features with aspect ratio close to 1:1, eg. Squares and circles. These have a separate spec due to the manufacturing process, so make sure to choose the appropriate grade of photomask with this in mind.
+  7. Choose a Critical Dimension “ _CD_ ” similar to your most critical feature (scaled up to the reticle scale), so they will print & measure & guarantee test structures at that size.
+  8. For UCSB purchases: you will need to submit your order in UCSB Procurement Gateway _**first**_ (as a ""_Non-Catalogue Item_ ""), with the cost estimate & grade/product code from our negotiated quote, so that you can get the Purchase Order (PO) Number. Then submit the order form to the photomask vendor with this PO number entered on their order form.
+
+
+## Mask Layout
+  * Maximum exposable single-image size: 14.8 x 14.8 mm at 1x wafer-scale (74mm square at 5x reticle-scale). Photomask vendor can accept up to max. 78mm X 78mm @ 5x reticle-scale.
+  * For multiple Images (patterns) per photomask mask: ≥1mm @ 1x wafer-scale / ≥5mm @ 5x mask-scale of chrome in between adjacent Images/patterns.
+  * For multiple Images per photomask, you'll need to calculate the distance, in mm, for the shutter blade positions to block off the unwanted regions of the mask. 
+    * There are 4 shutter blades, **XL(left)/XR(right)/YF(front)/YR(rear)** , that start at _Position=0mm_ (not blocking any part of the mask), and can extend up to _Position=97mm_ , blocking the entire mask. For the first 13mm (_Position = 0→13mm_), nothing is blocked on the 14.8mm exposure field.
+    * Remember that the photomask is rotated 180° from how it's loaded into the reticle box.
+
+
+## Alignment Marks (Global, Local/DFAS)
+To learn more about how these alignment marks work with the system, see the reticle handbook here: 
+  * [**GCA Reticle Handbook**](https://wiki.nanofab.ucsb.edu/w/images/uploads/2023/GCA-ReticleHandbook.pdf)
+
+
+In our system we mainly use manual global alignment to get +/- 0.25 or better alignment tolerance. Local alignment can be used but needs some characterization for each process. 
+  * _Global alignment marks_ : These marks and how to place them on the mask are described on page 5-44 to 5-47 of the above GCA Reticle Handbook and are included for download below. The difference of our system from the manual is that the objectives are 63.5 mm apart, not 76.2 mm as indicated in the manual. The distance of this mark (or marks) to the center of the cell in X and Y should be noted, this is the _key offset_ and will be required when exposing a job. (Positive offset values are left ← for X and up ↑ for Y).
+  * _Local alignment marks_ : Uses Digital Fine-Alignment System (DFAS). These marks and how to place them on the mask are described on page 5-33 to 5-34 of the above GCA Reticle Handbook and are included as an attachment to this document. If possible use one of each type if you desire to try to use local alignment. These can be light or dark field in nature. The distance of the center point of this mark (or marks) to the center of the cell in X and Y should be noted, this is the key offset and will be required when exposing a job.
+  * [Alignment Marks CAD File](https://wiki.nanotech.ucsb.edu/w/images/9/92/GCA_Global_Mark.gds) can be downloaded here.
+
+
+### Test Structures
+  * _Vernier Scales:_ These can be included to quantify the alignment offset after an exposure is done. The reticle handbook has an example of vernier scales on pages 5-49 to 5-53. You should include them for any layers that require critical alignment.
+  * _Resolution:_ If you have room in the mask layout, it is good to have features that can give the resolution of a given exposure. The resolution should show both “pillars” and “trenches” in the resist so that you can see whether the focus or exposure needs some tweaking for your particular process.
+
+
+## CAD Files
+  * [Photomask Template: Dark-field (polygons/objects are clear) at 5x Magnification (GDS)](https://wiki.nanotech.ucsb.edu/w/images/c/c4/GCA_Stepper_MaskPlate_Master-DarkField_5x.gds)
+    * _This template is designed to be submitted to the photomask vendor to print as-is, no scaling nor outer template applied - it is already at 5x magnification and has the GCA's reticle-alignment marks to align the mask to the lens column._
+    * _Insert your wafer-scale designs into the template as Instances scaled UP by 5x (using the Instance Properties)._
+    * _Template is written for ""objects/polygons are CLEAR"" aka. ""Dark Field"" - choose your design polarity accordingly._
+    * Use the Cell ""**Reticle_Align** "" or ""**Reticle_AlignFlat** "" (flattened version of the same), GDS **Layer 42/0**.
+    * _Your device cell should have center of die at (0,0), and instance it into the template with coords (0,0), for a single-design centered on the plate._
+  * [GCA Alignment Marks CAD File](https://wiki.nanotech.ucsb.edu/w/images/9/92/GCA_Global_Mark.gds) can be downloaded here. 
+    * _You can optionally include these in your die, allowing the system to perform_ Local alignment _in addition to std. Global alignment._
+    * _The AutoStep200 also has a system mask with this mark, which you could optionally use to shoot marks on the wafer._
+  * See [Calculators + Utilities > CAD Files](https://wiki.nanofab.ucsb.edu/wiki/Calculators_%2B_Utilities#CAD_Files_.26_Templates ""Calculators + Utilities"") for other useful CAD files, such as Overlay/Alignment and Resolution measurement.
+
+
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=Autostep_200_Mask_Making_Guidance&oldid=163132](https://wiki.nanofab.ucsb.edu/w/index.php?title=Autostep_200_Mask_Making_Guidance&oldid=163132)""
+"
+Mask Making Guidelines for Contact Aligners,https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners,"## Contents
+  * [1 General Procedure](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#General_Procedure)
+  * [2 Generic Contact Mask Parameters](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#Generic_Contact_Mask_Parameters)
+    * [2.1 Mask Plate Size](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#Mask_Plate_Size)
+    * [2.2 Other Mask Plate Specs](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#Other_Mask_Plate_Specs)
+  * [3 Definitions for Mask/Reticle Order Form](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#Definitions_for_Mask/Reticle_Order_Form)
+  * [4 Generic Mask design/programming CAD files & spreadsheets](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#Generic_Mask_design/programming_CAD_files_&_spreadsheets)
+    * [4.1 CAD Files](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#CAD_Files)
+  * [5 CAD Tips](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#CAD_Tips)
+    * [5.1 First Layer Alignment](https://wiki.nanofab.ucsb.edu/wiki/Mask_Making_Guidelines_for_Contact_Aligners#First_Layer_Alignment)
+
+
+## General Procedure
+  1. Make your CAD file of your device according to the tool you're going to do litho on.
+  2. Make separate ""Layers"" on your CAD file corresponding to each litho.
+  3. Fill out the Mask Order Form for the photomask vendor you choose to order from. Can order all photomasks (one for each Layer) in one order, calling out separate CAD Layers for each Mask. 
+    1. Academic users: Contact [Demis](https://wiki.nanofab.ucsb.edu/wiki/Demis_D._John ""Demis D. John"") for quotes from photomask vendors.
+    2. Industrial users: Contact photomask vendors for quotes, we can suggest some or you can find them online yourself.
+  4. UCSB Users: Submit a requisition in Procurement Gateway to send a PO to the photomask vendor.
+  5. Send Photomask vendor your CAD file and Mask order form (referencing above PO).
+  6. Industrial Users: You can pay by credit card if desired.
+  7. Typically ~3 days to receive the photomasks.
+
+
+## Generic Contact Mask Parameters
+For the contact aligner you are designing for, make sure you know the following specifications: 
+### Mask Plate Size
+  * We have two different styles of contact aligners and each has it's own capability in regard to the substrate and mask size it can accommodate (with some overlap between the two). 
+    * SUSS MJB-3: 
+      * Wafer size: 3"" max. for vacuum mode; 4” for soft contact (3” x 3” exposure area)
+      * Substrate size: 3"" x 3"" max
+      * Mask plate size: 3"" x 3"" x 0.090"" or 4"" x 4"" x 0.090"", typically soda-lime glass.
+    * SUSS MA-6: 
+      * Chuck Sizes: 
+        * 1"" square (or wafer) and smaller, backside alignment capability
+        * 3"" wafer, no backside alignment
+        * 4"" wafer, backside alignment capability
+        * 6"" wafer, backside alignment capability
+      * Mask Holder Sizes: 
+        * 3""
+        * 4""
+        * 5"" mask - can be modified to support a 6"" mask but exposure area will still be ~4"" diameter (see Staff)
+        * 7""
+  * The plate size should be ~1"" larger than your wafer size, AND the contact aligner should have a plate holder compatible with that plate size. Some examples: 
+    * To expose a **2"" (50mm) wafer, or _smaller pieces_** you could order 
+      * A 3 "" or 4"" mask plate. Eg. 3 _x 3 x 0.090 inch soda lime_ _glass._
+        * Either put your design in the center of the plate, and order multiple plates (one for each process step/""Layer""), or
+        * Put multiple patterns on a single plate and use the offset-vacuum chuck, to put your sample under the right pattern on the plate. (This takes a bit more experience with the MJB to design correctly.)
+    * To expose a **3"" (75mm) wafer** , you could order 
+      * A 4"" or 5"" mask plate. Eg. _5 x 5 x 0.090 inch soda lime_ _glass._
+    * To expose a **4"" (100mm) wafer** , you should order 
+      * 5"" mask plate. Eg. _5 x 5 x 0.090 inch soda lime_ _glass._
+      * This works on the [MA6](https://wiki.nanofab.ucsb.edu/wiki/Contact_Aligner_\(SUSS_MA-6\) ""Contact Aligner \(SUSS MA-6\)"") only.
+    * To expose a **6"" (150mm) wafer** , you should order 
+      * 7"" mask plate. Eg. _7 x 7 x 0.090 inch soda lime_ _glass._
+      * This works on the [MA6](https://wiki.nanofab.ucsb.edu/wiki/Contact_Aligner_\(SUSS_MA-6\) ""Contact Aligner \(SUSS MA-6\)"") only.
+
+
+  * Either the quoted product number from our photomask vendor quotes, or the minimum feature size in your CAD - and just ask the photomask vendor which product number to use.
+
+
+### Other Mask Plate Specs
+For all contact plates, we suggest the following standard params: 
+  * Material: Soda Lime glass (quartz is generally overkill)
+  * Thickness 0.090"" (eg. _5"" x 5"" x 0.090""_ or _4"" x 4"" x 0.090""_)
+  * Orientation/Mirroring should be ""_Right Reading with Chrome Down_ "" if your CAD file shows exactly what you want on your wafer. 
+    * For _Back side alignment_ , don't forget to mirror your pattern horizontally/over the Y-axis (since your wafer will be flipped).
+  * You can choose whether the polygons you draw are transparent glass (""objects are clear"") or opaque chrome (""objects are dark""). You must consider whether you are using a positive or negative resist.
+
+
+Ask the tool's Process Expert or Tool Supervisor to confirm these values. You can send your draft order form and CAD file to the tool super/process expert for review. 
+## Definitions for Mask/Reticle Order Form
+When submitting the photo mask order, the following notes & definitions apply: 
+  1. ""**Grade** "" or ""**Product Code** "" will be one of the items on our quote. This will specify the glass type (soda-lime or quartz), plate size (4"" square and 0.090"" thick, for example), and the resolution. The grade choice determines the price, and is chosen based on required feature size (smaller feature size is more expensive). This is found on the vendor's quote, or you ask the vendor for a price based on desired minimum feature size (smallest feature actually present on your CAD file). 
+    1. Although you will submit your CAD file at 1x wafer scale, the actual reticle is printer larger by the stepper's magnification (eg. 4x or 5x mag, depending on the stepper system), so make sure to choose your reticle grade accounting for this; eg. If my CAD has 1.0µm lines smallest feature, I should choose a photomask grade better/equal to 4.0µm for a stepper with 4x reduction.
+  2. ""**Title** "" or ""**Device Name** "" or ""Layer Title"" - any text of your choosing, to identify this ""set"" of multiple mask plates (""Device Name"") and each individual mask plate of the set (""Layer title""). 
+    1. Eg. ""Device"" is ""_DFB Laser 2025-01_ ""
+    2. ""Layer Titles"" may be ""_Mesa etch_ "", ""_Contact pads_ "" and ""_Gratings_ "" etc.
+    3. The mask plates will show both, eg. one plate will show ""_DFB Laser 2025-01: Mesa Etch_ "" and another will have """"_DFB Laser 2025-01: Gratings_ "", printed on the edge of the plates.
+  3. “**GDS Level** ” is also known as “**layer number** ” - the GDS Layer number to print, from your CAD file 
+    1. If you are printing multiple mask plates for separate device Layers, you can submit one CAD file with each Layer on a separate GDS Layer, and specify each GDS Layer number as a separate plate (with it's own Title text, polarity, grade/CD etc.) on the Order form (on it's own line).
+  4. ""**topcell** "" or ""**structure name** "" is the Cell in your CAD file that contains the hierarchy of patterns to print.
+  5. Polarity/Mirroring should be ""**Right-Reading (legible text) with Chrome Down** "", if your CAD is exactly what you want on the wafer, for all our systems.
+  6. “**Min. Feature on Mask** ” refers to minimum clear or opaque feature, assuming features similar to lines/spaces. This should be specified at the reticle-scale - see ""Grade"" above.
+  7. “**Min. Contact** ” refers to features with aspect ratio close to 1:1, eg. Squares and circles. These have a separate spec due to the manufacturing process, so make sure to choose the appropriate grade of photomask with this in mind.
+  8. “**CD** ”, or ""**Critical Dimension** "" - Choose a CD similar to your most critical feature (scaled to the reticle scale), so the vendor will print & measure & guarantee test structures at that exact size.
+
+
+## Generic Mask design/programming CAD files & spreadsheets
+  * Example [Toppan Order Form via Digidat](https://wiki.nanotech.ucsb.edu/wiki/images/9/90/Digidat-Toppan_Mask_order_form_%28UCSB_ASML_5500%29.docx)
+    * Academic users may request the UCSB Nanofab's quotes from various photomask vendors.
+  * On-wafer alignment marks: You will need matching male+female alignment marks to match each mask plate to on-wafer layers. You can use any alignment mark design you want - some examples are linked below.
+
+
+### CAD Files
+_For designing your mask plates._
+  * [CAD Files & Templates](https://wiki.nanofab.ucsb.edu/wiki/Calculators_%2B_Utilities#CAD_Files_.26_Templates ""Calculators + Utilities"") - alignment markers, alignment verniers and other useful CAD objects
+
+     [![screenshot of Contact-AlignMarks_Vernier_DemisDJohn_v3.oas](https://wiki.nanofab.ucsb.edu/w/images/thumb/2/22/Contact-AlignMarks_Vernier_DemisDJohn_v3_Screenshot.png.png/200px-Contact-AlignMarks_Vernier_DemisDJohn_v3_Screenshot.png.png)](https://wiki.nanofab.ucsb.edu/wiki/File:Contact-AlignMarks_Vernier_DemisDJohn_v3_Screenshot.png.png)Alignment Mark with Vernier |  [![Screenshot of Vented_font_DDJ.gds](https://wiki.nanofab.ucsb.edu/w/images/thumb/6/6f/Vented_font_screnshot.jpg/200px-Vented_font_screnshot.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:Vented_font_screnshot.jpg)Vented font schematic.  
+---|---  
+  * [CAD Layout Programs](https://wiki.nanofab.ucsb.edu/wiki/Calculators_%2B_Utilities#CAD_Layout_Programs ""Calculators + Utilities"")
+  * [CAD Design Tips](https://wiki.nanofab.ucsb.edu/wiki/Calculators_%2B_Utilities#CAD_Design_Tips ""Calculators + Utilities"")
+
+
+## CAD Tips
+  * By default, Wafer flat is Down (–Y) with respect to your CAD file for most systems.
+  * Utilize the ""Cell"" and ""Cell Instancing"" functionality in your CAD layout program! (aka. a ""Block"" in AutoCAD). Highly recommended to use KLayout, not AutoCAD. See [Calculators + Utilities > CAD Design Tips](https://wiki.nanofab.ucsb.edu/wiki/Calculators_%2B_Utilities#CAD_Design_Tips ""Calculators + Utilities"") for tutorials.
+  * Center your entire design around the coordinates (0,0). (0,0) should always be the center of your device, wafer and/or photomask/reticle Cells. Photomask vendors can then NOT ""auto center"" your designs on the plate.
+  * Inside each sub-Cell, also design around the cell's (0,0) origin.
+  * Create a Cell called ""_reticle_layout_ "" or similar, that is an exact representation of what the printed reticle patterns should look like (typically at 1x wafer-scale, if _not_ including the outer templates for the stepper system). Instance the Device's Cells into _reticle_layout_ , and reference this Cell on your mask order form. (You can also Instance the same cells into ""_device_layout_ "" and ""_wafer_layout_ "" cells during design/verification.).
+
+
+### First Layer Alignment
+  * To align your first layer, when there are no alignment marks on your wafer, it is very helpful to leave CLEAR/transparent open areas around the wafer to allow you to see the outer edges of your wafer/sample for coarse alignment to the pattern. Example below:[![CAD file screenshot of example of layer 1 alignemnt to wafer](https://wiki.nanofab.ucsb.edu/w/images/thumb/3/31/Contact_Layer_1_alignment_example_v1.png/300px-Contact_Layer_1_alignment_example_v1.png)](https://wiki.nanofab.ucsb.edu/wiki/File:Contact_Layer_1_alignment_example_v1.png)Example of transparent ring on mask plate for first layer alignment.However, make sure to consider the process implications for the fact that photoresist on this outer ring will be exposed during exposure (ie. may get developed out or hardened, depending on positive/negative photoresist).
+
+
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=Mask_Making_Guidelines_for_Contact_Aligners&oldid=162766](https://wiki.nanofab.ucsb.edu/w/index.php?title=Mask_Making_Guidelines_for_Contact_Aligners&oldid=162766)""
+"
+ICP Etch 1 (Panasonic E646V),https://wiki.nanofab.ucsb.edu/wiki/ICP_Etch_1_(Panasonic_E646V),"asa 
+| ICP Etch 1 (Panasonic E646V)   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/f/f5/ICP2.jpg/300px-ICP2.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:ICP2.jpg)  
+---  
+| Location  | Bay 2   
+---|---  
+Tool Type  |  [Dry Etch](https://wiki.nanofab.ucsb.edu/wiki/Category:Dry_Etch ""Category:Dry Etch"")  
+Manufacturer  | Panasonic Factory Solutions, Japan   
+Model  | E646V   
+Description  | ICP Etching and Ashing Multi-Chamber Tool   
+* * *  
+Primary Supervisor  |  [Lee Sawyer](https://wiki.nanofab.ucsb.edu/wiki/Lee_Sawyer ""Lee Sawyer"")  
+(805) 893-2123   
+* * *  
+Secondary Supervisor  |  [Don Freeborn ](https://wiki.nanofab.ucsb.edu/wiki/Don_Freeborn ""Don Freeborn"")  
+* * *  
+Recipes  |  **[Dry Etch Recipes](https://wiki.nanofab.ucsb.edu/wiki/Dry_Etching_Recipes ""Dry Etching Recipes"")**  
+* * *  
+SignupMonkey:  |  [Sign up for this tool](http://signupmonkey.ece.ucsb.edu/cgi-bin/users/browse.cgi?tool_ID=22)  
+  
+
+## Contents
+  * [1 About](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etch_1_\(Panasonic_E646V\)#About)
+  * [2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etch_1_\(Panasonic_E646V\)#Detailed_Specifications)
+  * [3 Documentation](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etch_1_\(Panasonic_E646V\)#Documentation)
+  * [4 Recipes](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etch_1_\(Panasonic_E646V\)#Recipes)
+
+
+## About
+This is a three-chamber tool for etching of a variety of materials. 
+Chamber one ""Etch Chamber"" is configured as an ICP etching tool with 1000 W ICP power, 500 W RF substrate power, and RT - 80°C operation with back-side He cooling and an electrostatic chuck to maintain controlled surface temperatures during etching. 
+This chamber has the following dedicated gas sources: Cl2, BCl3, and O2
+The chamber also has the following gas sources, where two of the lines must be manually switched between the two options shown (gasses can't be used simultaneously): N2/He, CHF3/Ar and CF4 /SF6
+The system can be used to etch a variety of materials from SiO2 to metals to compound semiconductors. The chamber is evacuated with a 2000 lpm Osaka Vacuum magnetically levitated turbo pump, and is load-locked for fast pump down. 
+The in-situ laser monitor installed on the etch chamber allows for repeatable etches and endpoint detection via continuous optical monitoring of the wafer reflectivity in a user-determined location, through a porthole on the chamber. 
+Chamber two, ""Ashing Chamber"" is a 2000 W ICP chamber configures for plasma ""ashing"" of photoresist and other materials such as BCB. The substrate is not biased for isotropic etching, and the chamber has CF4 and O2 for the gases. This is especially well-suited for omni-directional etching of photoresist/PR removal, or BCB etch-back. 
+Chamber three ""Rinse Chamber"" is a DI rinsing chamber that is not used/offline. 
+The system accepts 6” wafers with SEMI-std. flats. Users often mount smaller pieces to the wafers, usually with easily removable oil to improve uniform heat-sinking. 
+In Automatic mode, multiple wafers can be run through automatically with the cassette-based system. 
+## Detailed Specifications
+  * 1000 W ICP source, 500 W RF Sample Bias Source in etching chamber
+  * Multiple 6” diameter wafer capable system
+  * Pieces possible by mounting to 6” wafer
+
+
+_Etch Chamber:_
+  * Optimal Emission Monitoring
+  * Etch pressure from 0.1 Pa to 5 Pa (0.75 mT - 37.5 mT)
+  * Cl2, BCl3, O2, (CHF3 or Ar), (CF4 or SF6), and (N2 or He) in etch chamber
+  * Room Temp - 80°C sample temperature for etching. Default 12°C Chuck Temperature.
+  * Laser Etch Monitoring: [Intellemetrics LEP 500](https://wiki.nanofab.ucsb.edu/wiki/Laser_Etch_Monitoring ""Laser Etch Monitoring"")
+
+
+_Ashing Chamber:_
+  * 2000 W ICP ashing chamber
+  * RT - 250°C sample temperature for ashing
+  * Ashing pressures 50 mT - 500 mT
+  * O2, N2, CF4, H2O Vapor for ashing chamber
+  * Room Temp. to 270°C etching. Default 50°C.
+
+
+## Documentation
+  * [[1]](https://wiki.nanotech.ucsb.edu/w/images/0/0a/ICP_-1_Gas_Change_CF4-SF6-CF4.pdf)[Panasonic _1_instructions.pdf](https://wiki.nanofab.ucsb.edu/w/images/7/75/Panasonic_1_instructions.pdf ""Panasonic 1 instructions.pdf"")
+  * [ICP #1 Gas Change Procedure: CF4-SF6-CF4](https://wiki.nanotech.ucsb.edu/w/images/0/0a/ICP_-1_Gas_Change_CF4-SF6-CF4.pdf)
+  * [ICP #1 Gas Change Procedure: CHF3-Ar-CHF3](https://wiki.nanotech.ucsb.edu/w/images/8/8c/ICP_-1_Gas_Change_CHF3-Ar.pdf)
+  * [ICP #1 Gas Change Procedure: N2-He-N2](https://wiki.nanotech.ucsb.edu/w/images/f/fa/ICP_-1_Gas_Change_N2-He-N2.pdf)
+  * [ICP #1 Rules and Important Notes](https://wiki.nanotech.ucsb.edu/w/images/3/3a/ICP_-1_Rules_%26_Important_Notes.pdf)
+  * [ICP #1 Standard Recipes](https://wiki.nanofab.ucsb.edu/w/images/4/48/ICP_-1_Standard_Etch_Recipes.pdf)
+  * [ICP #1 Wafer Type Change Procedure](https://wiki.nanotech.ucsb.edu/w/images/d/de/ICP_-1_Wafer_Type_Change.pdf)
+  * [Laser Etch Monitor procedures](https://wiki.nanofab.ucsb.edu/wiki/Laser_Etch_Monitoring ""Laser Etch Monitoring"")
+
+
+## Recipes
+  * [**Recipes > Dry Etching > ICP Etch 1**](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etching_Recipes#ICP_Etch_1_.28Panasonic_E626I.29 ""ICP Etching Recipes"") page lists all qualified and contributed recipes for this tool. 
+    * Starting point recipes for ICP#1
+  * [Process Control Data](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etching_Recipes#Process_Control_Data_.28Panasonic_1.29 ""ICP Etching Recipes"")
+    * _Historical Data_ records ""calibration"" etches to test tool performance.
+  * The [**Recipes > Dry Etching Recipes**](https://wiki.nanofab.ucsb.edu/wiki/Dry_Etching_Recipes ""Dry Etching Recipes"")
+    * Master table lists all contributed **dry etches vs etched materials** across tools.
+
+
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=ICP_Etch_1_(Panasonic_E646V)&oldid=163119](https://wiki.nanofab.ucsb.edu/w/index.php?title=ICP_Etch_1_\(Panasonic_E646V\)&oldid=163119)""
+"
+Intellemetrics Laser Etch Monitor Procedure for Panasonic ICP Etchers,https://wiki.nanofab.ucsb.edu/wiki/Intellemetrics_Laser_Etch_Monitor_Procedure_for_Panasonic_ICP_Etchers,"_Procedure for performing an etch with laser monitor endpoint on the Panasonic ICP etchers._
+_Demis D. John, 2019-05-15_
+––––––––––––––––––––––––––––––––––––––––––– 
+```
+**You must be officially trained to use the laser monitors. Please contact Demis[](https://wiki.nanofab.ucsb.edu/wiki/Demis_D._John ""Demis D. John"") for training.**
+
+```
+
+## Contents
+  * [1 Load Sample into Chamber (Manual/Test Mode)](https://wiki.nanofab.ucsb.edu/wiki/Intellemetrics_Laser_Etch_Monitor_Procedure_for_Panasonic_ICP_Etchers#Load_Sample_into_Chamber_\(Manual/Test_Mode\))
+  * [2 Laser Monitor & Recipe setup](https://wiki.nanofab.ucsb.edu/wiki/Intellemetrics_Laser_Etch_Monitor_Procedure_for_Panasonic_ICP_Etchers#Laser_Monitor_&_Recipe_setup)
+  * [3 Run the Etch while Monitoring](https://wiki.nanofab.ucsb.edu/wiki/Intellemetrics_Laser_Etch_Monitor_Procedure_for_Panasonic_ICP_Etchers#Run_the_Etch_while_Monitoring)
+  * [4 Unload / Finish](https://wiki.nanofab.ucsb.edu/wiki/Intellemetrics_Laser_Etch_Monitor_Procedure_for_Panasonic_ICP_Etchers#Unload_/_Finish)
+
+
+### Load Sample into Chamber (Manual/Test Mode)
+  1. Mount sample such that area to be monitored is located in the laser monitor's cutout window, as indicated by the Carrier wafer mounted to the tool and/or the glass slide showing the laser monitor location. 
+    1. The locations on ICP#1 and ICP#2 are different.
+  2. Load wafer into etch chamber 
+    1. **_ICP#1_** Manual Load: 
+      1. {Test} Mode soft-button
+      2. Remove all wafers from cassettes
+      3. Place only your sample wafer in the bottom slot (#1) on left cassette (No. 1)
+      4. Check that cassette is seated properly. It will not map the cassette!
+      5. F6 Test
+      6. F1 Wf. Trans.
+      7. F1 Wf TRWIN (""Throw In"")
+      8. Confirm that Wafer #1 will be transferred into the E-Ch. (""Etching Chamber"")
+      9. {Start} soft-button
+    2. **_ICP#2_** Manual Load: 
+      1. {Test} Mode soft-button
+      2. Place Carrier wafer in load slot
+      3. Menu Test > Trans/Test > Transport > Wafer Load
+      4. {Start} soft-button
+
+
+### Laser Monitor & Recipe setup
+  1. Edit your ICP Recipe, make sure Step Time is longer than expected, to stop using the Manual Box instead of the recipe time.
+  2. Laser Monitor Setup: (Windows: log in as _GeneralUser)_
+    1. Launch ""**uEye** "" Camera software. 
+      1. Start Camera feed
+      2. Enable ""Auto Contrast""
+      3. Enable ""Fit to Window""
+    2. Turn on Illumination on laser head.
+    3. Plug in Laser Interlock to turn on laser (RF connector on keychain) 
+      1. Should see laser spot on wafer immediately. Can only see laser spot if a wafer is in the chamber, and laser is projected through the cutouts in the chamber heaters/casing.
+    4. Adjust focus (small changes only), to minimize size of laser spot.
+    5. **GREY knobs ONLY** to adjust X/Y. Place Laser on region to be monitored. 
+      1. Do NOT adjust the Black tilt knobs! If you are not an optics guru, then you usually will only make a mess of this.
+    6. Launch ""**Etch Director 2** "" Laser monitoring software 
+      1. Check that Signal level is live (non-zero). Can block laser head with hand to ensure signal shows dramatic change.
+      2. Make sure ""Endpoint"" panel does Not have ""Accept"" or ""Auto Go"" checked on any of the Endpoint tabs, or it may stop recording at some point.
+      3. Make sure you have your simulation or a screenshot of the expected stopping point handy.
+    7. {Start} & {Go} to begin laser monitoring
+
+
+### Run the Etch while Monitoring
+  1. Make sure you have your laser interferogram reference handy, so you know when to stop the etch. Eg. screenshot, simulation etc.
+  2. Run your etch in ""Process Test"" Mode: 
+    1. **_ICP#1:_**
+      1. Make sure Manual Box has ""Etching Chamber Select"" Enabled, not another chamber. All Chambers should have ""Evacuate"" enabled""
+      2. OPTIONALLY: Set switch to ""MR"" to use side keyboard/screen/manual box 
+        1. Make sure Manual Box on that side has ""Evacuate"" enabled on all chambers!
+        2. You must set this back to ""CR"" when you are done!
+      3. {Test} mode soft-button (should already be enabled)
+      4. F6 Test
+      5. F2 Test
+      6. F1 Etch Test
+      7. F2 Selection
+      8. Choose your recipe, edit if needed
+      9. F4 Register
+      10. **{Start} soft-button**
+      11. F5 & F5 to exit out to main menu
+      12. F3 Monitor > F1 E-Ch. to monitor the etch
+    2. **_ICP#2:_**
+      1. {Test} mode soft-button (should already be enabled)
+      2. Menu [Test]
+      3. [Process Test]
+      4. [Etch Test]
+      5. ¿ [Selection]
+      6. Choose your recipe, edit if needed
+      7. [Register]
+      8. **{Start} soft-button**
+      9. Return & Return to exit out to main menu
+      10. Monitor > P/C1 to monitor the etch
+
+[![](https://wiki.nanofab.ucsb.edu/w/images/thumb/2/29/Panasonic_ICP1_Manual_Box_-_annot_v2.png/300px-Panasonic_ICP1_Manual_Box_-_annot_v2.png)](https://wiki.nanofab.ucsb.edu/wiki/File:Panasonic_ICP1_Manual_Box_-_annot_v2.png)ICP#1: Manual Box
+  1. **Manual Box (Paddle)** to End Step at the appropriate time according to laser monitor (eg. some overetch after reaching desired endpoint) 
+    1. ICP#1: Hold down both Enable buttons on the sides & press **[RF__ OFF]** button to end current step. Make sure you use the correct Manual Box, there is one at each side of the tool (CR and MR sides)!
+    2. ICP#2: Hold down both Enable buttons on the sides & press **[Process Skip]** to end current step.
+  2. Wait for decharge steps to complete, done when top-left of screen ""RUN"" changes to ""STOP""
+
+
+### Unload / Finish
+  1. Transfer wafer out of chamber: 
+    1. **_ICP#1 Unload:_**
+      1. Return to main menu
+      2. F6 Test
+      3. F1 Wf. Trans.
+      4. F2 Collect
+      5. Double-Check that all cassettes are EMPTY and seated properly
+      6. {Start} soft button. Will check all three chambers before removing your wafer, takes a while. Do not touch until screen says ""STOP"" on top-left.
+      7. {Auto} soft-button for normal operation (to run your clean etc.)
+      8. **Set side back to CR if you changed the switch.**
+    2. _**ICP#2 Unload:**_
+      1. Return to main menu
+      2. Menu Test > Trans/Test > Transport > **Wafer Unload**
+      3. {Start} soft-button. Do not touch until screen says ""STOP"" on top-left.
+      4. {Auto} soft-button for normal operation (to run your clean etc.)
+    3. End Laser Monitoring / Save Data: 
+      1. [Force Cut]
+      2. Save Data if desired (Right-click the plots, copy data into Notepad, save BMP etc.)
+      3. Turn off Camera Illumination & Unplug Laser Interlock Key from Laser Head.
+  2. Set system back to **[Auto]** Mode (soft-button). 
+    1. On **_ICP#1_** : Also set switch back to ""CR"" mode so regular computer/screen is in control.
+  3. Run your cleaning process as normal.
+
+
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=Intellemetrics_Laser_Etch_Monitor_Procedure_for_Panasonic_ICP_Etchers&oldid=156497](https://wiki.nanofab.ucsb.edu/w/index.php?title=Intellemetrics_Laser_Etch_Monitor_Procedure_for_Panasonic_ICP_Etchers&oldid=156497)""
+"
+MLA150 - Large Image GDS Generation,https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Large_Image_GDS_Generation,"How to convert a regular rasterized image (eg. JPG, BMP, PNG etc.) and into a vectorized format (GDS,DXF) compatible with the MLA150. This produces a much smaller file than a raw BMP image, because large-area polygons are created, as opposed to the BMP file defining each ~4µm pixel across a 150mm wafer (which hits the RAM limit on the computer). 
+In this example, we convert the image into a 1-bit black-and-white image using the free software 
+#### Procedure
+  1. In 
+    1. open the Image (JPG, PNG, BMP etc.),
+    2. Image > Mode > Indexed > 1-bit 
+      1. Optional: Dither to handle grey values (haven't tried this).
+    3. Can edit by painting etc.
+    4. Save as any JPG, PNG, BMP format
+  2. In 
+    1. Open the Image file, default options
+    2. Click on the Image with the Arrow tool, to select it.
+    3. Path > Trace Bitmap (options affect curves/resolution)
+    4. Use the “Update” button to show a Preview of the Path that will be created.
+    5. Set the Options: Trace BitMap > Single-Scan > AutoTrace (dropdown menu). 
+    6. [OK] to create the Path, then Close the “Trace Bitmap” window.
+    7. Creates a new Path object that outlines the image
+    8. Use the Arrow select tool to select the Image 
+      1. Bottom status bar shows what object is selected
+      2. Option/Alt-Click to select obscured objects
+      3. Make sure PATH is _Not_ selected
+    9. Delete the Image object. File should now have only the Path object in it.
+    10. File > Save a Copy… > DXF (Autocad R14)
+    11. UNCHECK ""Robo"" and ""LWPOLYLINE"" - important, or the lines won’t be connected as a single object.
+    12. You now have a DXF vector file of the image.
+  3. In 
+    1. Open the DXF in Klayout
+    2. Use Cell Instance to scale up to desired size: 
+      1. Create a new Cell
+      2. Instance the original Cell into that.
+      3. Edit Cell Instance properties to adjust scaling
+    3. Use Move tool to Center image at 0,0
+    4. Save as GDS
+    5. Change file extension to _lower case_ “gds” important, or MLA _convert_ software won’t see the file.
+    6. Take note of which Cell & Layer should be printed
+  4. On the **[MLA](https://wiki.nanofab.ucsb.edu/wiki/Maskless_Aligner_\(Heidelberg_MLA150\) ""Maskless Aligner \(Heidelberg MLA150\)""):** load for exposure 
+    1. [Convert Design] and Import the GDS,
+    2. Choose correct Cell from dropdown for ""GDS Structure""
+    3. Set correct Layer: set 1st line to correct layer & uncheck the others
+    4. [Viewer] to make sure scale is correct
+    5. Ready to expose the pattern as normal.
+
+
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=MLA150_-_Large_Image_GDS_Generation&oldid=160150](https://wiki.nanofab.ucsb.edu/w/index.php?title=MLA150_-_Large_Image_GDS_Generation&oldid=160150)""
+"
+MLA150 - Design Guidelines,https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines,"Notes and specifications to help you design your [Heidelberg MLA150](https://wiki.nanofab.ucsb.edu/wiki/Maskless_Aligner_\(Heidelberg_MLA150\) ""Maskless Aligner \(Heidelberg MLA150\)""). 
+The term _Convert_ refers to the Unix conversion software used to import your CAD files into the _MLA150Menu_ software. 
+## Contents
+  * [1 General CAD Guidelines](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#General_CAD_Guidelines)
+  * [2 CAD Design File Specifications](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#CAD_Design_File_Specifications)
+    * [2.1 Compatibility with Heidelberg's _convert_ software](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Compatibility_with_Heidelberg's_convert_software)
+    * [2.2 GDS aka. GDSii](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#GDS_aka._GDSii)
+    * [2.3 DXF](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#DXF)
+    * [2.4 BMP](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#BMP)
+    * [2.5 CIF](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#CIF)
+    * [2.6 Gerber](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Gerber)
+  * [3 Alignment Marks](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Alignment_Marks)
+    * [3.1 Automatic Alignment](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Automatic_Alignment)
+    * [3.2 Aligning to a quarter-wafer/irregular piece](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Aligning_to_a_quarter-wafer/irregular_piece)
+  * [4 High-Resolution Writing](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#High-Resolution_Writing)
+  * [5 Greyscale Lithography](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Greyscale_Lithography)
+    * [5.1 Limitations & Workarounds](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Limitations_&_Workarounds)
+    * [5.2 Greyscale BMP](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Greyscale_BMP)
+    * [5.3 Greyscale DXF](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Greyscale_DXF)
+    * [5.4 Conversion](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Conversion)
+    * [5.5 Exposure](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Design_Guidelines#Exposure)
+
+
+## General CAD Guidelines
+  * GDS / GDSii is the preferred file format (fewest errors). DXF, CIF, BMP and Gerber are also available.
+  * Note the Cell that you want to print. Only one Cell may be selected in the software, so use Cell Instancing to create combinations/hierarchy of Cells to print.
+  * Note the Layer(s) to print. The system can select either a single Layer, or can combine multiple layers via Boolean OR.
+  * The Origin (0,0) in your file is the reference for all coordinates during exposure, including alignment mark exposure/measurement. 
+    * The Origin is usually placed at the _Center_ of your wafer/substrate. Autofocus usually initializes at this location, so it's important that it's _not_ at the edge of your wafer where there is badly formed photoresist/cleaved edges.
+  * Your file name cannot contain any spaces or special characters except for underscores.
+  * Make sure the file extension is all lower case (e.g. `.gds` not `.GDS`) - some design programs (e.g. Klayout) will create a file with an upper case file extension by default.
+  * We recommend that your filename starts with your LastnameFirstinitial, similar to job/design names for easy finding later. For example, Demis D. John's GDS files would be named `johnd_MyCadDesign_Layer1_v2.gds`.
+
+
+## CAD Design File Specifications
+### Compatibility with Heidelberg's _convert_ software
+We recommend to keep two versions of your CAD design - 
+  1. Your ""Editable"" version that you can easily edit designs with, that keeps your separated Cells, Arrays, PCells such as Text/Circle objects, and possibly is saved in OASIS format.
+  2. An ""exposure"" version where you make the file compatible with the heidelberg software by: 
+    1. Save as `*.gds` with your name at the start of the filename, eg. `johnd_UCSB_device1_L10_v1.gds`.
+    2. Convert all PCells to Static Cells,
+    3. Resolve Arrays - especially orthogonal arrays, which cause issues.
+    4. Turn off any options that reduce compatibility, such as ""Save cell context info"" etc. MLA software has issues with those.
+    5. Optionally _Flatten_ all objects (removes all Cells) and delete all unused Cells
+    6. Optionally Save _only_ the Layers to be printed (turn off other layers, and ""Save only Visible Layers""). These reduce chances of human-error during the MLA program setup.
+    7. This is the file you'll upload to the MLA for exposure.
+
+
+### GDS aka. GDSii
+  * This is the preferred file format for import into the machine.
+
+
+  * Make note of the ""Cell"" that you want to print, often called the ""top cell"" as it can contain a hierarchy of other child/instanced cells. 
+    * This is called ""GDS Structure"" in the _Convert_ software.
+  * Note the Layer to be printed. On the MLA, you can boolean Union (combine) multiple layers, or print only one layer.
+
+
+### DXF
+Common export format for users of AutoCAD. Export with AutoCAD R12 compatibility. 
+  * DXF files don't define the ""units"" when exported, so you must type in the designed length units in _Convert_ software during import. Eg. whether a length of ""10"" means ""10 mm"" or ""10 µm"".
+  * It is easy for these files to have ""open polygons"", meaning the ends of the polygon don't attach, preventing the software from calculating the filled-in area to write. You can use L-Edit or KLayout's Design Rule Check automation to try and locate these kinds of errors.
+  * Make sure to use _Convert_ 's [Viewer] and the [Measure] tool to make sure the scaling factors are correct.
+  * Note the Layer to be printed. You can boolean Union (combine) multiple layers, or print only one layer.
+
+
+### BMP
+The BMP Pixelsizes are shown in the BMP options when importing a file into _Convert_. 
+The BMP pixel size can be adjusted to change the scaling of the bmp file. The base pixel size is 40nm per pixel, and can be adjusted up to 4000nm in increments of 40nm (eg. _pixel size = 40nm, 80nm, 120nm ... 3960nm, 4000nm_). 
+### CIF
+_To Be Added_
+### Gerber
+_To Be Added_
+## Alignment Marks
+The system is very versatile, and can align to any feature you like using ""Manual Alignment"", as long as you know the coordinates of that feature with respect to your CAD file's origin (0,0). 
+You can use the software to shoot the alignment marks for you, on a first (or other) layer. That method is best for circular wafers that tend to have open, unused areas on the outer edges, perfect for placing an alignment mark (with no die). You can also use the ""**Expose Bitmaps** "" function in the Setup Job screen to have the system expose crosses for you, at coordinates that you provide. (Coordinates are always w/r/to your CAD file 0,0 origin.) 
+You can optionally place the marks directly inside your die. 
+The system will only need at least 4 marks at different places on the wafer (8 max) for global alignment. Preferably, these should be placed as far apart as possible (for rotation/scaling measurement), and at different quadrants of the wafer (for shearing/orthogonality). 
+### Automatic Alignment
+Automatic alignment (ie. automatic measuring of the mark, or Field/""Local"" Alignment) requires a basic Cross ✚ shape, for example with 20µm line width (10µm to 50µm should work). 
+The cross extents need to fill the whole camera field of view, which are as follows: 
+Minimum size of Cross for auto. alignment  Camera  | Field of View   
+---|---  
+Low Res.  | 640 x 480 µm   
+High Res.  | 190 x 140 µm   
+**So a cross of 30µm line width, that is 800 x 600µm would be adequate.**
+If your cross does not fill the whole field, you can use the Reduced Detection Area button to make the image detection measure in a smaller area. 
+### [Aligning to a quarter-wafer/irregular piece](https://wiki.nanofab.ucsb.edu/wiki/MLA150_-_Troubleshooting#Aligning_to_a_quarter-wafer/irregular_piece ""MLA150 - Troubleshooting"")
+See the above link for how to align to the cleaved edges of an irregular piece. 
+## High-Resolution Writing
+It has been suggested to use the ""CD Bias"" (Critical dimension) to reduce your feature sizes during the _Convert_ process, and then compensate by going to higher exposure doses (widening the features back to original size). If you choose a ""-200 nm"" CD Bias, then run a Focus-Exposure Array (""Series"" in _MLAMenu_), you will look for the higher/lower doses (depending on photoresist and design polarity) that bring the features back to the original designed sizes. 
+Overexposing alleviates the stitching boundaries. 
+## Greyscale Lithography
+Please see the Manual for greyscale options and details. 
+BMP and DXF are acceptable formats for greyscale lithography. The _Convert_ program accepts values 0-255 grey levels, although you can run any number of grey-levels from binary (2 levels) up to 256 levels (0-255). 
+### Limitations & Workarounds
+Greyscale exposure has the following limitations that we have identified: 
+  1. **Alignment - workarounds** :
+
+```
+As of 2024-11, Heidelberg have added alignment capability to Greyscale exposures, but this hasn’t yet been tested by staff. Please let us know if you try this out. 
+
+```
+
+  1.     1. the native software does not have rotational alignment capabilities implemented for greyscale exposures. To prevent the software from silently failing during greyscale exposure, you must _DIS_ able **[_]** _**Expose with** **Substrate Angle**_ and/or **[_]_Rotation, Scaling and Shearing_** during exposure or the _software will fail to expose_ (with no error, exposure will begin but then suddenly stop after a few minutes). Workarounds - read _both_ of the following before proceeding, as you'll need to combine both methods into your CAD file to implement both X-Y and Rotational alignment: 
+      1. X-Y Alignment workaround: 
+        1. Identify an alignment mark or other feature on your wafer with known coordinates with respect to your CAD file.
+        2. Set that location in your CAD file to coordinates (0,0). (Recommended: put your entire design into a [sub-Cell](https://wiki.nanofab.ucsb.edu/wiki/KLayout_Design_Tips#Cells_.26_Instances_of_Cells ""KLayout Design Tips"") and apply the X/Y shift to that [Cell Instance](https://wiki.nanofab.ucsb.edu/wiki/KLayout_Design_Tips#Cells_.26_Instances_of_Cells ""KLayout Design Tips"") via the Instance's X/Y insertion position or a _Move_ operation.)
+        3. Once you are at the _**Exposure**_ portion of the procedure, drive the microscope and crosshair to the feature that you designated as (0,0) on your CAD file. Use the [**⨁**] button to use precise positioning via clicking on the microscope image.
+        4. Click **[Set Zero]** to set the origin (0,0) of your CAD file at that location of the crosshair. 
+          1. [![Screenshot showing MLA150 ""Set Zero"" button.](https://wiki.nanofab.ucsb.edu/w/images/c/cd/MLA_Set_Zero_button_IMG_2352.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:MLA_Set_Zero_button_IMG_2352.jpg)
+        5. (See below for Rotation alignment correction - to be performed _before_ the X-Y alignment set, but also requires editing the CAD file.)
+      2. Rotation Alignment workaround: 
+        1. Load your substrate onto the vacuum chuck and run [Load Substrate] function. 
+          1. _**IMPORTANT**_ : _Do not unload your substrate_ until the exposure is complete! We will be correcting the misalignment with respect to the substrate's load position, so once you have loaded the substrate, you do not want to release vacuum or otherwise allow the substrate to move w/r/to the vacuum chuck.
+        2. Run a dummy binary-design design as a ""normal"" 2nd-Layer exposure with Alignment, and align to a few marks on your wafer. In the ""Exposure"" screen it'll show your the resulting _Rotation (and Scaling/Shearing)_ values calculated from your alignment marks.
+        3. Record the _Rotation_ value (Scaling/Shearing are optional - if they are far from nominal, you may want to account for these as well).
+        4. Do _NOT_ run the exposure, but instead exit the Exposure and go back to the **[_< < Setup_]** screen.
+        5. Edit your CAD file and apply the rotation to the CAD file. (Recommended: put your entire design into a [sub-Cell](https://wiki.nanofab.ucsb.edu/wiki/KLayout_Design_Tips#Cells_.26_Instances_of_Cells ""KLayout Design Tips"") and apply the rotation to that [Cell Instance](https://wiki.nanofab.ucsb.edu/wiki/KLayout_Design_Tips#Cells_.26_Instances_of_Cells ""KLayout Design Tips""). Not you'll likely have to convert between µRadians --> Degrees).
+        6. Load this corrected CAD file into the Design via ""Convert Design"". (Will require a fresh conversion.)
+        7. Use the _Above_ ""X-Y Alignment Workaround"" method to align your CAD file to the sample, before running your exposure.
+  2. **Stitching** : Because our tool is the higher-throughput version that exposes a ~20µm field at a time (not a single spot), greyscale exposures will typically see the stitching boundaries between fields. The fast-scan axis is in Y, so you generally will see Y-oriented ridges with something like ~4-7% lower dose. This primarily manifests for greyscale because photoresist is being only partially exposed. (For regular binary exposure, users typically overexpose which hides this stitching boundary.)
+  3. **Time** : Your will need to sign up for significantly more time to run a greyscale exposure. The software requires an initial “conversion” of the CAD file - which takes 45-60min for a 100mm wafer with 50% fill. (Be patient - the progress bar may not indicate it is working, but it is!) Once that is complete the Design shows up in the list for exposure - you can expose it any time thereafter. The exposure is also much longer than binary: 50% fill on a 100mm wafer took 12 hours. (Small substrates should be much shorter.) Staff did the Conversion and Exposure two separate sessions, on different days to accomplish the full litho. Contact Staff if you need to book the tool overnight for such a session.
+  4. **File size** can be an issue. We have found that for full-wafers, DXF is the only format that works - BMP files that cover an entire 100mm wafer result in file sizes too large for the _Convert_ software to handle, it will silently fail/crash.
+  5. **Minimum Dose** : In order to expose at low doses, you may need to enable the 15% filter in the exposure menu. Use this if the software disallows entering below a certain Dose that you'd like to access. We *think* you will have to calculate the actual exposure yourself, and calibrate your exposure with this filter enabled.
+
+
+### Greyscale BMP
+Accepts 4-bit up to 24-bit bitmap files, although 8-bit gives the full greyscale range (256 grey values). BMP Greyscale files tends to quickly hit the filesize limit of the software, so only works for smaller than wafer-scale litho (eg. ~2cm areas). If you need to expose a larger area, such as a full wafer, you need to use DXF format, below. 
+### Greyscale DXF
+Each grey-level should be on a separate layer, where the layer name should be a number corresponding to the grey-level to print (layers numbers/levels #1-255). We recommend using a scripting method such as 
+Y-oriented ridges will still be present on the PR due to lateral stitching (approx 7% lower dose on the stitching boundaries - small but will be easily visible due to corresponding PR thickness changes). Post-develop reflow (via hotplate) might be required for smoothing steps, but may also affect the PR profile. 
+### Conversion
+Greyscale designs must be fully converted at the time the CAD file is imported, so plan to book extra time just for the Design conversion, prior to exposure (depending on design size). 
+For small samples (1-2cm), plan something like 30-45min for conversion. 
+For full 4-inch wafers with ~50% fill, conversion could take up to 1hr or more. Book tool time accordingly and be sure to communicate with upcoming users to let them know, as the total conversion time is often unknown. 
+It is ok to convert the Design in one session and run the Exposure in a separate session. 
+During the _Convert_ phase you will choose either DXF Greyscale or BMP Greyscale. You will also set up the **Gray Table** that determines which layers get which grey-value (0-255). The Maximum Grey-Value (255) will get the full Dose chosen in the Exposure Screen, and 0 will get 0mJ Dose. 
+### Exposure
+The Dose chosen in the _Exposure_ screen will correspond to a grey-value of 255 (in the grey-table chosen during the _Convert_ phase, see above). 
+You can run a Series (focus-exposure matrix) with a Grey-scale Design, although the exposure time will be longer, so we suggest to use a minimal working CAD file for this purpose, to minimize exposure time. 
+At this time the tool does not support Rotation alignment correction for greyscale litho, only X/Y translation. You can use a 2nd Layer exposure with Alignment, but you must **disable ""Exposee with Substrate Angle"" and/or ""Rotation, Scaling and Shearing""** or the exposure will fail. 
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=MLA150_-_Design_Guidelines&oldid=163121](https://wiki.nanofab.ucsb.edu/w/index.php?title=MLA150_-_Design_Guidelines&oldid=163121)""
+"
+GCA 6300 training manual -old instructions,https://wiki.nanofab.ucsb.edu/wiki/GCA_6300_training_manual_-old_instructions,"Updated 
+GCA Stepper Training Guide & References 
+General Information about system 1 Aligning reticle (mask) to system 2 Logging into computer/checking the system 3 Setting up / editing an exposure job (Section 5 of Instruction Manual) 3 Loading a wafer into the system 7 Focus / Exposure optimization (End of Section 5 of Instruction Manual) 7 Performing an exposure job 8 Logging out of computer when done/End of job 9 User Accessible Commands – Definitions 10 System Shut-down procedure. 10 System Start-up procedure. 11 Troubleshooting. 12 Mask Layout / Alignment Marks / Ordering from Photronics / Specifications 14 
+General Information about system 
+The stepper system is used to shoot a repeating pattern over wafer. It is primarily needed for jobs where feature resolution and/or alignment is critical. The contact aligners can be used for many jobs. There is a sign-up sheet on the web for the stepper and you must look at the tool status before signing up for time on this equipment. Please plan your time out as this system can get heavily used. 
+Also, this system is very expensive and replacement parts, especially the optical column, are also expensive. Please be careful, slow, and meticulous when operating this piece of equipment. Many students rely on this piece of equipment for their research. 
+1) System: GCA 6300 5x reduction i-line step and repeat, λ = 365 nm 2) Lens system mirrors both X and Y from mask to stepper 3) I-line intensity is ~180 mW/cm2 at the wafer 4) Lens: Olympus 2142: 21mm field on wafer, NA = 0.42, Depth of field = 1.2μm 5) Maximum die size ~(14.8 x14.8)mm2 6) Resolution: 0.7 um reproducible, 0.5 um achievable R&D 7) Registration tolerance: Max 0.30μm global alignment, Max 0.15μm local alignment (with care, you can achieve < 0.10 μm registration) 8) Minimum substrate size: ~ (15 x 15)mm2 (I have seen smaller substrates used in stepper , but they were mounted on a carrier wafer) 9) Maximum substrate size: ~ 4 inch wafer (round) , 6 inch wafer ( using custom paddles) 10) The baseline system focus and registration is checked weekly 
+  
+
+The system will be down from the following lab conditions: 1) Power Outage. For outages of 1 hour or less, system will be back on line in 2 hours. Four outages more than 1 hour, system will be back on after 8 hours so that mechanical system restabilizes to the environmental chamber. 2) Cooling Water Outage. Environmental unit goes down. For outages of 1 hour or less, system will be back on line in 2 hours. Four outages more than 1 hour, system will be back on after 8 hours so that mechanical system restabilizes to the environmental chamber. 3) Compressed Air Outage. The vibration isolation table will not be operational. System back on line as soon as table legs refill with air. 
+This document should answer most questions and prepare you for most operations necessary to achieve good results on the stepper. Manuals are available for more detailed descriptions of the stepper operation. 
+Aligning reticle (mask) to system 
+The alignment of the mask to the system is critical for achieving reproducible alignment. System alignment marks on the reticle are located near the right and left edges of the mask and are 103 mm apart so they do not get exposed within the 100 mm exposure area of the mask. These marks are put on automatically by Photronix and the gds file can be obtained from Brian Thibeault if you use a different vendor. Use the following procedure to align the mask correctly to the system. 
+1) Unlock spindle and swing lamp column to middle position so that the lens is exposed. 2) Place mask chrome side down so that wording appears correct ( as seen in L-edit file). 3) Swing lamp column so that objective can be used to align mask, DO NOT tighten spindle lock at this time. 4) Using your hands and looking through microscope, shift and rotate mask so that the “crosses” are roughly aligned 5) Tighten spindle lock. This releases a vacuum holder onto the top of the mask so that the mask may be precisely aligned. 6) Looking through microscope, use alignment knobs to translate and rotate the mask into position. First focus the objective by using the knob on top of the microscope. Use the right alignment mark for the x-axis alignment and both alignment marks for the y-axis and rotation alignments. NOTE: to get best and fastest results approach alignment from one direction (do not try to wiggle back and forth about the alignment position. Backlash in the mechanics can make this frustrating). You should see equal amounts of light in between all lines when the mask is aligned well (within 0.1 um). 7) Once mask is aligned, pull the reticle vacuum button to the left of the lens column. 8) Use the stencil (usually L-shape mask cover), to cover part of the mask plate that you do NOT want to be exposed. If you have just one layer on your mask plate, you do not need to use the stensil. There are also blade aperatures that could be used. The knobs on the lamp column X,Y) can be adjusted to 100,75,50 and 25% to be open. Fully open blade aperatures would be at 100% 9) You are now ready to proceed with a focus job, map job, or exposure job. 10) This part is important. If alignments are critical, do not just brush through this procedure. The global alignment requires good, precise alignment of the reticle with the system in order to work correctly. The local alignment system can adjust for local X and Y misalignment, but not rotational errors. 
+Logging into computer/checking the system 
+The system administrator will set up a directory for you to log in and use the stepper at the time of training. Before using the system, you will need to log in and perform an interferometer zeroing routine. 
+1) Check to make sure air table pressure is 60-80 psi. 2) Check to make sure vacuum is >20” Hg 3) At the colon log into the administrator account using LOG IN [10,1] 4) Type MODE and check for proper chuck size and system focus. Use 100 for 4” wafers and use 3 for everything else. DO NOT change any other parameters in here, except the chuck size. 5) Log out using LOG OUT 6) At the colon sign type LOG IN [10,xxx] and hit enter ( xxx-your account number) 7) Type ORIG and hit enter. This resets the laser interferometer position measurement system and moves the stages through its entire motion. 
+Setting up / editing an exposure job (Section 5 of Instruction Manual) 
+Setting up the job: 
+This section describes how to set up a job to do a step and repeat exposure of your patterns. A more detailed description is given in section 5 of the instruction manual. Jobs are created using the SPEC command. First information about the array steps, alignment offsets, and general job is asked for. Passes are attached to each job to apply parameters unique to each pass specified. In this way all exposure information for a complete mask set can be specified all in one job. Following is the procedure for setting up a job and passes. Notes: If at any point you wish to stop and start over with the job description hit CTRL C followed by A and ENTER on the keyboard to abort the SPEC command. An abort of this type will result in no saved information. Also when a * is displayed, this indicates the default value if you hit enter for a reply to a question asked by the computer in setting up or editing any job. If a numeric value is asked for hitting enter will leave the value previously specified, if that exists. Also, if you put in an incorrect value and wish to go back a step type “?” and ENTER. 
+1) At the colon sign type SPEC “filename” and hit enter. The filename can be 1 to 9 alphanumeric characters long. 2) Select metric units 3) Input a job comment such as “HBT-1 process” 4) Set tolerance to 1 (default value is 3). Please use 1-the time required to stop and settle the stage to tolerable degree of vibration. 5) Scale corrections will only be needed if wafer shrinkage or expansion has occurred in a previous process step. Hitting enter without entering a value here results in 0 being used. This is the normal answer. 6) Hit enter for orthogonality with no value. 7) Enter the wafer diameter in mm. This defines the maximum area in which exposure can occur. If you have a square or non circular piece, you will need to specify a diameter that includes the entire square, not the length of a square. 8) Enter the step size in X in mm at the wafer plane 9) Use “C” for specifying the number of columns to expose, “S” for spanning a certain width in the X direction, and A to fill in all area in X direction to the edge of a circular wafer. For square pieces you will always use “C”. For full wafers, you may use any of these options depending on the process. For quarter wafers, you will most likely use “C” and make the job array look square. You will then use dropouts in each pass to specify more complicated array shapes. 10) When “C” is entered, you will then be able to enter the number of columns desired. 11) Repeat 8 through 10 for the Y step. The final array is centered on the wafer. 12) Translate Origin is generally used only if the wafer is off-center. 13) If you wish to see an “*” cartoon of the exposure array hit Y for display, otherwise hit Enter. 14) Layout will give you a display of the nuber of rows and columns and the distance from die 1,1 to the array center, taking origin translation into account.. Ususally this is not looked at. Hit enter to pass this up. 15) If you wish to adjust the numbers of rows and columns you can do this at the Adjust prompt. Usually, you can hit enter to skip this. 16) Standard Keys. If this is used, then the die used for right and left alignment is chosen automatically by the system. This is good if you have a wafer larger than 38.1 mm in the X direction and both alignment marks are exactly 38.1 mm apart and have the same offset from the die center. If you do not meet these conditions, you will need to choose N. 17) If “N” is chosen you will need to enter the row and column of the alignment die. 18) Right Key Offset. The distance from the die(mask) center to the alignment mark center for the alignment mark die. Enter the number in mm at the wafer plane. See picture below for sign convention of alignment key offsets. 
+19) If non-standard alignment keys are selected, you will need the Left Key Offset as well. 20) Skip through epi shift. 21) Now you are ready to enter information specific to passes. 22) Enter the name of the first pass. When you expose a job, you will specify it as filename\pass. The name of a pass can be 1 to 9 alphanumeric characters long. (i.e. emitter) 23) Next enter a pass comment 24) Next, input an exposure time between 0 and 128 sec. The calibrations are done at 1.2 sec. Since the lamp power is held constant, your times should not change over time. This time should be optimized for your substrate and process before doing the real devices to ensure optimum resolution. 25) Based on a focus calibration that you do, you will have a focus offset from the baseling calibration job. The current baseline focus setting is posted on the machine, so you should enter the correct focus setting for your job based on the current calibration. 26) Enter Y or N for local alignment 27) Select G for the Revert to command, the P option does not work. 28) Enter 1 for number of sites per DXD alignment if you will be using the local alignment, this will align every die. 29) For Die Alignment Offset, the offset of the DFAS center to the die center at the wafer plane is entered for X and Y. You should run a test sample to determine how well the DFAS system is performing for your mask set and process. You may need a small offset in X or Y to compensate. 30) Use pass shift to shift all exposures in this pass by a set amount. Usually this option is passed over, but may be used if you have multiple levels on a single mask and are aperturing all layers but the one of interest and this pattern is off-center. You would enter the correct offset to ensure pattern alignment. See picture below for sign convention for X and Y for pass shifts to place pattern into center of wafer. 
+  
+
+31) Array or Plug. When P is entered, only those row and column sites that the user enters will be exposed. When A is entered all sites previously specified will be exposed except dropouts specified later. 32) When P is entered, enter the row and column numbers of die you wish to be exposed. Enter D at the R prompt to display the currently selected die. Press return with a blank entry at the R prompt when finished. 33) In the dropouts section, sites or entire rows or columns can be removed from the exposure. Enter the row. Then enter at the C prompt : nothing to remove the whole row, the first and last column number with a dash in between (i.e.3-6) to remove several sits, or a single number to remove a single site. Enter D at the R prompt to view the die that will be exposed. Enter V at the R prompt to see a list of dropouts. Enter ? at the R prompt to put back in the last die that was dropped out. Again hit return with no entry at the R prompt to exit. 34) Answer Y to save pass. 35) If no other passes are desired, hit enter with no entry at the name prompt. 36) Enter another pass name if desired and hit enter. 37) If the pass information is mostly the same as a previous pass, hit Y at the Copy prompt and enter the name of the pass to be copied, then change any needed parameters after the job is saved using the EDIT command. 38) Say Y to Write to Disk or all information will be lost. 39) You are ready. 
+Editing an existing job: 
+To edit an existing job, use the EDIT command followed by the file name. You can then scroll through job and all passes and change any desired parameters. Don’t forget to save the changes. If you just wanted to look at the program you can use the EDIT command and then use CTRL C followed by A and a carriage return to abort the command and not save any changes. 
+Loading a wafer into the system 
+Before loading a wafer, after putting on the resist, make sure that there is no resist on the backside of the wafer. This can cause errors in the interpreted best focus point since the wafer surface may be at a different height. 
+1) Attach the appropriate chuck to the system. 2) Place your wafer centered on the chuck, noting the orientation. If you are doing an alignment step, make sure to place the wafer in the same orientation and as best as possible in the same location as the first exposure. The set screws in the chuck can help to get reproducible placement of the wafer. When the wafer is in place, flip the right vacuum switch upwards to hold the sample. 3) Place the sample chuck onto the stage, again trying to be repeatable, and flip the left vacuum switch upwards to hold the chuck. 4) Now you are ready to do an exposure. 
+Focus / Exposure optimization (End of Section 5 of Instruction Manual) 
+The system is calibrated weekly on 2 inch Si wafers with the 2” wafer chuck. Your substrate type/thickness/resist may require different focus and exposure settings that the standard calibration. A focus / exposure optimization should be done to tweak your process relative to the calibration baseline. To do this you can use one of your already defined jobs and passes and your highest resolution mask. The command EXPO will shoot a specified serpentine array based on the parameters in your job\pass. The focus and/or exposure can be varied across this array to determine the optimum focus relative to the baseline. One focus step is equal to 0.1 um of focus depth. 
+1) Before doing an expo job, use the “MODE” command to check that the system focus is set as recorded in the baseline sheet attached to the machine. Do not change any other values using this command. 2) Use the command EXPO jobname\passname and hit enter 3) Enter starting row within array specified in the pass 4) Enter ending row within the array specified in the pass 5) Enter starting column within array specified in the pass 6) Enter ending column within the array specified in the pass 7) Enter F to vary the focus in a serpentine pattern, E to vary the exposure in a serpentine pattern, or R to increment focus for each row and exposure for each column within the array. 8) Enter the parameters as prompted by the computer. They will differ based on which option is chosen. 9) Press RESET on the small keyboard next to the monitor 10) Press the MAN and S/C simultaneously 11) Wait a few seconds and press MAN again and the wafer will move underneath the two objectives used for global alignment. 12) Since alignment is not needed for a calibration like this, press the EXP key on the small keyboard to shoot the array. The PC next to the stapper will display a cartoon showing each die as it is exposed. 13) When done, do the development according to the process and inspect in the microscope. 14) The computer will ask you for the best row and column. 15) The computer will then tell you the focus and exposure based on the row and column you input. 16) Do not update system focus ! Input a focus offset into your own exposure job. (If you update the focus, you must change it back using the MODE command when you are done) 
+Performing an exposure job 
+1) Before doing an expo job, use the “MODE” command to check that the system focus is set as recorded in the baseline sheet attached to the machine. Do not change any other values using this command. 2) Type EXEC jobname\passname and hit enter. (See “Wafer alignment to mask / Local Alignment (DFAS)” below for local alignment job syntax) 3) Type in the desired exposure time. 4) Type in desired focus offset. 5) Press RESET on the small keyboard. 6) Press MAN and S/C simultaneously. 7) Wait about 5-10 seconds. 8) Press MAN. 9) Sample will move to alignment position/do global alignment. 
+Wafer alignment to mask / Local Alignment (DFAS) : The best way to use this is to use a mapping routine followed by a shoot using the corrections given by the map. A mapping routine should be set-up in your job with a pass name named mapxx. Make sure you specify die x die is to be used and that you have the correct key offsets for the global and local alignment marks. The command you will then use is: MAP jobname\mapxx,jobname\passname. The first exposure is the mapping pass. When asked to make corrections, say yes. The exposure job will then be performed. 
+  
+Wafer alignment to system / Global (Manual Operation Only) The joysticks and focus knobs are used in this part of the exposure sequence to align the wafer to the system. The sequence of operations you do will depend on whether or not you used standard alignment keys or not. If you placed the sample close to the position you did during the first exposure, you should see an alignment mark in the right side of the screen. If not, you will need to find this mark using the position joystick by following a spiraling outward from the initial position. Pressing “F” repeatedly on the keyboard will do this spiral finding for you automatically. The joysticks have a double speed. Press joystick far for the high speed, shallow for the low speed. To change the joystick speed hit O on the main keyboard. Once the alignment mark is found follow one of the following procedures. 
+Standard Alignment Keys: a) Adjust the focus knob to get a crisp image. b) Align the right mark using the position joystick. c) Use the Theta joystick to rotate the left image into position. Positive Theta = clockwise rotation of chuck. If you run out of theta alignment, you will need to adjust your sample on the chuck. d) The left image is used for theta only. e) Repeat process until satisfied with the alignment. You can obtain better than 0.2 um alignment consistently if you are careful with reticle and global alignment. 
+Non-Standard Alignment Keys: a) Adjust the focus knob to get a crisp image. b) Align the right mark using the position joystick. c) Press A on the main keyboard to toggle to the left alignment mark. d) Use the Theta joystick to rotate the left image into position. Positive Theta = clockwise rotation of chuck. If you run out of theta alignment, you will need to adjust your sample on the chuck. e) The left image is used for theta only. f) Press A again to move to the right alignment mark g) Again adjust the right alignment mark h) Repeat process until position and theta are acceptable. 
+9) After global alignment, press EXP on small keyboard and the job will be executed. 10) Remove the sample from the stage when done. 11) Develop resist and inspect in microscope for alignment (if needed) 12) Computer may ask for next wafer. To escape out of this press CTRL C followed by A and the enter key to abort out of the loop. If you have another wafer with the same job\pass, you can do it now without aborting. 
+  
+
+Logging out of computer when done/End of job 
+1) Use LOG OUT command. 2) Log back into the [10,1] account using LOG IN [10,1] 3) Type MODE and change the chuck size back to 3 and the focus back to the calibrated value 4) Use LOG OUT to leave the system 5) Remove your mask and make sure the lamp source is covering the lens. 6) Make sure the doors to the environmental chamber are closed. 
+User Accessible Commands – Definitions 
+COPY – Use this to copy a file from someone else’s directory to your own. You will need to know the user log in drive and the filename DELETE – Removes a file from system DISP – Display the parameters for a job EDIT – Use to edit exposure jobs and passes EXEC – Use this to execute an exposure job EXPO – Use this to perform a focus and/or exposure calibration HELP – Use this to find out the syntax and use of any command. LISTF – Lists a directory of files LOAD – moves the stage to the load position, may be needed if the stage/computer hangs up. LOG IN [10,xxx] – To log into computer LOG OUT – To log out of system. MODE – You can use this to change the chuck size ( from the [10,1] account only) and verify the focus of the system. Do not change any other parameters or you will throw the system out of calibration. ORIG – Use this to retune the originate the laser counter / move the stages through their entire motion. PURGE – Delete files from directory RENAME – Rename a file SPEC – Create a job file, must go all the way through to save the job. 
+Useful Control Characters CTRL C followed by A and Enter – Abort back to colon prompt A – Toggles between left and right alignment die when using non-standard keys D – Sets joystick to move from die to die. T – Sets joystick to move left alignment die under right objective. E – Exit out of D or T mode so that joystick is back to normal. O – Vary joystick speed during alignment. F – Each time you press this, it will move the stage about an increasing spiral path away from the initial location. Use this repeatedly to find the alignment marks for samples placed differently on chuck than in initial exposure. CTRL S – stops monitor scrolling function CTRL Q – resumes monitor scrolling function 
+System Shut-down procedure. 
+1) Pull out keyboard for ICS/Advent computer (upper keyboard) 2) Hit scroll twice (you will hear a faint beep). Immediately press “2” 3) Push ICS/Advent keyboard back in. 4) Lift up plastic piece over stepper keyboard (lower keyboard)and press break. 5) Pull out monitor to expose monitor power switch on top right of system.(if it does not want to come out, the shield is hitting the frame, use a long screwdriver to help get it out) 6) Turn off monitor power 7) Turn off all other rack components. Do not turn off lamp. 8) Open top folding door on rack and turn off the computer interface. 9) Turn off lamp power. 10) Pull back out ICS/Advent keyboard (upper keyboard) 11) Exit the program running on the PC (“Alt F” for file followed by “x” for exit) 12) Turn off power to the top black advent computer on the rack 13) Turn off power to the bottom black advent computer on the rack 14) Turn off little pump in back of system. 15) If cooling water is to go out or has failed, turn off the environmental unit with the large red breaker at the top left of machine. 16) Turn off system power switch (Switch located on monitor box and is labeled) 
+System Start-up procedure. 
+1) Turn on system power switch (Switch located on monitor box and is labeled) 2) Turn on environmental unit with large red breaker. 3) Turn on little pump in back of system 4) Turn off lamp fan in circuit breaker panel 5) Turn on lamp power and start lamp. 6) Once lamp reaches 200W, turn on fan in breaker box (THIS IS IMPORTANT) 7) Open top folding door on rack and turn on the computer interface. 8) Turn off all other rack components. 9) Turn on monitor power 10) Let monitor warm up until you see a cursor on the screen. 11) Hit the Set Up key on the stepper keyboard (lower keyboard) 12) Hit Line/Local key so that the on-line LED lights. 13) Hit the Set Up key again. You should have a cursor on the screen 14) Turn on upper advent computer 15) Turn on lower advent computer 16) Pull out upper keyboard and look at upper screen 17) Type “stepper” at the command prompt 18) Type “Alt O” followed by “S”. Upper screen should go blank and stepper screen should begin to show commands. 19) Push in upper keyboard. 20) Enter date and time on lower keyboard when asked by stepper 21) Stepper will finish booting up. 22) Pull out upper keyboard and hit “Scroll” twice. You will hear a beep, then hit “1”. This will change the monitor control over to the bottom Advent computer and you will see the “Waiting for MOP command” line at bottom. 23) In the environment al chamber, on the right side, is the interferometer laser power supply. There is a bank of green LEDs there that will tell you when the laser is ready. Make sure the “ready” light is lit and not flashing before you begin. 
+Troubleshooting. 
+What to do in case of computer (monitor) freeze-up. Please try these things in this order. 
+1) Try CTRL C followed by A and Enter. This will abort any command that may have hung up. 2) Press RESET on small monitor keyboard. 3) Follow this sequence: a) Pull out upper keyboard. b) Hit “Scroll Lock” button twice followed by the number 2. This switches the upper monitor from the smart-set computer to the PC control computer. Try a second time if this doesn’t work. You should see a black screen with “Ready” near the top or you will see a menu driven screen. If the monitor switching does not work, go up to the gray interfce box on top of the stepper control rack. Press the gray flash button. This is located in the area where the cables all plug in. c) Push in upper keyboard. d) Lift up plastic flap over lower keyboard and press break e) Turn off lower monitor by pulling out the monitor box and using the switch on the top right front corner of the box (DO NOT TURN OFF SYSTEM POWER SWITCH ON MONITOR! This will shut down the whole system) f) Wait 1 minute and turn the monitor back on. g) Let monitor warm up until you see a cursor on the screen. h) Hit the Set Up key on the stepper keyboard (lower keyboard) i) Hit Line/Local key (number 4) so that the on-line LED lights. j) Hit the Set Up key again. You should have a cursor on the screen. k) Pull out upper keyboard and press the Alt button and “O” at the same time. l) Hit Return to start the program. m) Push in upper keyboard. n) At the prompt on the lower monitor, enter the time and date as specified (10:25 19-NOV-02) o) Stepper will finish booting up. p) Pull out upper keyboard and hit “Scroll Lock” button twice followed by the number 1 to transfer monitor back to the smart-set computer. Try a couple times if this does not work and use the flash button (see instruction b) if needed. q) You are ready to Log In. 4) Follow this sequence: a) Follow system shut down sequence, but DO NOT TURN OFF LAMP OR ENVIRONMENTAL UNIT b) Wait 5 minutes. c) Follow system start-up sequence except for instructions on lamp or environmental unit. 
+What to do if the local alignment or wafer exposure mapping hangs up on the upper monitor. 1) Reset lower Advent computer and wait for reboot. 
+What to do in case of unplanned power outage. 1) CR Staff will take care of the system in the morning. 
+What to do for alignment error. 
+1) Verify that correct alignment key offset is being used 2) Verify that the mask is aligned 3) Verify that the baseline is correct (check values in MODE against the last calibration in the calibration notebook) 4) If you have DFAS alignment marks, perform a MAP job to verify alignment. 
+What to do for focus resolution problems. 
+1) Verify system focus using the MODE command 2) Perform a focus (EXPO) job using the same type of wafer that you will use for your real job and use the optimal focus offset determined from this job. You may need to look at both exposure time and focus. 3) Verify that your wafer is not bowed (i.e. under stress from some process) 
+What to do in case of mask vacuum problem. 
+1) Check that small pump is running in back of system. 
+```
+Make sure vacuum level is above 20” Hg.
+         2)   Push foot down onto mask with hand so that the vacuum holds the mask.
+
+```
+
+What to do in case of focus getting stuck and system hanging up. 
+1) Adjust manual focus knob so that a negative number appears on volt meter. 2) Note die on computer screen at right of system. Abort using Ctrl-C followed by A, edit the program and drop out the problem die. If you have exposed some die already, you may want to drop them out too for the second run. 
+What to do in case of the stage limit going too far (red stage limit light will be lit inside the stepper chamber next to the joystick. 
+1) Press the lit limit switch to release the stage. 
+Contacts to call if you cannot undo the problem. Do not call after 10 p.m. unless there is a real emergency (A deadline for a paper or conference is not a real emergency) 
+1) Brian Thibeault : x 2268 Work or 964-4009 Home 2) RTS Inc. (These guys know all about the stepper, they rebuilt it and service it under contract for us). Ask for Matt or Robert. 480-892-4433. 3) If neither can be reached, leave a note on the stepper and the white board that the stepper is down. E-mail Brian Thibeault at thibeault@ece.ucsb.edu to report the problem. 
+  
+
+Mask Layout / Alignment Marks / Ordering from Photronics / Specifications 
+5) Mask specifications to Photronics using old Connexant order form The following material should be sent to them to do a job: 
+2. Mask file in GDSII format by ftp. Site: “dragon.photronics.com or 207.77.140.1”, User Name: ucsbsd@199.36.4.16 Password: university. 3. The mask file should be the same scale size as will appear on the mask. The features on the wafer will be 5 x smaller. L-Edit has a feature to scale dimensions so that the original mask file can be made with the correct on-wafer dimensions and then the job can be scaled and saved as a separate file. Each layer in the document must have a unique GDSII number assigned to it. These numbers are used by Photrinics. 4. You must send a purchase order and put a part number on the order form. The part number is anything you make up and will appear on the mask. 5. You need to fill out a Connexant Photomask Order form (2 pages). Most fields you will fill in are obvious. Here are the meanings of the not-so-obvious ones. Media Type : “ftp” is the answer for electronically sent data. Data Scale : “1 x” is the correct answer if the mask layout dimensions sent are those that will be on the mask (remember that the system will shrink these dimensions by 5 times on the wafer) Material : Quartz Material Size: 5” x 5” x .09” C.D. Feature Type: “rectangle” is usually the correct answer Data Extents Xlow, Ylow, Xhigh, and Yhigh: In the L-edit mask file, these are the box coordinates, in microns from the origin, of a box that just contains all of the features in the mask. Reticle/Mask Level I.D: The name of the level Topcell Structure Name: The cell in the L-edit file that contains the features data for the mask. Add. Unit: This is the address unit size of the beam used by Connexant to shoot the mask. This will affect the price. Chrome Side Down Reading: “Right” is usually correct. This specifies that if the Chrome is facing down, all features will appear as in the mask file. Also that the text will be readable. Polarity: “Clear” for a positive pattern (i.e. objects will be in chrome and block light) “Dark” for the opposite polarity. CD: Size of critical dimension in microns Overlay Registration to grid: See price list. This sets the guaranteed precision of one mask level feature relative to another. Pellicle Req’d: “No” is the correct answer. Connexant PRMIS Lot No: Leave blank. Special Instructions: “Use tucsbgca.jb alignment marks for masks”, “See attached drawings for CD placement and specifications for each layer and for text information to include at the outside of each mask” 6. The location of the critical dimension (CD) features, what they look like, and what the dimensions are should be included for each layer in which CDs are important. 7. Also include any text that you want to be written at the outside of the usable mask area for each layer for your own purposes. For example, the mask name, layer name, Key Offset for Global Alignment in X and Y (i.e. One could ask for the text KOGX 25um to specify a key offset in X of 25um for global alignment, etc.), the key offset for local alignment in X and Y, and the repeat step distance in X and Y would be good to include on each layer. 
+6) Alignment marks in exposure field, Global, Local (DFAS). To learn more about how these alignment marks work with the system, see the reticle handbook. In our system we mainly use manual global alignment to get +/- 0.25 or better alignment tolerance. Local alignment can be used but needs some characterization for each process. 
+Global alignment marks: These marks and how to place them on the mask are described on page 5-44 to 5-47 of the reticle handbook and are included as an attachment to this document. The difference of our system from the manual is that the objectives are 38.1 mm apart, not 76.2 mm as indicated in the manual. The distance of this mark (or marks) to the center of the cell in X and Y should be noted, this is the key offset and will be required when exposing a job. (Positive offset values are left for X and up for Y) 
+Local alignment marks: These marks and how to place them on the mask are described on page 5-33 to 5-34 of the reticle handbook and are included as an attachment to this document. If possible use one of each type if you desire to try to use local alignment. These can be light or dark field in nature. The distance of the center point of this mark (or marks) to the center of the cell in X and Y should be noted, this is the key offset and will be required when exposing a job. 
+7) Vernier Scales: These can be included to quantify the alignment offset after an exposure is done. The reticle handbook has an example of vernier scales on pages 5-49 to 5-53. You should include them for any layers that require critical alignment. 
+8) Resolution: If you have room in the mask layout, it is good to have features that can give the resolution of a given exposure. The resolution should show both “pillars” and “trenches” in the resist so that you can see whether the focus or exposure needs some tweaking for your particular process. 
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=GCA_6300_training_manual_-old_instructions&oldid=157272](https://wiki.nanofab.ucsb.edu/w/index.php?title=GCA_6300_training_manual_-old_instructions&oldid=157272)""
+"
+Oxford ICP Etcher (PlasmaPro 100 Cobra),https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_(PlasmaPro_100_Cobra),"| Oxford ICP Etcher (PlasmaPro 100 Cobra)   
+---  
+|  [![](https://wiki.nanofab.ucsb.edu/w/images/thumb/2/21/OxfordPlasmaPro.jpg/282px-OxfordPlasmaPro.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:OxfordPlasmaPro.jpg)  
+---  
+| Location  | Bay 2   
+---|---  
+Tool Type  |  [Dry Etch](https://wiki.nanofab.ucsb.edu/wiki/Category:Dry_Etch ""Category:Dry Etch"")  
+Manufacturer  |   
+Model  | PlasmaPro 100 Cobra 300   
+Description  | ICP Etches for III-V/ALE   
+* * *  
+Primary Supervisor  |  [Tony Bosch](https://wiki.nanofab.ucsb.edu/wiki/Tony_Bosch ""Tony Bosch"")  
+(805) 893-3486   
+* * *  
+Secondary Supervisor  |  [Bill Millerski ](https://wiki.nanofab.ucsb.edu/wiki/Bill_Millerski ""Bill Millerski"")  
+* * *  
+Materials  | InP, GaAs, GaN, Silicon ALE   
+Recipes  |  **[Dry Etch Recipes](https://wiki.nanofab.ucsb.edu/wiki/Dry_Etching_Recipes ""Dry Etching Recipes"")**  
+  
+
+## Contents
+  * [1 About](https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)#About)
+  * [2 Detailed Specifications](https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)#Detailed_Specifications)
+  * [3 Documentation](https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)#Documentation)
+  * [4 Recipes](https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)#Recipes)
+    * [4.1 Process Control Data](https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)#Process_Control_Data)
+      * [4.1.1 Std InP Ridge Etch: Cl2/CH4/H2/60°C](https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)#Std_InP_Ridge_Etch:_Cl2/CH4/H2/60%C2%B0C)
+      * [4.1.2 GaN Etch (Cl2/BCl3/Ar/200°C)](https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)#GaN_Etch_\(Cl2/BCl3/Ar/200%C2%B0C\))
+
+
+## About
+The Oxford PlasmaPro 100 Cobra 300 is intended for etching InP-based, GaAs-baased and GaN-based epitaxies, in addition to Atomic Layer Etching (ALE) processes. The system has a load lock, wide temperature range with rapid heating/cooling, Inductively Coupled Plasma (ICP) coil and a capactively coupled substrate HF (13.56MHz) The fixturing is configured for 4"" diameter Si wafers and uses a clamp to hold the sample on the RF chuck. Small pieces may be placed on Silicon carrier wafers, with or without mounting adhesive. Helium back-side cooling is used to keep the sample cool during the etch, but pieces do heat up when placed on carriers. 
+The in-situ laser monitor installed on this system allows for repeatable etches and endpoint detection via continuous optical monitoring of the wafer reflectivity in a user-determined location, through a porthole on the chamber. The system also has an _in situ_ optical emission monitor for plasma spectroscopy, utilized for chamber clean endpoint detection. 
+## Detailed Specifications
+  * Temperature Range: –150°C to +400°C
+  * Gases Available: CH4, H2, Ar, Cl2, BCl3, SF6, SiCl4, O2, N2
+  * ICP Power (max): 3000 W
+  * RF Power (max): 600 W
+  * He-back-side cooling
+  * 100mm wafer held down with ceramic clamp., single-load 
+    * Users may place pieces onto carrier wafer with or without adhesive. Standard recipes use no adhesive.
+    * Pieces must be >7mm from edge of carrier to avoid wafer-clamping mechanism.
+  * Windows-based Cortex software control of process and wafer handling
+  * Allowed Materials: 
+    * InP-based epitaxies - _qualified and ready_
+    * GaAs-baased epitaxies - _starter recipe is available_
+    * GaN-based epitaxies - _starter recipe is available_
+    * GaSb-based epitaxies - _starter recipe is available_
+    * Atomic Layer Etching on select materials - _starter recipe is available_
+  * Standard masking materials include: 
+    * SiO2
+    * Si3N4
+    * photoresist (at << 100°C).
+
+
+Other materials can be exposed to the chamber only with staff approval. 
+  * Laser monitoring with camera and etch simulation software: [Intellemetrics LEP 500](https://wiki.nanofab.ucsb.edu/wiki/Laser_Etch_Monitoring ""Laser Etch Monitoring"")
+  * Optical Emission Spectroscopy (Ocean Optics) for endpoint detection of chamber cleans & etches - integrated into Oxford software
+
+
+## Documentation
+  * [Oxford PlasmaPro Operating Instructions](https://wiki.nanofab.ucsb.edu/w/images/d/d9/Oxford_Cobra_300_SOP_v2021-12-14.pdf ""Oxford Cobra 300 SOP v2021-12-14.pdf"")
+    * _Includes ""Travelers"" and post-cleaning for each type of standard etch (InP, GaAs, GaN)_
+  * [Laser Etch Monitoring procedures](https://wiki.nanofab.ucsb.edu/wiki/Laser_Etch_Monitoring ""Laser Etch Monitoring"")
+  * Online Training Video: 
+    * **Important:** _This video is for reference only, and does not give you authorization to use the tool. You must be officially authorized by the supervisor before using this machine._
+
+
+## Recipes
+  * **[Oxford PlasmaPro Recipes](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etching_Recipes#Oxford_ICP_Etcher_.28PlasmaPro_100_Cobra.29 ""ICP Etching Recipes"")** - Recipes specific to this tool.
+  * All [Dry Etching Recipes](https://wiki.nanofab.ucsb.edu/wiki/Dry_Etching_Recipes ""Dry Etching Recipes"") - use this list to see other options for dry etching various materials.
+
+
+### [Process Control Data](https://wiki.nanofab.ucsb.edu/wiki/ICP_Etching_Recipes#Process_Control_Data_.28Oxford_ICP_Etcher.29 ""ICP Etching Recipes"")
+_Click above for calibration etch data for verifying tool performance over time._
+_Calibration / Process testing data taken using the ""InP Ridge Etch"" process: Cl2/CH4/H2 @ 60°C, 1cm piece with ~50% SiO2 hardmask._
+#### GaN Etch (Cl2/BCl3/Ar/200°C)
+Recipe: _Std GaN Etch - BCl3/Cl2/Ar - 200C (Public)_ , on 1cm x 1cm _~1.2µm deep GaN etch with Cl2/BCl3/Ar at 200°C._ Sapphire substrate with SiO2 mask for GaN. 
+  * * * *
+
+
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=Oxford_ICP_Etcher_(PlasmaPro_100_Cobra)&oldid=162648](https://wiki.nanofab.ucsb.edu/w/index.php?title=Oxford_ICP_Etcher_\(PlasmaPro_100_Cobra\)&oldid=162648)""
+"
+S-Cubed Flexi - Operating Procedure,https://wiki.nanofab.ucsb.edu/wiki/S-Cubed_Flexi_-_Operating_Procedure,"[![](https://wiki.nanofab.ucsb.edu/w/images/thumb/c/c8/UnderConstruction.jpg/150px-UnderConstruction.jpg)](https://wiki.nanofab.ucsb.edu/wiki/File:UnderConstruction.jpg)  
+**Work In Progress**  
+_This article is still under construction. It may contain factual errors. Content is subject to change._  
+---  
+  
+
+```
+**Only staff & designated maintenance users are allowed to write recipes on this tool!  **
+Maintaining low particle counts on this tool is extremely important, so users must strictly follow the training procedures. The Underside of your wafers must be clean to avoid contamination!
+
+```
+
+## Contents
+  * [1 **Procedure:**](https://wiki.nanofab.ucsb.edu/wiki/S-Cubed_Flexi_-_Operating_Procedure#Procedure:)
+  * [2 **Process currently available to lab users:**](https://wiki.nanofab.ucsb.edu/wiki/S-Cubed_Flexi_-_Operating_Procedure#Process_currently_available_to_lab_users:)
+  * [3 **Troubleshooting:**](https://wiki.nanofab.ucsb.edu/wiki/S-Cubed_Flexi_-_Operating_Procedure#Troubleshooting:)
+  * [4 **How to clean wafer backside before use:**](https://wiki.nanofab.ucsb.edu/wiki/S-Cubed_Flexi_-_Operating_Procedure#How_to_clean_wafer_backside_before_use:)
+  * [5 Available PR Spin Recipes](https://wiki.nanofab.ucsb.edu/wiki/S-Cubed_Flexi_-_Operating_Procedure#Available_PR_Spin_Recipes)
+
+
+### **Procedure:**
+  1. Check if the correct user account is selected. Only use the “**UCSB User** ” account. 
+    1. Click “Home” -> “Change User”. User Name: “ _UCSB Users_ ”, Password: “ _ucsb_ ”
+  2. Make sure the system is not running a process. Lot view shows no wafers or batches running.
+  3. Check if PR containers are empty. PR bottles that are available to use are UV6-0.8 in POD#4 and DSK101 in POD#5. If bottles are empty (if you see large bubbles in the supply tube) use the “report tool issue” in signupmonkey. _**Users are not authorized to change or add any chemistries.**_
+  4. Check the PR nozzle “bath” (small white tray underneath _Arm 1_). Make sure it’s not clogged (should have a bit of liquid, but not above the drain hole). If the bath is clogged use the “report tool issue” in signupmonkey. Users are not authorized to clean the nozzle bath or the nozzle tips. To unclog or clean, the robot arms need to be raised up. Or else nozzles can get bumped and change its positions. _**Only staff is allowed to manually raise the robot arm and clean the nozzle tips & bath.**_
+  5. Make sure all wafers to be used in the S-Cube have extremely clean backsides. If wafers have dirt, clean the backside following the steps given in the “ _How to clean wafer backside before use_ ” section, before using in the S-Cube.
+  6. Check if hot plates are set to required temperatures for your process. If not, run Temp-change recipes: 
+    1. Note only Hot Plate 4 (HP4) temperature can be changed. HP1(135C), HP2(170C) & HP3(170C) temperatures are set and cannot be changed.
+    2. Load dummy wafer (_**With extremely clean underside**_)
+    3. Run Staff -> HP4-SET-***C recipe. HP4 can be set to 185C, 200C, 210C or 220C. 
+      1. Ex: HP4-SET-220C will set hot plate 4 to 2200C
+    4. Check that the hotplate reaches the desired temperature (will overshoot by ~2C - 3C).
+    5. After 5 min wafer bake, make sure the temperature is ±2C before running the actual process.
+  7. Load a test “mechanical” wafer (_**With extremely clean underside**_) and run a test run of your desired recipe and make sure spin looks ok. This is important for the first UV6-0.8 run after more than 6 hrs of idle time. The 1st mechanical test wafer will likely show radial non uniformity as dried PR is ejected. 2nd test wafer should spin with high uniformity. If the nozzle is clogged, report tool issue in signupmonkey.
+  8. Load your wafers into the left Cassette at Load Port 1 (LP1 labeled with “1”).
+  9. Select the Route/Chain to run (see available recipes table). Use filter [staff] for all the available routes.
+  10. Select wafer slots to run in the LP1 section
+  11. Click [Run] to run your route. Do not open the tool door while process is running.
+
+
+### **Process currently available to lab users:**
+  * Coat DSK at: 
+    * Varying speeds (1.5 & 5 krpm)
+    * Varying temperatures (185C, 200C, 210C, 220C)
+  * Coat UV6-0.8 at: 
+    * Varying speeds (2, 2.5, 3, 3.5, 4, 5 & 6 krpm)
+    * Single temperature (135C)
+  * Combination of the above two: 
+    * DSK @ 1.5K or 5K @ 220C + UV6 @ 2K – 6K @ 135C
+    * DSK @ 1.5K or 5K @ 185C + UV6 @ 2K – 6K @ 135C
+  * PEB Bake at 135C for 90 sec
+  * Develop at single spin speed of 300 rpm and varying develop time (10, 15 & 20 sec)
+  * Combination of PEB bake and develop: Bake @ 135C 90sec + Develop @ 300rpm @ 10 – 20 sec
+  * _**DO NOT run developer recipes that are not in ""UCSB Users""! There are experimental Develop recipes in the other logins that can damage and bring tool down for extended period of time!**_
+
+
+### **Troubleshooting:**
+  1. Air bubbles in the PR, EBR-PG or AZ300MIF tubes. 
+    1. Use [Report Tool issue] on SignupMonkey to report the problem & get help.
+  2. If PR nozzle bath (small white tray underneath _Arm 1_) or the nozzle tip is clogged. 
+    1. Use [Report Tool issue] on SignupMonkey to report the problem & get help.
+    2. Users are not authorized to manually raise the nozzle tips and clean them.
+  3. Robot arms are not moving after 5min – 10min after starting a route. 
+    1. Use [Report Tool issue] on SignupMonkey to report the problem & get help.
+    2. Tool may need full system reset. Users are not allowed to manually initialize the tool.
+  4. If wafer is lost in tool. 
+    1. Use [Report Tool issue] on SignupMonkey to report the problem & get help.
+    2. Do not try to retrieve the wafer on your own.
+  5. The Run button cannot be toggled after clicking “no” at “Run Selected Route” prompt in LP1. 
+    1. Physically remove the black wafer carrier from LP1 and wait for 2 sec.
+    2. Put the wafer carrier back in its place in LP1.
+    3. LP1 tabs in the Run section will get re-initialized.
+  6. Unknowingly ran a developer recipe not in “UCSB Users” login. 
+    1. As a precaution, _**DO NOT run developer recipes that are not in ""UCSB Users"" login!**_
+    2. Notify staff immediately!
+  7. If new or other variations of standard recipe is needed, contact staff.
+
+
+### **How to clean wafer backside before use:**
+  1. Place the wafer upside down in the POLOS spinner using a non-contact chuck.
+  2. Set spin speed to 2000 rpm. Program “backside”.
+  3. Spin wafer, wait until at top speed.
+  4. Squirt “Remover PG” 10 sec, then Acetone 3 seconds, then ISO for 3 sec
+  5. Spin Dry while blowing with N2. Wait ~5 sec before stopping spin.
+
+
+### Available PR Spin Recipes
+**Recipes > Lithography >** [**_Automated Coater Recipes_**](https://wiki.nanofab.ucsb.edu/wiki/Lithography_Recipes#Automated_Coat.2FDevelop_System_Recipes_.28S-Cubed_Flexi.29 ""Lithography Recipes"") - See all available spin-coat recipes for this machine. Only Staff may edit/create recipes. 
+Retrieved from ""[https://wiki.nanofab.ucsb.edu/w/index.php?title=S-Cubed_Flexi_-_Operating_Procedure&oldid=162203](https://wiki.nanofab.ucsb.edu/w/index.php?title=S-Cubed_Flexi_-_Operating_Procedure&oldid=162203)""
+"
