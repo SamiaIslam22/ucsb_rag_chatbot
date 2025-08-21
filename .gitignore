@@ -26,9 +26,3 @@ Thumbs.db
 # Logs
 *.log
 
-# Database files
-*.db
-*.sqlite3
-
-# CSV data files (if you don't want to upload large datasets)
-csv_dataframes/
