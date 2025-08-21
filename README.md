@@ -1,40 +1,88 @@
-# Modular RAG System with Table Integration
-A comprehensive, educational implementation of a RAG pipeline that handles both all sorts of documents. Built with Streamlit, Docling, Crawl4AI, OpenAI, and semantic search to demonstrate modern knowledge management systems for nanofabrication facilities.
+# 🤖 UCSB RAG Chatbot System
+### Advanced Modular RAG Implementation with Multi-Document Support and Intelligent Knowledge Management
+
+A comprehensive, production-ready implementation of a RAG (Retrieval-Augmented Generation) pipeline that handles diverse document types, web scraping, and intelligent search across nanofabrication knowledge bases. Specifically designed to process and make searchable the extensive [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages) containing critical nanofabrication protocols, equipment manuals, and research procedures. Built with Streamlit, advanced document processing, multiple LLM providers, and semantic search to demonstrate modern AI-powered knowledge management systems for research facilities.
 
 ## 🎯 Overview
-This project demonstrates how to build a complete RAG system that can intelligently search across all sorts of documents. Each module handles a specific aspect of the pipeline, making it easy to learn, modify, and extend for real-world applications.
+
+This project demonstrates how to build a complete, modular RAG system that can intelligently search across multiple document types, web content, and structured data from the [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages). Each module handles a specific aspect of the pipeline, making it easy to learn, modify, and extend for real-world applications in research facilities and technical organizations.
 
 ### What is RAG?
 RAG (Retrieval-Augmented Generation) is a technique that combines:
-- **Retrieval**: Finding relevant information from a knowledge base
-- **Generation**: Using that information to generate accurate, contextual responses
+- **Retrieval**: Finding relevant information from the [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages) and other knowledge sources
+- **Generation**: Using that information to generate accurate, contextual responses about nanofabrication procedures
+- **Intelligence**: Learning from user interactions and improving knowledge discovery over time
 
 ### System Architecture
-Text Documents → Text Chunking → Embeddings ↘
-                                            → Combined Knowledge Base → Vector Search → LLM Response
-Table Data → Table Extraction → Embeddings ↗
+```
+📄 UCSB Wiki → 🔄 Processing → 🧠 Embeddings → 🔍 Vector Search → 💬 LLM Response
+      ↓             ↓              ↓               ↓              ↓
+🌐 Web Content → 📊 Tables → 🎯 Knowledge Base → 🔎 Similarity → ✨ Final Answer
+      ↓             ↓              ↓               ↓              ↓
+📋 Documents  → 🖼️ Images  → 📚 Chunked Data → 📈 Ranking → 📖 Citations
+```
 
 ## 📁 Project Structure
+
 ```
-├── README.md                           # This comprehensive guide
-├── app.py                             # 🌐 Streamlit web interface
-├── chunking.py                        # 🔀 Text and table processing
-├── embedding_generator.py             # 🧠 Vector embedding generation
-├── vector_search.py                   # 🔍 Semantic similarity search
-├── openai_services.py                 # 🤖 OpenAI API integration
-├── main.py                            # 💬 Command-line interface
-├── wiki_table.py                      # 📊 Table extraction from wikis
-├── hybrid_search.py                   # 🔬 Experimental hybrid search
-├── multi_page_scrape1.csv             # 📄 Input: scraped text documents
-├── all_pages_tables_data.csv          # 📊 Input: extracted table data
-├── chunked_pages.csv                  # 🔄 Processed: combined chunks
-└── chunked_pages_with_embeddings.csv  # 🎯 Final: vectorized knowledge base
+UCSB_RAG_CHATBOT/
+├── README.md                              # 📖 This comprehensive documentation
+├── requirements.txt                       # 📦 Python dependencies
+├── 📁 venv/                               # 🐍 Virtual environment
+├── .env                                   # 🔐 Environment variables
+├── .gitignore                            # 🚫 Git ignore patterns
+│
+├── 📁 backend/                           # 🔧 Core backend services
+│   ├── __pycache__/                     # Python cache files
+│   ├── main.py                          # 🎯 Main orchestrator and CLI interface
+│   │
+│   ├── 📁 ai_services/                  # 🧠 AI & LLM Integration
+│   │   ├── __pycache__/                 
+│   │   ├── __init__.py                  # Package initialization
+│   │   ├── embedding_generator.py      # 🎯 Vector embedding generation
+│   │   ├── openai_services.py          # 🤖 OpenAI API integration
+│   │   └── vector_search.py            # 🔍 Semantic similarity search
+│   │
+│   ├── 📁 chunking/                     # 🔀 Content Processing
+│   │   ├── __pycache__/                 
+│   │   ├── __init__.py                  # Package initialization
+│   │   └── chunking.py                  # 🔄 Text and table chunking engine
+│   │
+│   └── 📁 extraction/                   # 🌐 Content Extraction & Scraping
+│       ├── __pycache__/                 
+│       ├── __init__.py                  # Package initialization
+│       ├── wiki_images.py              # 🖼️ Image extraction from UCSB wiki
+│       ├── wiki_table.py               # 📊 Table extraction from UCSB wiki
+│       └── wiki_texts.py               # 📝 Text extraction from UCSB wiki
+│
+├── 📁 csv_dataframes/                   # 📊 Processed Data Storage
+│   ├── 📁 embeddings/                   # 🧠 Vector embeddings storage
+│   │   └── chunked_pages_with_embeddings.csv # 🎯 Final vectorized knowledge base
+│   ├── 📁 processed/                    # 🔄 Processed content
+│   │   └── chunked_pages.csv            # 📋 Combined processed chunks
+│   └── 📁 raw/                          # 📄 Raw extracted data
+│       ├── 📁 scratch/                  # 🗂️ Individual table markdown files
+│       │   └── [Individual markdown versions of extracted tables]
+│       ├── wiki_images.csv              # 🖼️ Extracted image metadata
+│       ├── wiki_tables.csv              # 📊 Extracted table data
+│       └── wiki_texts.csv               # 📝 Extracted text content
+│
+├── 📁 database/                         # 🗄️ Database Operations
+│   ├── bootstrap.db.py                  # 🚀 Database initialization
+│   ├── chunk.csv.py                    # 📊 CSV chunk processing
+│   └── search.py                        # 🔍 Database search operations
+│
+├── 📁 experiments/                      # 🧪 Experimental Features
+│   └── hybrid_search.py                # 🔬 Hybrid search experiments
+│
+└── 📁 frontend/                         # 🎨 User Interface
+    └── app.py                           # 🌐 Primary Streamlit web interface
 ```
 
 ## 🧩 Module Architecture
 
-### **1. `wiki_table.py` - Table Extraction Engine**
-**Purpose:** Extract structured data from wiki pages using Docling's advanced table processing
+### 1. **backend/extraction/wiki_table.py** - UCSB Wiki Table Extraction Engine
+**Purpose**: Extract structured data from [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages) using advanced table processing
 
 ```python
 def table_to_markdown(table)
@@ -42,173 +90,210 @@ def ultra_clean_text_for_csv(text_content)
 def get_page_name_from_url(url)
 ```
 
-**What it does:**
-- **Advanced Table Detection**: Uses Docling's DocumentConverter to identify and extract tables from web pages
+**What it does**:
+- **Advanced Table Detection**: Uses Docling's DocumentConverter to identify and extract tables from UCSB wiki pages
 - **Intelligent Cleaning**: Converts complex table structures to clean markdown format
 - **Metadata Preservation**: Maintains source URLs, page names, and table numbering
-- **Error Handling**: Gracefully handles pages without tables or conversion errors
-- **CSV Generation**: Creates structured output for downstream processing
+- **Individual File Generation**: Creates separate markdown files in `/csv_dataframes/raw/scratch/` for each table
+- **CSV Compilation**: Aggregates all table data into `wiki_tables.csv`
 
-**Table Processing Pipeline:**
-1. **URL Processing**: Fetches content from wiki URLs
-2. **Table Detection**: Identifies table structures using AI models
-3. **Content Extraction**: Converts tables to clean markdown format
-4. **Data Cleaning**: Removes special characters, normalizes spacing
-5. **Metadata Addition**: Adds source tracking and table numbering
+**UCSB Wiki Processing Pipeline**:
+- URL Processing: Fetches content from UCSB nanofab wiki URLs
+- Table Detection: Identifies equipment tables, protocol tables, and process parameters
+- Content Extraction: Converts tables to clean markdown preserving scientific data
+- Individual Storage: Saves each table as separate `.md` file in scratch folder
+- Data Cleaning: Removes special characters, normalizes spacing for technical content
+- Metadata Addition: Adds source tracking and equipment/protocol categorization
 
-
----
-
-### **2. `chunking.py` - Unified Content Processing**
-**Purpose:** Intelligent processing of both text documents and table data into searchable chunks
+### 2. **backend/extraction/wiki_texts.py** - Text Content Extraction Engine
+**Purpose**: Extract and process textual content from [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages)
 
 ```python
-def process_text_content(input_df, text_splitter)
-def process_table_content(tables_df)
-def combine_chunks(text_chunks, table_chunks)
+def extract_title_from_url(url)
+async def scrape(url)
+async def run_all_scrapes(urls)
 ```
 
-**What it does:**
-- **Dual Processing Strategy**: Handles text and tables with different chunking approaches
-- **Smart Text Splitting**: Uses LangChain's CharacterTextSplitter for semantic boundaries
-- **Table Preservation**: Keeps complete tables as single chunks to maintain structure
-- **Content Type Tracking**: Labels chunks as "text" or "table" for downstream processing
-- **Unified Output**: Combines both content types into a single searchable dataset
+**What it does**:
+- **URL Title Extraction**: Converts wiki URLs to clean page titles by extracting and formatting the page name
+- **Asynchronous Web Scraping**: Uses Crawl4AI to extract content from wiki pages with proper CSS selectors
+- **Content Processing**: Focuses on the main content area (`div#mw-content-text`) while excluding navigation and footer elements
+- **Batch Processing**: Processes multiple wiki URLs efficiently with async operations
+- **CSV Output**: Creates structured `wiki_texts.csv` with title, URL, and markdown content
 
-**Chunking Strategies:**
-- **Text Documents**: Split into 1000-character chunks with 2-character overlap
-- **Table Data**: Each table becomes exactly one chunk (no splitting)
-- **Metadata Preservation**: Maintains source URLs, titles, and chunk relationships
+**Key Features**:
+- Uses `CrawlerRunConfig` with content filtering to exclude external links and social media
+- Bypasses cache to ensure fresh content extraction
+- Handles errors gracefully and continues processing other pages
+- Outputs clean markdown format suitable for chunking
 
-**Processing Flow:**
+### 3. **backend/extraction/wiki_images.py** - Image Metadata and Analysis Engine
+**Purpose**: Extract, analyze, and catalog images from [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages) with AI-powered descriptions
+
 ```python
-# Text Processing
-text_splitter = CharacterTextSplitter(
-    separator="\n\n",
-    chunk_size=1000,
-    chunk_overlap=2
-)
-
-# Table Processing (no splitting)
-table_chunk = {
-    "content": complete_table_markdown,
-    "content_type": "table",
-    "chunk_number": 1,
-    "total_chunks": 1
-}
+def normalize_mediawiki_image_url(url: str) -> str
+async def download_image_as_data_url(url: str, client_http) -> str
+def summarize_image_with_context(data_url: str, context_text: str, alt=None, caption=None) -> str
+async def main()
 ```
 
----
+**What it does**:
+- **MediaWiki Image Processing**: Converts thumbnail URLs to original image URLs for better quality analysis
+- **Image Download & Encoding**: Downloads images and converts them to base64 data URLs for AI processing
+- **AI-Powered Image Analysis**: Uses OpenAI's vision model (gpt-4o-mini) to generate detailed descriptions
+- **Context-Aware Descriptions**: Incorporates page context, alt text, and captions for more accurate analysis
+- **Deduplication**: Removes duplicate images and filters out UI elements like logos and sprites
+- **CSV Output**: Creates `wiki_images.csv` with comprehensive image metadata and AI-generated summaries
 
-### **3. `embedding_generator.py` - Vector Embedding Pipeline**
-**Purpose:** Convert all chunks (text and tables) into searchable vector representations
+**Key Features**:
+- Integrates with `wiki_texts.py` to provide page context for better image understanding
+- Handles various image formats (PNG, JPEG, GIF, WebP)
+- Clips context to prevent overwhelming the AI model
+- Robust error handling for failed downloads or API calls
+
+### 4. **backend/chunking/chunking.py** - Unified Content Processing
+**Purpose**: Intelligent processing of all extracted UCSB wiki content (text, tables, images) into searchable chunks
+
+```python
+def parse_table_to_rows(table_markdown)
+# Main processing logic (no specific functions - direct processing)
+```
+
+**What it does**:
+- **Multi-Source Processing**: Handles wiki text, equipment tables, and image metadata with different chunking approaches
+- **Text Chunking**: Uses LangChain's CharacterTextSplitter (1000 chars, 2 char overlap) for semantic boundaries
+- **Table Processing**: Parses markdown tables into structured rows with `parse_table_to_rows()` function
+- **Content Type Tracking**: Labels chunks as "text", "table", "table_row", or "image" for downstream processing
+- **Unified Output**: Combines all content types into `processed/chunked_pages.csv`
+
+**Processing Strategy**:
+- **Text Content**: Loads from `csv_dataframes/raw/wiki_texts.csv` and splits into manageable chunks
+- **Table Content**: Loads from `csv_dataframes/raw/wiki_tables.csv`, parses markdown tables into individual rows
+- **Image Content**: Loads from `csv_dataframes/raw/wiki_images.csv` and creates single chunks per image
+- **Error Handling**: Gracefully skips missing files and continues processing available content
+
+**Data Flow**:
+```
+raw/wiki_texts.csv + raw/wiki_tables.csv + raw/wiki_images.csv
+                            ↓
+            Direct processing in chunking.py
+                            ↓
+              processed/chunked_pages.csv
+```
+
+**Key Features**:
+- Uses markdown table parsing to extract structured data from equipment tables
+- Maintains complete context for each chunk with metadata (URL, title, character count)
+- Processes large datasets efficiently with progress reporting
+- Creates detailed statistics showing breakdown by content type
+
+### 5. **backend/ai_services/embedding_generator.py** - Vector Embedding Pipeline
+**Purpose**: Convert all UCSB wiki chunks (text, tables, and images) into searchable vector representations
 
 ```python
 def embed_chunks_with_openai(chunks_df, client)
-def create_metadata_structure(row)
-def handle_embedding_errors(chunk_data, error)
 ```
 
-**What it does:**
-- **Universal Embedding**: Creates vectors for both text and table content using the same model
-- **Batch Processing**: Efficiently processes large datasets with rate limiting
-- **Error Recovery**: Gracefully handles API failures and continues processing
-- **Metadata Enrichment**: Preserves all chunk information in structured metadata
-- **Progress Tracking**: Provides detailed progress information during processing
+**What it does**:
+- **Universal Embedding**: Creates vectors for wiki text, equipment tables, and image content using text-embedding-3-small
+- **Batch Processing**: Efficiently processes large UCSB wiki datasets with rate limiting (0.1 second delays)
+- **Error Recovery**: Gracefully handles API failures and continues processing other chunks
+- **Metadata Preservation**: Maintains all equipment and protocol information in structured JSON metadata
+- **Output**: Creates `embeddings/chunked_pages_with_embeddings.csv` - the final searchable knowledge base
 
-**Embedding Specifications:**
-- **Model**: `text-embedding-3-small` (1536 dimensions)
-- **Consistency**: Same model for all content types ensures comparable vectors
-- **Rate Limiting**: 0.1-second delays between API calls to respect limits
-- **Error Handling**: Continues processing even if individual chunks fail
+**Key Features**:
+- Uses OpenAI's text-embedding-3-small model (1536 dimensions)
+- Preserves content_type information for downstream filtering
+- Stores embeddings as JSON arrays for easy loading
+- Comprehensive error handling with detailed logging
 
-**Metadata Structure:**
-```python
-metadata = {
-    'url': chunk_source_url,
-    'title': document_title,
-    'chunk_number': position_in_document,
-    'total_chunks': total_document_chunks,
-    'character_count': chunk_length,
-    'content_type': 'text' or 'table'
-}
-```
-
-
----
-
-### **4. `vector_search.py` - Semantic Search Engine**
-**Purpose:** Find relevant chunks using vector similarity across both text and table data
+### 6. **backend/ai_services/vector_search.py** - Semantic Search Engine
+**Purpose**: Find relevant UCSB wiki chunks using vector similarity across all content types
 
 ```python
-def cosine_similarity_openai(query_vector, chunk_vectors)
 def vector_similarity_search(query_text, df, client, k=5)
 def embed_query(query_text, client)
+def load_chunked_data_from_csv(csv_path)
 ```
 
-**What it does:**
-- **Unified Search**: Searches across both text and table content seamlessly
-- **Optimized Similarity**: Leverages OpenAI's pre-normalized embeddings for efficiency
-- **Ranking Intelligence**: Returns top-k most relevant chunks regardless of content type
-- **Score Transparency**: Provides similarity scores for result analysis
-- **Error Resilience**: Handles embedding failures gracefully
+**What it does**:
+- **Unified Search**: Searches across wiki text, equipment tables, and image metadata seamlessly
+- **Equipment-Aware**: Understands queries about specific tools, protocols, and nanofab procedures
+- **Optimized Similarity**: Uses numpy dot product operations for efficiency with OpenAI embeddings
+- **Content Type Support**: Handles text, table, table_row, and image chunks with proper type inference
+- **Score Transparency**: Provides similarity scores for result analysis in technical contexts
 
-**Search Mathematics:**
-```python
-# Optimized for OpenAI embeddings (pre-normalized)
-similarity = np.dot(chunk_vectors, query_vector)
-# Equivalent to cosine similarity for normalized vectors
-```
+**Key Features**:
+- Automatically loads and converts JSON embeddings back to numpy arrays
+- Infers content types when missing from older data
+- Shows content type distribution for transparency
+- Returns top-k results with similarity scores and metadata
 
-**Search Pipeline:**
-1. **Query Embedding**: Convert user question to vector
-2. **Similarity Calculation**: Compare against all chunk vectors
-3. **Content-Agnostic Ranking**: Rank by relevance regardless of text/table
-4. **Top-K Selection**: Return most relevant chunks with metadata
-
-
----
-
-### **5. `openai_services.py` - LLM Response Generation**
-**Purpose:** Generate contextual responses using retrieved chunks as supporting evidence
+### 7. **backend/ai_services/openai_services.py** - Response Generation
+**Purpose**: Generate contextual responses using retrieved UCSB wiki chunks as supporting evidence
 
 ```python
+def format_chunk_for_display(chunk_row)
 def generate_response_with_context(user_prompt, retrieved_chunks, client)
-def build_context_from_chunks(retrieved_chunks)
-def create_source_metadata(retrieved_chunks)
+# Contains: client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 ```
 
-**What it does:**
-- **Context Assembly**: Combines retrieved text and table chunks into coherent context
-- **Prompt Engineering**: Crafts effective prompts for RAG-based responses
-- **Source Attribution**: Tracks which chunks contributed to the response
-- **Mixed Content Handling**: Seamlessly works with both text and tabular information
-- **Error Management**: Provides fallback responses for API failures
+**What it does**:
+- **Content-Type Aware Formatting**: Intelligently formats different chunk types (text, table, table_row, image) for optimal display
+- **Context Assembly**: Combines retrieved wiki text, equipment tables, and image data into coherent context
+- **Advanced Prompt Engineering**: Uses gpt-4o-mini with specialized system prompts for nanofabrication queries
+- **Source Attribution**: Returns enhanced source information with similarity scores and content types
+- **Multi-Content Integration**: Seamlessly handles mixed content from equipment specifications and procedure text
 
-**Response Generation Flow:**
+**Key Features**:
+- Formats table row JSON data into readable bullet points
+- Handles complete markdown tables with proper formatting
+- Uses temperature=0.1 for focused, technical responses
+- Supports up to 4000 tokens for comprehensive answers
+- Returns both response text and enhanced source metadata
+
+**Content Type Processing**:
+- **table_row**: Parses JSON and formats as structured bullet points
+- **table**: Displays complete markdown tables in code blocks
+- **text**: Shows actual content for procedure descriptions
+- **image**: Integrates image analysis summaries into responses
+
+### 8. **backend/main.py** - System Orchestrator and CLI Interface
+**Purpose**: Central coordination of all backend components and command-line interface for the RAG system
+
 ```python
-# Context Construction
-context_parts = []
-for score, chunk_row in retrieved_chunks:
-    context_parts.append(f"Source {i}:\n{chunk_row['content']}\n")
-
-# Prompt Engineering
-system_prompt = """Use the provided context to answer accurately.
-Context may include both text passages and structured table data."""
-
-# LLM Configuration
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    temperature=0.1,  # Focused responses
-    max_tokens=4000   # Comprehensive answers
-)
+class NanofabRAGPipeline:
+    def step_1_extract_wiki_texts(self)
+    def step_2_extract_wiki_tables(self)
+    def step_3_extract_wiki_images(self)
+    def step_4_process_chunking(self)
+    def step_5_generate_embeddings(self)
+    def run_complete_pipeline(self)
 ```
 
+**What it does**:
+- **Pipeline Orchestration**: Coordinates the complete RAG pipeline from extraction to embeddings
+- **Step-by-Step Execution**: Manages each phase of data processing with proper error handling
+- **File Existence Checking**: Skips steps if output files already exist to avoid reprocessing
+- **Module Integration**: Imports and executes extraction modules (wiki_texts, wiki_table, wiki_images)
+- **Async Coordination**: Handles async operations for image processing and web scraping
+- **Logging & Monitoring**: Provides detailed logging for each step with success/failure reporting
 
----
+**Pipeline Steps**:
+1. **Text Extraction**: Runs `wiki_texts.py` to scrape and process wiki content
+2. **Table Extraction**: Executes `wiki_table.py` to extract and convert tables to markdown
+3. **Image Processing**: Calls `wiki_images.py` for AI-powered image analysis
+4. **Content Chunking**: Processes all extracted data through the chunking pipeline
+5. **Embedding Generation**: Creates vector embeddings for the final knowledge base
 
-### **6. `app.py` - Interactive Web Interface**
-**Purpose:** Provide user-friendly access to the RAG system through Streamlit
+**Key Features**:
+- Uses pathlib for robust file path handling
+- Implements proper async/await patterns for web scraping operations
+- Provides clear status reporting with emojis and detailed error messages
+- Supports incremental processing by checking for existing output files
+
+### 9. **frontend/app.py** - Interactive Web Interface
+**Purpose**: Provide user-friendly access to the UCSB wiki RAG system through Streamlit
 
 ```python
 def load_chunked_data(csv_path)
@@ -217,212 +302,265 @@ def handle_chat_interface()
 def show_source_attribution(sources, df)
 ```
 
-**What it does:**
-- **Intuitive Interface**: Clean, modern web interface for non-technical users
-- **Content Type Awareness**: Shows breakdown of text vs. table chunks in knowledge base
-- **Real-time Search**: Interactive search with immediate results
-- **Source Transparency**: Displays exactly which documents/tables informed each response
-- **Session Management**: Maintains chat history and conversation context
+**What it does**:
+- **Intuitive Interface**: Clean, modern web interface for researchers and facility users
+- **UCSB Wiki Integration**: Shows breakdown of text vs. table vs. image chunks in knowledge base
+- **Real-time Search**: Interactive search across all UCSB nanofab documentation
+- **Source Transparency**: Displays exactly which wiki pages, markdown tables, and images informed each response
+- **Markdown Table Access**: Direct links to individual table markdown files in the scratch folder
 
-**Interface Features:**
-- **Smart Sidebar**: Knowledge base statistics and search configuration
-- **Content Type Labels**: Shows whether responses come from text or tables
-- **Similarity Scores**: Transparency into search quality and relevance
-- **Source Links**: Direct access to original documents and tables
-- **Chat History**: Persistent conversation with source tracking
+### 10. **database/** - Cloud Database Operations with Neon Tech
+**Purpose**: Upload CSV dataframes to cloud database and transform them into organized, queryable database structures
 
+**bootstrap.db.py**:
+- **Cloud Database Initialization**: Sets up Neon Tech PostgreSQL database for scalable storage
+- **CSV to Database Migration**: Uploads processed CSV dataframes to cloud storage
+- **Schema Management**: Creates optimized database structure for vector search and metadata queries
+- **Connection Management**: Handles secure connections to Neon Tech cloud infrastructure
 
----
+**chunk.csv.py**:
+- **CSV Processing Pipeline**: Transforms local CSV dataframes into database-ready format
+- **Data Validation**: Ensures data integrity before cloud upload
+- **Batch Processing**: Efficiently handles large datasets for cloud migration
 
-### **7. `main.py` - Command-Line Orchestration**
-**Purpose:** Demonstrate complete pipeline execution and testing
+**search.py**:
+- **Cloud-Based Search**: Provides efficient search operations directly against the cloud database
+- **Vector Search Optimization**: Leverages Neon Tech's PostgreSQL extensions for vector similarity search
+- **Query Performance**: Optimized database queries for fast retrieval across large knowledge bases
 
-```python
-def load_chunked_data_from_csv(csv_path)
-def complete_rag_pipeline(query, df, client, k=5)
-def run_test_queries(test_queries)
-```
+**Key Features**:
+- **Neon Tech Integration**: Uses Neon Tech's serverless PostgreSQL for scalable cloud storage
+- **API Key Required**: Requires your own Neon Tech API credentials for database connection
+- **Production Ready**: Enables deployment-ready database infrastructure for the RAG system
+- **Vector Support**: Utilizes pgvector extension for efficient similarity search in the cloud
+- **Cost Effective**: Serverless architecture scales automatically based on usage
 
-**What it does:**
-- **Pipeline Demonstration**: Shows end-to-end RAG execution
-- **Testing Framework**: Provides structured testing of system capabilities
-- **Performance Monitoring**: Tracks search and response quality
-- **Debug Information**: Detailed logging of search and retrieval process
-
-**Educational Flow:**
-```python
-# Step 1: Load processed knowledge base
-df = load_chunked_data_from_csv("chunked_pages_with_embeddings.csv")
-
-# Step 2: Execute search pipeline
-retrieved_chunks = vector_similarity_search(query, df, client, k)
-
-# Step 3: Generate contextual response
-response = generate_response_with_context(query, retrieved_chunks, client)
-
-# Step 4: Display results and metrics
-```
-
----
-
-## 🔄 Complete Data Flow Architecture
+## 🔄 Complete UCSB Wiki Data Flow Architecture
 
 ```
-📄 Text Documents (multi_page_scrape1.csv)     📊 Wiki Tables (URLs)
-         ↓                                           ↓
-📁 chunking.py: Text Processing              📊 wiki_table.py: Table Extraction
-         ↓                                           ↓
-📑 Text Chunks (1000 chars each)             📋 Table Chunks (complete tables)
-         ↓                                           ↓
-         ↘️                                         ↙️
-           🔄 chunking.py: Combine Content Types
-                        ↓
-           📊 chunked_pages.csv (Mixed Content)
-                        ↓
-           🧠 embedding_generator.py: Vectorization
-                        ↓
-           🔢 chunked_pages_with_embeddings.csv
-                        ↓
-❓ User Query → 🧠 openai_services.py: Query Embedding
-                        ↓
-           🔍 vector_search.py: Similarity Search
-                        ↓
-           📋 Top-K Relevant Chunks (Text + Tables)
-                        ↓
-           💬 openai_services.py: Response Generation
-                        ↓
-           ✨ Final AI Response with Source Attribution
+📄 UCSB Wiki Pages ([UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages))
+         ↓
+🌐 backend/main.py (Orchestrates extraction modules)
+         ↓
+┌─────────────────┬─────────────────┬─────────────────┐
+│ wiki_texts.py   │ wiki_table.py   │ wiki_images.py  │
+│       ↓         │       ↓         │       ↓         │
+│ wiki_texts.csv  │ wiki_tables.csv │ wiki_images.csv │
+└─────────────────┴─────────────────┴─────────────────┘
+         ↓                ↓                ↓
+📊 Individual table markdown files saved to raw/scratch/
+         ↓
+🔄 backend/chunking/chunking.py (Processes all content types)
+         ↓
+📋 processed/chunked_pages.csv (Combined chunks)
+         ↓
+🧠 backend/ai_services/embedding_generator.py (Vectorization)
+         ↓
+🎯 embeddings/chunked_pages_with_embeddings.csv (Final knowledge base)
+         ↓
+❓ User Query → frontend/app.py
+         ↓
+🔍 backend/ai_services/vector_search.py (Semantic search)
+         ↓
+📋 Relevant Content (Text + Tables + Images)
+         ↓
+💬 backend/ai_services/openai_services.py (Response generation)
+         ↓
+✨ Final AI Response with Source Attribution
 ```
 
 ## 🚀 Getting Started
 
-### Prerequisites
-```bash
-# Install core dependencies
-pip install streamlit pandas numpy openai python-dotenv
-pip install langchain-text-splitters docling crawl4AI
+## 📦 Dependencies & Setup Requirements
 
-# Or if docling installation issues:
-pip install git+https://github.com/DS4SD/docling.git
+### Core Dependencies
+```bash
+pip install -r requirements.txt
 ```
+**Key packages include:**
+- `streamlit` - Web interface framework
+- `pandas numpy` - Data processing and manipulation
+- `openai` - OpenAI API integration for embeddings and chat
+- `python-dotenv` - Environment variable management
+- `langchain-text-splitters` - Text chunking for RAG pipeline
+- `docling` - Advanced document processing and table extraction
+- `beautifulsoup4` - Web scraping and HTML parsing
+- `crawl4ai` - Advanced web crawling capabilities
+
+### Cloud Database Setup (Neon Tech)
+For production deployment with cloud database:
+```bash
+pip install psycopg2-binary pgvector
+```
+**Additional requirements:**
+- **Neon Tech Account**: Sign up at [neon.tech](https://neon.tech) for serverless PostgreSQL
+- **Database URL**: Get your connection string from Neon Tech dashboard
+- **pgvector Extension**: Automatically enabled for vector similarity search
 
 ### Environment Setup
 Create a `.env` file in the project root:
-```bash
+```env
 OPENAI_API_KEY=your_openai_api_key_here
+DATABASE_URL=your_neon_tech_database_url_here
 ```
 
 ### Quick Start Guide
 
-#### **Step 1: Extract Table Data**
+#### Step 1: Extract All UCSB Wiki Content
 ```bash
-python wiki_table.py
+cd backend/
+python main.py
 ```
-- Extracts tables from predefined wiki URLs
-- Creates `all_pages_tables_data.csv`
-- Processes 10+ wiki pages for table content
+- Orchestrates extraction modules (wiki_texts.py, wiki_table.py, wiki_images.py)
+- Extracts content from [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages)
+- Creates `raw/wiki_texts.csv`, `raw/wiki_tables.csv`, and `raw/wiki_images.csv`
+- Saves individual table markdown files to `raw/scratch/` folder
+- Processes equipment specifications, process parameters, and protocol tables
 
-#### **Step 2: Process All Content**
+#### Step 2: Process and Chunk Content
 ```bash
+cd backend/chunking/
 python chunking.py
 ```
-- Combines text documents and table data
-- Creates unified chunk structure
-- Outputs `chunked_pages.csv` with mixed content types
+- Combines all extracted UCSB wiki content (text, tables, images)
+- Creates unified chunk structure preserving technical information
+- Outputs `processed/chunked_pages.csv` with mixed content types
 
-#### **Step 3: Generate Embeddings**
+#### Step 3: Generate Vector Embeddings
 ```bash
+cd backend/ai_services/
 python embedding_generator.py
 ```
-- Creates vector embeddings for all chunks
-- Processes both text and table content
-- Outputs `chunked_pages_with_embeddings.csv`
+- Creates vector embeddings for all UCSB wiki chunks
+- Processes text content, equipment specifications, and image metadata
+- Outputs `embeddings/chunked_pages_with_embeddings.csv` - the final searchable knowledge base
 
-#### **Step 4: Launch Interface**
+#### Step 4: Launch Web Interface
 ```bash
+cd frontend/
 streamlit run app.py
 ```
 - Opens web interface at `http://localhost:8501`
-- Provides interactive search and chat
-- Shows source attribution and content types
+- Provides interactive search across UCSB nanofab knowledge
+- Shows source attribution to specific wiki pages and markdown tables
 
-#### **Step 5: Test System**
+#### Step 5: Run Complete Pipeline (Alternative)
 ```bash
+cd backend/
 python main.py
 ```
-- Runs command-line testing
-- Demonstrates pipeline execution
-- Shows search quality metrics
+- Runs the complete RAG pipeline from the main orchestrator
+- Tests system with nanofab-specific queries
+- Demonstrates end-to-end functionality
 
-## 📚 Educational Learning Path
+#### Step 6: Setup Cloud Database (Optional)
+```bash
+cd database/
+python bootstrap.db.py
+```
+- **Cloud Migration**: Uploads CSV dataframes to Neon Tech PostgreSQL database
+- **Scalable Storage**: Enables production-ready, serverless database infrastructure
+- **Vector Search**: Sets up pgvector extension for efficient similarity search in the cloud
+- **API Integration**: Requires Neon Tech API credentials in `.env` file
+- **Performance Optimization**: Enables faster search operations for large knowledge bases
 
-### **Level 1: Understanding Mixed Content Processing**
-1. **Start with `wiki_table.py`**
-   - Learn table extraction from web content
-   - Understand structured data processing
-   - Practice content cleaning and normalization
 
-2. **Explore `chunking.py`**
-   - See how different content types require different strategies
-   - Learn about preserving table structure vs. enabling search
-   - Understand content type classification
+## 🔍 Example Use Cases
 
-### **Level 2: Vector Search and AI Integration**
-3. **Study `embedding_generator.py`**
-   - Learn how to vectorize mixed content types
-   - Understand batch processing and error handling
-   - Practice API integration patterns
+### Equipment Queries
+- *"What are the specifications for the Oxford RIE system?"*
+- *"How do I clean the SEM sample holder?"*
+- *"What safety procedures are required for the furnace?"*
 
-4. **Examine `vector_search.py`**
-   - Learn content-agnostic similarity search
-   - Understand ranking across different data types
-   - Practice efficient vector operations
+### Process Queries
+- *"What's the recipe for silicon etching?"*
+- *"How do I prepare samples for lithography?"*
+- *"What are the troubleshooting steps for failed depositions?"*
 
-### **Level 3: Response Generation and User Interface**
-5. **Analyze `openai_services.py`**
-   - Learn context assembly from mixed sources
-   - Understand prompt engineering for RAG
-   - Practice LLM integration and error handling
+### Research Queries
+- *"Find all protocols related to photoresist processing"*
+- *"What equipment can handle 4-inch wafers?"*
+- *"Show me all safety procedures for chemical handling"*
 
-6. **Run `app.py`**
-   - See modern AI interface design
-   - Learn real-time data processing
-   - Understand user experience for AI systems
+## 🔧 Configuration & Customization
+
+The system is designed to be easily adaptable to other research facilities and wiki systems. Key configuration points include:
+
+### Basic Configuration
+- **URL patterns** in scraping modules for different wiki structures
+- **Content type detection** for facility-specific equipment categorization
+- **Embedding models** for domain-specific technical content
+- **Search parameters** tuned for scientific and technical queries
+
+### Cloud Database Configuration (Neon Tech)
+- **Database Schema**: Customizable table structures for different content types
+- **Vector Dimensions**: Configurable embedding dimensions (default: 1536 for OpenAI)
+- **Connection Pooling**: Automated connection management for production workloads
+- **Backup Strategy**: Neon Tech provides automatic backups and point-in-time recovery
+- **Scaling**: Serverless architecture automatically scales based on usage patterns
 
 
 ## 🔍 Troubleshooting Guide
 
-### **Common Issues and Solutions**
+### Common Issues and Solutions
 
-#### **Table Extraction Issues**
+#### Table Extraction Issues
 **Problem**: Tables not extracting properly from wiki pages
 - **Cause**: Complex table structures or authentication required
 - **Solution**: Check URL accessibility, verify table markup
 - **Debug**: Examine individual table markdown output files
 
-#### **Mixed Content Search Problems**
+#### Mixed Content Search Problems
 **Problem**: Poor results when searching across text and tables
 - **Cause**: Different content types may have different embedding patterns
 - **Solution**: Adjust search parameters or implement content type weighting
 - **Debug**: Compare similarity scores between content types
 
-#### **Embedding Generation Failures**
+#### Embedding Generation Failures
 **Problem**: Some chunks fail to generate embeddings
 - **Cause**: API rate limits, content too long, or special characters
 - **Solution**: Implement retry logic, clean content, check token limits
 - **Debug**: Examine failed chunks in detail
 
-#### **Memory Issues with Large Datasets**
+#### Cloud Database Issues
+**Problem**: Database connection failures or slow query performance
+- **Cause**: Network connectivity, API key issues, or database scaling limits
+- **Solution**: Verify Neon Tech credentials, check connection string, monitor usage limits
+- **Debug**: Test database connectivity separately, review Neon Tech dashboard metrics
+
+#### Memory Issues with Large Datasets
 **Problem**: System runs out of memory loading embeddings
-- **Cause**: Too many embeddings loaded simultaneously
-- **Solution**: Implement lazy loading or use database storage
-- **Debug**: Monitor memory usage during loading
+- **Cause**: Too many embeddings loaded simultaneously in local processing
+- **Solution**: Use cloud database setup with Neon Tech for distributed storage and processing
+- **Debug**: Monitor memory usage and migrate to database-based operations for large datasets
 
+## 🤝 Contributing
 
+This project serves as both a practical tool for UCSB nanofab users and an educational resource for learning RAG implementation. Contributions are welcome, especially:
 
-**Happy Learning! 🎉**
+- Additional document processing formats
+- Improved search algorithms for technical content
+- Enhanced user interface components
+- Integration with other research facility systems
 
-*This modular RAG system demonstrates how modern AI can make complex technical knowledge more accessible through intelligent search and contextual response generation. Perfect for understanding both the technical implementation and practical applications of retrieval-augmented generation systems.*
+## 📖 Acknowledgments & Citation
 
-**Dr. Samantha Roberts** ([@srobertsphd](https://github.com/srobertsphd))
-**Developed with guidance from Dr. Samantha Roberts (@srobertsphd) - advancing AI-powered knowledge management for scientific research.**
+### Project Development
+
+```
+This UCSB RAG Chatbot System was developed with guidance and mentorship from Dr. Samantha Roberts (@srobertsphd), director of ASRC Nanofab, advancing AI-powered knowledge management for scientific research and nanofabrication facilities.
+```
+### Data Source Permission
+```
+We gratefully acknowledge Dr. Demis D. John, director of UCSB Nanofab, for granting permission to scrape and process the UCSB wiki pages for this educational and research project.
+```
+
+## Research Applications
+```
+This project demonstrates the potential for AI-powered knowledge management systems in specialized research environments, making complex technical documentation more accessible through intelligent search and contextual response generation.
+```
+---
+
+**Happy Learning and Research! 🎉**
+
+This modular RAG system demonstrates how modern AI can make complex technical knowledge from the [UCSB wiki pages](https://wiki.nanofab.ucsb.edu/wiki/Special:AllPages) more accessible through intelligent search and contextual response generation. Perfect for understanding both the technical implementation and practical applications of retrieval-augmented generation systems in research environments.
