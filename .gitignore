@@ -30,3 +30,6 @@ Thumbs.db
 docs/
 mkdocs.yml
 site/
+# Large CSV files (over 100MB)
+csv_dataframes/embeddings/*.csv
+csv_dataframes/processed/*.csv
