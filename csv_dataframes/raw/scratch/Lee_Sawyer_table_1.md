@@ -1,0 +1,7 @@
+# Lee_Sawyer - Table 1
+
+Source: https://wiki.nanofab.ucsb.edu/wiki/Lee_Sawyer
+
+| 0                                                                                                                                                                                  | 1                                                                                                                                                                                                         |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Contact Aligner (SUSS MA-6) Suss Aligners (SUSS MJB-3) Wafer Bonder (SUSS SB6-8E) DUV Flood Expose Molecular Vapor Deposition ICP Etch 1 (Panasonic E626I) RIE 2 (MRC) RIE 3 (MRC) | UV Ozone Reactor Plasma Activation (EVG 810) Dicing Saw (ADT) Goniometer (Rame-Hart A-100) Plasma Clean (YES EcoClean) Film Stress (Tencor Flexus) Maskless Aligner (Heidelberg MLA150) E-Beam 2 (Custom) |

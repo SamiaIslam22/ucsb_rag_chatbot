@@ -1,0 +1,7 @@
+# Inspection__Test_and_Characterization - Table 5
+
+Source: https://wiki.nanofab.ucsb.edu/wiki/Inspection,_Test_and_Characterization
+
+| 0                                                                                                                                                                                                                                                                        | 1                                                                                                                                    |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| Rapid Thermal Annealer/Processor "RTA" (AET RX6) Rapid Thermal Processor (SSI Solaris 150) Tube Furnace (Tystar 8300) Tube Furnace Wafer Bonding (Thermco) Tube Furnace AlGaAs Oxidation (Lindberg) Wafer Bonder (SUSS SB6-8E) Wafer Bonder/Wax Mounting (Logitech WBS2) | Ovens - Overview of all Lab Ovens Ovens 1, 2 & 3 (Labline) Oven 4 (Thermo-Fisher HeraTherm) Oven 5 (Labline) High Temp Oven (Blue M) |

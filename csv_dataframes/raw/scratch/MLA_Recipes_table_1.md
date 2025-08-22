@@ -1,0 +1,14 @@
+# MLA_Recipes - Table 1
+
+Source: https://wiki.nanofab.ucsb.edu/wiki/MLA_Recipes
+
+| resist        | spin_cond_            | soft_bake   | thickness   | laser__nm_   | exposure_dose__mj_cm2_   | defocus   | post_exposure_bake          | developer     | developer_time   | comments                                                       |
+|:--------------|:----------------------|:------------|:------------|:-------------|:-------------------------|:----------|:----------------------------|:--------------|:-----------------|:---------------------------------------------------------------|
+| AZ4110        | 4 krpm/30s            | 95°C/60s    | ~ 1.1 µm    | 405          | 240                      | 5         | none                        | AZ400K:DI 1:4 | 50s              | Used MLA design (good for isolated lines 0.8-1um)              |
+| AZ4330        | 4 krpm/30s            | 95°C/60s    | ~ 3.3 µm    | 405          | 320                      | 6         | none                        | AZ400K:DI 1:4 | 90s              | Used MLA design                                                |
+| AZ4620        |                       |             |             |              |                          |           |                             |               |                  |                                                                |
+| SPR 955 1.8   | 4 krpm/30s            | 95°C/90”    | ~1.8 µm     | 405          | 210                      | 10        | 110°C/90s                   | AZ300MIF      | 60s              | UCSB design (good for dense lines~1um)                         |
+| SPR 220-3.0   | 2.5 krpm/30s          | 115°C/90”   | ~ 2.7 µm    | 405          | 325                      | - 4       | 115°C/90s                   | AZ300MIF      | 60s              | Used MLA design                                                |
+| SPR 220-7.0   | 3.5 krpm/30s          | 115°C/2m    | ~7 µm       | 405          | 440                      | 5         | 50°C/1m, ramp up, 115°C/90s | AZ300MIF      | 70s              | UCSB design 1um pillars/5um trenches]                          |
+| SPR 955-CM0.9 | 3 krpm/30s            | 95°C/90”    | ~ 0.9 µm    | 405          | 250                      | - 7       | 110°C/90s                   | AZ300MIF      | 60s              | Used MLA design, [for 5um pillars/1um trench:150/5]            |
+| THMR-3600HP   | 1.5 krpm/45s250 rpm/s | 100°C/60s   | 0.430µm     | 405          | 180–220                  | -4        | 100°C/60s                   | AZ300MiF      | 20s              | line/space: low dose for clear-field, high does for dark-field |

@@ -1,0 +1,10 @@
+# Stepper_Recipes - Table 7
+
+Source: https://wiki.nanofab.ucsb.edu/wiki/Stepper_Recipes
+
+| resist                        | spin_cond_                             | bake      | thickness   | exposure_dose_mj_   | focus_offset   | peb       | developer   | developer_time   | comments                                                                                             |
+|:------------------------------|:---------------------------------------|:----------|:------------|:--------------------|:---------------|:----------|:------------|:-----------------|:-----------------------------------------------------------------------------------------------------|
+| UV6-0.7 (replaced by UV6-0.8) | 3.5 krpm/30”                           | 135°C/60” | 630nm       | 17                  | -0.2           | 135°C/90” | AZ300MIF    | 45”              | 200nm dense line/space NA 0.57, Sigma 0.75 Eo ~ 5.5mj UV6-0.7 was discontinued, we now stock UV6-0.8 |
+| UV210-0.3                     | 5.0 krpm/30”                           | 135°C/60” | 230nm       | 20                  | -0.1           | 135°C/90” | AZ300MIF    | 45"              | 150nm dense line/space Annular Illumination NA 0.63, Sigma_o 0.8, Sigma_i 0.5                        |
+| UV210-0.3                     | 3.0 krpm/30”                           | 135°C/90” | 260nm       | 85                  | -0.2           | 135°C/90” | AZ300MIF    | 80”              | 170nm isolated holes Annular Illumination NA 0.63, Sigma_o 0.8, Sigma_i 0.5                          |
+| UV26-2.5                      | Available but no recipes characterized | 135°C/90s | ~2.5 µm     | approx. 40          | approx. +0.8   | 110°C/90s | AZ300MiF    | Unknown          | Users must run your own development/FEM's.                                                           |

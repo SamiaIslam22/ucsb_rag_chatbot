@@ -3,6 +3,7 @@ import base64
 import asyncio
 import httpx
 import csv
+import pandas as pd
 from urllib.parse import urljoin, urlparse, urlunparse
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -10,20 +11,48 @@ from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, CacheMode
 
 # Import the multi-page scraper to get page text
 try:
-    from wiki_texts import run_all_scrapes, wiki_links as MULTI_LINKS
-except Exception:
-    # still allow running with just PAGE_URL if wiki_links isn't defined
     from wiki_texts import run_all_scrapes
-    MULTI_LINKS = []
+except Exception:
+    print("⚠️ Could not import wiki_texts module")
 
+# Load URLs from CSV instead of hardcoded links
+def load_wiki_urls_from_csv():
+    """Load wiki URLs from the generated CSV file."""
+    csv_path = "csv_dataframes/raw/wiki_all_page_links.csv"
+    
+    # Check if the CSV exists
+    if not os.path.exists(csv_path):
+        print(f"❌ CSV file not found: {csv_path}")
+        print("📋 Run wiki_all_pages_links.py first to generate the URLs")
+        
+        # Fallback to manual links if CSV doesn't exist
+        fallback_links = [
+            "https://wiki.nanofab.ucsb.edu/wiki/E-Beam_1_-_4-inch,_4-wafer_Fixture_SOP",
+            "https://wiki.nanofab.ucsb.edu/wiki/ICP_Etch_1_(Panasonic_E646V)",
+            "https://wiki.nanofab.ucsb.edu/wiki/Oxford_ICP_Etcher_(PlasmaPro_100_Cobra)"
+        ]
+        print(f"🔄 Using fallback links: {len(fallback_links)} URLs")
+        return fallback_links
+    
+    try:
+        # Load the CSV
+        df = pd.read_csv(csv_path)
+        urls = df['url'].tolist()
+        print(f"✅ Loaded {len(urls)} URLs from {csv_path}")
+        return urls
+    except Exception as e:
+        print(f"❌ Error reading CSV: {e}")
+        return []
+
+# Initialize OpenAI client
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# You can keep this as a single page seed, or just manage links in multi_page.wiki_links
-PAGE_URL = "https://wiki.nanofab.ucsb.edu/wiki/E-Beam_1_-_4-inch,_4-wafer_Fixture_SOP"
+MULTI_LINKS = load_wiki_urls_from_csv()
+
 MODEL_VISION = "gpt-4o-mini"
 
-# :file_folder: Save to csv_dataframes/raw/ folder
+# Save to csv_dataframes/raw/ folder
 OUT_PATH = "csv_dataframes/raw/wiki_images.csv"   # CSV output
 
 # --- Helpers ---
@@ -96,26 +125,42 @@ def summarize_image_with_context(data_url: str, context_text: str, alt=None, cap
     if context:
         prompt += f"\n\nContext:\n{context}"
     
-    resp = client.chat.completions.create(
-        model=MODEL_VISION,
-        messages=[{
-            "role": "user",
-            "content": [
-                {"type": "text", "text": prompt},
-                {"type": "image_url", "image_url": {"url": data_url}}
-            ]
-        }]
-    )
-    return resp.choices[0].message.content.strip()
+    try:
+        resp = client.chat.completions.create(
+            model=MODEL_VISION,
+            messages=[{
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": prompt},
+                    {"type": "image_url", "image_url": {"url": data_url}}
+                ]
+            }]
+        )
+        return resp.choices[0].message.content.strip()
+    except Exception as e:
+        return f"[error] OpenAI API call failed: {e}"
 
 # --- Main ---
 async def main():
-    # 0) Decide which pages to process
-    pages = list({*(MULTI_LINKS or []), PAGE_URL})  # ensure PAGE_URL included
-    print(f"Pages to process: {len(pages)}")
+    print("🔍 Starting UCSB Wiki Image Extraction...")
     
-    # 1) Use multi_page.py to extract page text (markdown) per URL
-    scraped = await run_all_scrapes(pages)
+    # Get pages to process from CSV
+    pages = MULTI_LINKS
+    if not pages:
+        print("❌ No pages to process!")
+        print("🔧 Please run wiki_all_pages_links.py first")
+        return
+        
+    print(f"📋 Processing {len(pages)} pages for image extraction")
+    
+    # 1) Use wiki_texts.py to extract page text (markdown) per URL for context
+    print("📝 Getting page text for context...")
+    try:
+        scraped = await run_all_scrapes(pages)
+        print(f"✅ Got text context for {len(scraped)} pages")
+    except Exception as e:
+        print(f"⚠️ Could not get page text context: {e}")
+        scraped = []
     
     # Build quick lookup: url -> context (title + markdown)
     page_ctx = {}
@@ -138,102 +183,130 @@ async def main():
     
     entries = []
     async with AsyncWebCrawler() as crawler:
-        for page_url in pages:
-            result = await crawler.arun(url=page_url, config=config)
-            images = result.media.get("images", [])
+        for page_index, page_url in enumerate(pages, 1):
+            print(f"🖼️ Crawling images from page {page_index}/{len(pages)}: {page_url[-50:]}")
             
-            raw_entries = []
-            for img in images:
-                src = img.get("src")
-                if not src:
-                    continue
+            try:
+                result = await crawler.arun(url=page_url, config=config)
+                images = result.media.get("images", [])
                 
-                # absolutize
-                if src.startswith("//"):
-                    src = "https:" + src
-                elif not src.startswith("http"):
-                    src = urljoin(page_url, src)
+                raw_entries = []
+                for img in images:
+                    src = img.get("src")
+                    if not src:
+                        continue
+                    
+                    # absolutize
+                    if src.startswith("//"):
+                        src = "https:" + src
+                    elif not src.startswith("http"):
+                        src = urljoin(page_url, src)
+                    
+                    # normalize any MediaWiki thumbnail to original
+                    src = normalize_mediawiki_image_url(src)
+                    
+                    raw_entries.append({
+                        "page_url": page_url,
+                        "url": src,
+                        "alt": img.get("alt"),
+                        "caption": img.get("caption") or img.get("desc") or img.get("figcaption")
+                    })
                 
-                # normalize any MediaWiki thumbnail to original
-                src = normalize_mediawiki_image_url(src)
+                # Optional: drop obvious UI images (just in case)
+                filtered = [e for e in raw_entries if not is_probably_ui(e["url"])]
                 
-                raw_entries.append({
-                    "page_url": page_url,
-                    "url": src,
-                    "alt": img.get("alt"),
-                    "caption": img.get("caption") or img.get("desc") or img.get("figcaption")
-                })
-            
-            # Optional: drop obvious UI images (just in case)
-            filtered = [e for e in raw_entries if not is_probably_ui(e["url"])]
-            
-            # Dedupe per page by normalized filename
-            seen = set()
-            for e in filtered:
-                k = filename_key(e["url"])
-                if k in seen:
-                    continue
-                seen.add(k)
-                entries.append(e)
+                # Dedupe per page by normalized filename
+                seen = set()
+                for e in filtered:
+                    k = filename_key(e["url"])
+                    if k in seen:
+                        continue
+                    seen.add(k)
+                    entries.append(e)
+                    
+                print(f"   ✅ Found {len(filtered)} unique images on this page")
+                
+            except Exception as e:
+                print(f"   ❌ Error crawling {page_url}: {e}")
     
-    print(f"Keeping {len(entries)} unique content images after dedupe across all pages")
+    print(f"🎯 Total unique content images found: {len(entries)}")
     
     # 3) Create the directory if it doesn't exist
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     
-    # 4) Download, summarize with CONTEXT, write CSV (NO EMBEDDINGS)
+    # 4) Download, summarize with CONTEXT, write CSV
+    print(f"🤖 Starting AI-powered image analysis...")
+    
+    # Create CSV even if no images found
     with open(OUT_PATH, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        # Simplified CSV header - just the core data
         writer.writerow(["index", "page_url", "image_url", "title", "alt", "caption", "summary"])
         
-        async with httpx.AsyncClient() as http_client:
-            for idx, e in enumerate(entries, 1):
-                img_url = e["url"]
-                page_url = e["page_url"]
-                print(f"\nImage {idx}/{len(entries)}: {img_url}")
-                
-                data_url = await download_image_as_data_url(img_url, http_client)
-                if not data_url:
-                    print("  :x: Failed to fetch image")
+        if not entries:
+            print("⚠️ No images found to process")
+        else:
+            async with httpx.AsyncClient() as http_client:
+                for idx, e in enumerate(entries, 1):
+                    img_url = e["url"]
+                    page_url = e["page_url"]
+                    print(f"\n🔄 Processing image {idx}/{len(entries)}: {img_url[-50:]}")
+                    
+                    data_url = await download_image_as_data_url(img_url, http_client)
+                    if not data_url:
+                        print("   ❌ Failed to fetch image")
+                        writer.writerow([
+                            idx, 
+                            page_url,
+                            img_url, 
+                            "", 
+                            e.get("alt") or "", 
+                            e.get("caption") or "", 
+                            "[error] fetch failed"
+                        ])
+                        continue
+                    
+                    # Pull context text for this image's page
+                    ctx_info = page_ctx.get(page_url, {})
+                    context_text = ctx_info.get("context_text", "")
+                    page_title = ctx_info.get("title", "")
+                    
+                    print(f"   🤖 Analyzing image with AI...")
+                    try:
+                        summary = summarize_image_with_context(
+                            data_url,
+                            context_text=context_text,
+                            alt=e.get("alt"),
+                            caption=e.get("caption")
+                        )
+                        print(f"   ✅ AI analysis complete")
+                    except Exception as ex:
+                        summary = f"[error] {ex}"
+                        print(f"   ❌ AI analysis failed: {ex}")
+                    
+                    # Write row with data
                     writer.writerow([
-                        idx, 
+                        idx,
                         page_url,
-                        img_url, 
-                        "", 
-                        e.get("alt") or "", 
-                        e.get("caption") or "", 
-                        "[error] fetch failed"
+                        img_url,
+                        page_title,
+                        e.get("alt") or "",
+                        e.get("caption") or "",
+                        summary
                     ])
-                    continue
-                
-                # Pull context text for this image's page
-                ctx_info = page_ctx.get(page_url, {})
-                context_text = ctx_info.get("context_text", "")
-                page_title = ctx_info.get("title", "")
-                
-                try:
-                    summary = summarize_image_with_context(
-                        data_url,
-                        context_text=context_text,
-                        alt=e.get("alt"),
-                        caption=e.get("caption")
-                    )
-                except Exception as ex:
-                    summary = f"[error] {ex}"
-                
-                # Write row with simplified data
-                writer.writerow([
-                    idx,
-                    page_url,
-                    img_url,
-                    page_title,
-                    e.get("alt") or "",
-                    e.get("caption") or "",
-                    summary
-                ])
     
-    print(f"\n✅ Saved CSV to {OUT_PATH}")
+    print(f"\n✅ Image extraction complete!")
+    print(f"📄 CSV saved to: {OUT_PATH}")
+    print(f"🖼️ Processed {len(entries)} images from {len(pages)} pages")
+    
+    # Verify output file
+    if os.path.exists(OUT_PATH):
+        try:
+            verify_df = pd.read_csv(OUT_PATH)
+            print(f"✅ Output file verified: {len(verify_df)} rows")
+        except Exception as e:
+            print(f"⚠️ Output file verification failed: {e}")
+    else:
+        print(f"❌ Output file not created: {OUT_PATH}")
 
 if __name__ == "__main__":
     asyncio.run(main())

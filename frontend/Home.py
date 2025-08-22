@@ -2,14 +2,49 @@ import streamlit as st
 
 st.set_page_config(
     page_title="UCSB Nanofab - Home",
-    page_icon="🏠",
-    layout="wide"
+    page_icon="🔬",
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 def main():
     # Custom CSS for better styling
     st.markdown("""
     <style>
+        /* Hide the ugly keyboard arrow */
+        [data-testid="collapsedControl"],
+        button[title="Close sidebar"],
+        button[title="Open sidebar"],
+        .css-1rs6os.edgvbvh3,
+        .css-1vq4p4l.e1fqkh3o0 {
+            display: none !important;
+        }
+        
+        /* Custom clean arrow toggle */
+        .stApp::before {
+            content: "›";
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 999;
+            font-size: 1.8rem;
+            color: #666;
+            font-weight: 300;
+            cursor: pointer;
+            padding: 0.3rem 0.5rem;
+            background: rgba(255,255,255,0.9);
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        
+        .stApp::before:hover {
+            color: #333;
+            background: white;
+            border-color: #ccc;
+        }
+        
         /* GLOBAL FONT FAMILY - Apply Calibri to EVERYTHING */
         *, *::before, *::after {
             font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;

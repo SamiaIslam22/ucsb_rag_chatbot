@@ -3,6 +3,7 @@ import pandas as pd
 import json
 import sys
 import os
+import re
 
 # Add the parent directory to sys.path to import backend modules
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -13,6 +14,106 @@ sys.path.append(grandparent_dir)
 # Now import from the correct backend modules
 from backend.ai_services.vector_search import vector_similarity_search, client
 from backend.ai_services.openai_services import generate_response_with_context
+
+def ultra_aggressive_title_cleaning(title):
+    """Ultra-aggressive title cleaning to remove all key artifacts and formatting issues"""
+    if pd.isna(title) or title is None:
+        return "Unknown Page"
+    
+    clean_title = str(title)
+    
+    # Remove ALL key-related artifacts (most aggressive patterns first)
+    patterns_to_remove = [
+        r'key[🔓🔒🔑].*?-',              # key + emoji + anything + dash
+        r'key\w*[🔓🔒🔑].*?-',           # key + word + emoji + anything + dash
+        r'key\w+-\w*-?',                 # key + word + dash + word + optional dash
+        r'key\w*-.*?-',                  # key + anything + dash + anything + dash
+        r'^[a-zA-Z]*[🔓🔒🔑].*?-',       # start + any letters + emoji + anything + dash
+        r'^[🔓🔒🔑].*?-',                # start + emoji + anything + dash
+        r'[🔓🔒🔑].*?-',                 # any emoji + anything + dash
+        r'^key.*?-',                     # start + key + anything + dash
+        r'key\w*',                       # any remaining "key" + letters
+        r'^[a-zA-Z]{1,4}[🔓🔒🔑]',       # short letters + emoji at start
+        r'^\w{1,6}_.*?_',                # short word + underscore + anything + underscore at start
+    ]
+    
+    # Apply all removal patterns
+    for pattern in patterns_to_remove:
+        clean_title = re.sub(pattern, '', clean_title, flags=re.IGNORECASE)
+    
+    # Clean up formatting artifacts
+    clean_title = clean_title.replace('_', ' ')
+    clean_title = clean_title.replace('-', ' ')
+    clean_title = clean_title.replace('  ', ' ')  # double spaces
+    clean_title = re.sub(r'\s+', ' ', clean_title)  # multiple spaces to single
+    clean_title = clean_title.strip()
+    
+    # Remove any remaining special characters at the start
+    clean_title = re.sub(r'^[^a-zA-Z0-9]+', '', clean_title)
+    
+    # If title is still empty, too short, or contains artifacts
+    if not clean_title or len(clean_title) < 3 or any(bad in clean_title.lower() for bad in ['key', '🔓', '🔒', '🔑']):
+        return "Wiki Page Content"
+    
+    # Capitalize first letter of each word for better presentation
+    clean_title = ' '.join(word.capitalize() for word in clean_title.split())
+    
+    # Limit length
+    if len(clean_title) > 60:
+        clean_title = clean_title[:60] + "..."
+    
+    return clean_title
+
+def extract_title_from_url(url):
+    """Extract a clean title from URL as fallback"""
+    if not url:
+        return "Unknown Source"
+    
+    try:
+        # Get the last part of the URL
+        url_parts = url.split('/')
+        page_name = url_parts[-1]
+        
+        # Clean URL encoding
+        page_name = page_name.replace('%20', ' ').replace('_', ' ')
+        
+        # Remove common URL artifacts
+        page_name = re.sub(r'[^a-zA-Z0-9\s]', ' ', page_name)
+        page_name = re.sub(r'\s+', ' ', page_name).strip()
+        
+        # Capitalize words
+        if page_name:
+            page_name = ' '.join(word.capitalize() for word in page_name.split())
+            return page_name
+        else:
+            return "Wiki Page"
+    except:
+        return "Wiki Content"
+
+def clean_dataframe_titles(df):
+    """Clean all titles in the dataframe at source"""
+    if 'title' not in df.columns:
+        return df
+    
+    df = df.copy()
+    
+    # Apply ultra-aggressive cleaning
+    df['title'] = df['title'].apply(ultra_aggressive_title_cleaning)
+    
+    # For titles that are still problematic, use URL extraction
+    for idx, row in df.iterrows():
+        if (not row['title'] or 
+            len(row['title']) < 3 or 
+            row['title'] == "Wiki Page Content" or
+            any(bad in str(row['title']).lower() for bad in ['key', 'unknown'])):
+            
+            # Try to extract from URL
+            if 'url' in row and pd.notna(row['url']):
+                df.at[idx, 'title'] = extract_title_from_url(row['url'])
+            else:
+                df.at[idx, 'title'] = f"Content Item {idx + 1}"
+    
+    return df
 
 def load_data():
     """Load the embedded data"""
@@ -70,6 +171,9 @@ def load_data():
                 elif content.startswith('{') and content.endswith('}'):
                     df_with_embeddings.at[idx, 'content_type'] = 'table_row'
         
+        # CLEAN TITLES AT SOURCE - This is the key fix!
+        df_with_embeddings = clean_dataframe_titles(df_with_embeddings)
+        
         return df_with_embeddings
     except FileNotFoundError:
         st.error("Embeddings file not found! Please run the main pipeline first.")
@@ -83,19 +187,26 @@ def display_sources(sources):
     for i, source in enumerate(sources, 1):
         # Handle both dictionary and tuple formats
         if isinstance(source, tuple) and len(source) == 2:
-            # Format: (score, chunk_data)
             score, chunk_data = source
             content_type = chunk_data.get('content_type', 'text')
             title = chunk_data.get('title', 'Unknown')
             url = chunk_data.get('url', '')
             content = chunk_data.get('content', 'No content available')
         else:
-            # Format: dictionary
             content_type = source.get('content_type', 'text')
             title = source.get('title', 'Unknown')
             url = source.get('url', '')
             content = source.get('content', 'No content available')
             score = source.get('score', 0.0)
+        
+        # ENHANCED TITLE CLEANING - Additional safety net
+        clean_title = ultra_aggressive_title_cleaning(title)
+        
+        # If title is still problematic, extract from URL
+        if (clean_title == "Wiki Page Content" or 
+            len(clean_title) < 3 or 
+            any(bad in clean_title.lower() for bad in ['key', 'unknown'])):
+            clean_title = extract_title_from_url(url)
         
         # Set icon and display type based on content type
         if content_type == 'table_row':
@@ -111,7 +222,8 @@ def display_sources(sources):
             icon = '📝'
             display_type = 'Content'
         
-        with st.expander(f"{icon} {i}. {title} - {display_type} (Score: {score:.3f})"):
+        # Clean source title display
+        with st.expander(f"{icon} Source {i}: {clean_title} ({display_type}, Score: {score:.3f})"):
             # Show the URL as a clickable link
             if url:
                 st.markdown(f"**🔗 Source:** [{url}]({url})")
@@ -126,11 +238,13 @@ def display_sources(sources):
                             table_data = json.loads(content)
                             # Create a formatted table display with all data
                             for key, value in table_data.items():
+                                # Clean up key names for better display
+                                clean_key = str(key).replace('_', ' ').title()
                                 # Show all key-value pairs, even if empty
                                 if value is not None and str(value).strip():
-                                    st.markdown(f"**{key}:** {value}")
+                                    st.markdown(f"**{clean_key}:** {value}")
                                 else:
-                                    st.markdown(f"**{key}:** *(empty)*")
+                                    st.markdown(f"**{clean_key}:** *(empty)*")
                         else:
                             st.markdown(str(content))
                     else:
@@ -142,10 +256,10 @@ def display_sources(sources):
             elif content_type == 'table':
                 st.markdown("**📋 Complete Table:**")
                 if content and content != 'No content available' and str(content).strip():
-                    # Clean up the table content
+                    # Better table formatting
                     content_str = str(content)
                     
-                    # Remove markdown table separators and clean up formatting
+                    # Clean up the table content
                     lines = content_str.split('\n')
                     cleaned_lines = []
                     
@@ -162,7 +276,7 @@ def display_sources(sources):
                     
                     cleaned_content = '\n'.join(cleaned_lines)
                     
-                    # Display as a formatted table
+                    # Display as a formatted code block for better readability
                     if cleaned_content.strip():
                         st.code(cleaned_content, language='markdown')
                     else:
@@ -174,9 +288,9 @@ def display_sources(sources):
                 st.markdown("**📄 Text Content:**")
                 if content and content != 'No content available' and str(content).strip():
                     content_str = str(content)
-                    # Limit text display to avoid overwhelming
-                    if len(content_str) > 1000:
-                        st.markdown(content_str[:1000] + "...")
+                    # Limit text display to avoid overwhelming - but show more
+                    if len(content_str) > 500:
+                        st.markdown(content_str[:500] + "...")
                         with st.expander("Show full content"):
                             st.markdown(content_str)
                     else:
@@ -215,12 +329,47 @@ def main():
     st.set_page_config(
         page_title="Search - UCSB Nanofab",
         page_icon="🔍",
-        layout="wide"
+        layout="wide",
+        initial_sidebar_state="expanded"
     )
     
     # Custom CSS for better styling including sidebar
     st.markdown("""
     <style>
+        /* Hide the ugly keyboard arrow */
+        [data-testid="collapsedControl"],
+        button[title="Close sidebar"],
+        button[title="Open sidebar"],
+        .css-1rs6os.edgvbvh3,
+        .css-1vq4p4l.e1fqkh3o0 {
+            display: none !important;
+        }
+        
+        /* Custom clean arrow toggle */
+        .stApp::before {
+            content: "›";
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 999;
+            font-size: 1.8rem;
+            color: #666;
+            font-weight: 300;
+            cursor: pointer;
+            padding: 0.3rem 0.5rem;
+            background: rgba(255,255,255,0.9);
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        
+        .stApp::before:hover {
+            color: #333;
+            background: white;
+            border-color: #ccc;
+        }
+        
         /* GLOBAL FONT FAMILY - Apply Calibri to EVERYTHING */
         *, *::before, *::after {
             font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;
@@ -268,6 +417,7 @@ def main():
         .stChatInput, .stChatInput * {
             font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;
         }
+        
         /* CONSISTENT NAVIGATION SIDEBAR STYLING - Same as Home page */
         [data-testid="stSidebar"] {
             background: linear-gradient(180deg, #FFE135 0%, #4A90E2 100%) !important;

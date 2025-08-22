@@ -1,0 +1,9 @@
+# O2 - Table 1
+
+Source: https://wiki.nanofab.ucsb.edu/wiki/Test_Data_of_etching_SiO2_with_CHF3/CF4/O2
+
+| 0                                                            | 1                                                            | 2                                                            | 3                                                            | 4                                                            |
+|:-------------------------------------------------------------|:-------------------------------------------------------------|:-------------------------------------------------------------|:-------------------------------------------------------------|:-------------------------------------------------------------|
+| ICP#2: 0.5Pa, 50/500W, CHF3/CF4/O2=35/5/10sccm, time=210 sec | ICP#2: 0.5Pa, 50/500W, CHF3/CF4/O2=35/5/10sccm, time=210 sec | ICP#2: 0.5Pa, 50/500W, CHF3/CF4/O2=35/5/10sccm, time=210 sec | ICP#2: 0.5Pa, 50/500W, CHF3/CF4/O2=35/5/10sccm, time=210 sec | ICP#2: 0.5Pa, 50/500W, CHF3/CF4/O2=35/5/10sccm, time=210 sec |
+| Date                                                         | Sample#                                                      | Etch Rate (nm/min)                                           | Etch Selectivity (SiO2/PR)                                   | Averaged Sidewall Angle (o)                                  |
+| 10/5/2018                                                    | SiO2#01                                                      | 95.2                                                         | 0.74                                                         | 77.9                                                         |
