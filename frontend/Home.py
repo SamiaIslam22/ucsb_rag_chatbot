@@ -8,119 +8,10 @@ st.set_page_config(
 )
 
 def main():
-    # Custom CSS for better styling
+    # MINIMAL CSS - Only headers, sidebars, and content cards
     st.markdown("""
     <style>
-        /* Hide the ugly keyboard arrow */
-        [data-testid="collapsedControl"],
-        button[title="Close sidebar"],
-        button[title="Open sidebar"],
-        .css-1rs6os.edgvbvh3,
-        .css-1vq4p4l.e1fqkh3o0 {
-            display: none !important;
-        }
-        
-        /* Custom clean arrow toggle */
-        .stApp::before {
-            content: "›";
-            position: fixed;
-            top: 1rem;
-            left: 1rem;
-            z-index: 999;
-            font-size: 1.8rem;
-            color: #666;
-            font-weight: 300;
-            cursor: pointer;
-            padding: 0.3rem 0.5rem;
-            background: rgba(255,255,255,0.9);
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-            font-family: system-ui, -apple-system, sans-serif;
-        }
-        
-        .stApp::before:hover {
-            color: #333;
-            background: white;
-            border-color: #ccc;
-        }
-        
-        /* GLOBAL FONT FAMILY - Apply Calibri to EVERYTHING */
-        *, *::before, *::after {
-            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;
-        }
-        
-        /* Apply to all HTML elements */
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed, 
-        figure, figcaption, footer, header, hgroup, 
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video,
-        button, input, select, textarea {
-            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;
-        }
-        
-        /* Specifically target Streamlit components */
-        .stApp, .stApp * {
-            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;
-        }
-        
-        /* Target sidebar specifically */
-        [data-testid="stSidebar"], [data-testid="stSidebar"] * {
-            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;
-        }
-        
-        /* Target main content */
-        .main, .main * {
-            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif !important;
-        }
-        /* SUPER AGGRESSIVE font size for navigation only */
-        [data-testid="stSidebar"] {
-            background: linear-gradient(180deg, #FFE135 0%, #4A90E2 100%) !important;
-        }
-        
-        [data-testid="stSidebar"] * {
-            font-size: 22px !important;
-            font-weight: bold !important;
-            color: white !important;
-        }
-        
-        /* Target navigation links specifically */
-        [data-testid="stSidebar"] a,
-        [data-testid="stSidebar"] div[role="button"],
-        [data-testid="stSidebar"] .css-1vq4p4l {
-            font-size: 24px !important;
-            font-weight: 700 !important;
-            color: white !important;
-            padding: 1rem 1.5rem !important;
-            margin: 0.5rem 0 !important;
-            border-radius: 10px !important;
-            transition: all 0.3s ease !important;
-        }
-        
-        /* Even more nuclear approach */
-        .stSidebar * {
-            font-size: 24px !important;
-            font-weight: bold !important;
-        }
-        
-        /* Hover effects */
-        [data-testid="stSidebar"] a:hover,
-        [data-testid="stSidebar"] div[role="button"]:hover {
-            background: rgba(255,255,255,0.2) !important;
-            transform: translateX(8px) !important;
-        }
-        
-        /* All other styles remain the same for main content */
-        
+        /* Main header styling */
         .main-header {
             text-align: center;
             padding: 2rem 0;
@@ -130,6 +21,31 @@ def main():
             margin-bottom: 2rem;
         }
         
+        /* Sidebar gradient */
+        [data-testid="stSidebar"] {
+            background: linear-gradient(180deg, #FFE135 0%, #4A90E2 100%);
+        }
+        
+        /* Sidebar text color and size */
+        [data-testid="stSidebar"] * {
+            color: white;
+        }
+        
+        /* HUGE navigation font size */
+        [data-testid="stSidebar"] a {
+            font-size: 32px !important;
+            font-weight: 700 !important;
+            padding: 1rem 1.5rem !important;
+            margin: 0.5rem 0 !important;
+        }
+        
+        [data-testid="stSidebar"] a:hover {
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            transform: translateX(5px);
+        }
+        
+        /* Feature cards */
         .feature-card {
             background: #f8f9fa;
             padding: 1.5rem;
@@ -139,6 +55,7 @@ def main():
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
+        /* Stats cards */
         .stats-card {
             background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
             color: white;
@@ -148,6 +65,7 @@ def main():
             margin: 0.3rem 0;
         }
         
+        /* CTA button */
         .cta-button {
             background: linear-gradient(90deg, #00b894 0%, #00a085 100%);
             color: white;
@@ -160,6 +78,7 @@ def main():
             display: block;
         }
         
+        /* Extraction section */
         .extraction-section {
             background: #f1f3f4;
             padding: 2rem;
@@ -167,15 +86,16 @@ def main():
             margin: 2rem 0;
         }
         
+        /* Purpose section */
         .purpose-section {
             background: linear-gradient(135deg, #87CEEB 0%, #4A90E2 100%);
             color: white;
             padding: 2rem;
             border-radius: 15px;
             margin: 2rem 0;
-            font-family: 'Calibri', 'Segoe UI', sans-serif;
         }
         
+        /* Acknowledgment section */
         .acknowledgment-section {
             background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
             color: white;
@@ -184,6 +104,18 @@ def main():
             margin: 2rem 0;
         }
         
+        /* Contributors section */
+        .contributors-section {
+            background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+            color: white;
+            padding: 0.8rem;
+            border-radius: 10px;
+            margin: 1rem auto;
+            text-align: center;
+            max-width: 400px;
+        }
+        
+        /* Icon header */
         .icon-header {
             font-size: 2.5rem;
             text-align: center;
@@ -213,7 +145,7 @@ def main():
         
         st.markdown("""
         <div class="cta-button">
-            💡 Ready to explore? Click "🔍 Search" in the sidebar to get started!
+            💡 Ready to explore? Click "Chat" in the sidebar to get started!
         </div>
         """, unsafe_allow_html=True)
     
@@ -405,6 +337,19 @@ def main():
     ### 🔬 Research Impact
     This project demonstrates the potential for AI-powered knowledge management systems in specialized research environments, making complex technical documentation more accessible through intelligent search and contextual response generation.
     """)
+    
+    # Contributors section - NEW ADDITION
+    st.markdown("""
+    <div class="contributors-section">
+        <p style="margin: 0; font-weight: bold;">Project Created By: Samia Islam* & Arnob Hassan*</p>
+        <p style="margin: 0; font-size: 0.8em; opacity: 0.9;">*Equal Contributors</p>
+        <p style="margin: 0.5rem 0 0 0; font-size: 0.85em;">
+            <a href="https://github.com/SamiaIslam22/ucsb_rag_chatbot" target="_blank" style="color: white; text-decoration: underline;">
+                GitHub Repository
+            </a>
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
     
     # Technical details in collapsible section
     with st.expander("⚙️ Technical Details & Architecture"):
