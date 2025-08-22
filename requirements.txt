@@ -4,7 +4,7 @@ langchain-text-splitters
 python-dotenv
 
 # Database
-psycopg[binary]
+psycopg2-binary
 pgvector
 
 # Data processing
@@ -14,10 +14,26 @@ numpy
 # Web scraping and document processing
 crawl4ai
 docling
+beautifulsoup4
+requests
+lxml
+playwright
+selenium
+undetected-chromedriver
 
 # Web framework (for Streamlit frontend)
 streamlit
 
-# Development tools
-ipykernel
+# Additional dependencies for crawl4ai and docling
+asyncio
+aiohttp
+json5
+pillow
+pypdf
+pydantic
+typing-extensions
 
+# System dependencies that might be needed
+nest-asyncio
+httpx
+tqdm
